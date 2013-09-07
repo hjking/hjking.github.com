@@ -1,4 +1,2 @@
-hjking.github.com
-=================
+## gkwelding.Github.com
 
-HJKing
