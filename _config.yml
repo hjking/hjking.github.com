@@ -2,26 +2,26 @@ auto: true
 markdown: rdiscount
 pygments: true
 
-title: In The Attic
+title: HJKing's Blog
 
-url: http://www.in-the-attic.com
+url: https://hjking.github.com
 
 permalink: /:year/:month/:day/:title/
 
 author:
-    name: Garry Welding
-    email: gkwelding@gmail.com
-    github: gkwelding
-    twitter: GarryWelding
+    name: Jin Hong
+    email: hon9jin@gmail.com
+    github: hjking
+    twitter: hon9jin
     gravatar: http://www.gravatar.com/avatar/5b7d3122776b44cfb18ed7aa865804a1.png
 
 comments:
     provider: disqus
     disqus:
         short_name: intheatticuk
-        
+
 analytics:
-    provider: google 
-    google: 
+    provider: google
+    google:
         tracking_id: 'UA-18015420-1'
         domain: 'in-the-attic.com'
