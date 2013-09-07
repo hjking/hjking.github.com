@@ -13,12 +13,14 @@ author:
     email: hon9jin@gmail.com
     github: hjking
     twitter: hon9jin
-    gravatar: http://www.gravatar.com/avatar/5b7d3122776b44cfb18ed7aa865804a1.png
+    facebook: hon9jin
+    linkedin: kinghom
+    gravatar: http://www.gravatar.com/avatar/f5f95a698d284cdb1acece79504077db.png
 
 comments:
     provider: disqus
     disqus:
-        short_name: intheatticuk
+        short_name: hjking
 
 analytics:
     provider: google
