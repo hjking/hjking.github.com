@@ -4,3 +4,29 @@
 {% include css/custom.css %}
 {% include css/bootstrap/bootstrap-responsive.min.css %}
 {% include js/bootstrap/google-code-prettify/prettify.css %}
+
+
+/*******************
+ **     Search    **
+ *******************/
+
+#searchform div{
+    padding: 0;
+}
+#searchsubmit{
+    background: url("/images/go_button.png") no-repeat;
+    width: 25px;
+    height: 25px;
+    border: 0;
+    cursor: pointer;
+    vertical-align: top;
+}
+#s{
+    color: #5b5b5b;
+    border: 4px solid #CCC;
+    background-color: #FFF;
+    width: 166px;
+}
+.hidden{
+    display: none;
+}
