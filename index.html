@@ -3,7 +3,9 @@ layout: layout
 title: "HJKing's Blog"
 ---
 <p></p>
-{% for post in site.posts offset: 0 limit: 50 %}
+
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
 <div class="row">
   <div class="span7">
     <div class="row">
@@ -30,3 +32,36 @@ title: "HJKing's Blog"
   </div>
 </div>
 {% endfor %}
+
+<!-- Pagination links -->
+<!-- <div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="/page{{ paginator.previous_page }}" class="previous">Previous Page</a>
+  {% else %}
+    <span class="previous">Previous Page</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="/page{{ paginator.next_page }}" class="next">Next Page</a>
+  {% else %}
+    <span class="next ">Next Page</span>
+  {% endif %}
+</div> -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+  	{% if paginator.page == 2 %}
+  		<a href="/" rel="bookmark"> << Previous Page</a>
+  	{% else %}
+  		<a href="/page{{ paginator.previous_page }}" rel="bookmark"> << Previous Page</a>
+  	{% endif %}
+  {% endif %}
+<!--   <div style="text-align: center;">
+    <span class="page_number " style="border:1px solid red;">
+        Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+    </div> -->
+    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+  	<a href="/page{{ paginator.next_page }}" rel="bookmark" style="float:right">Next Page >></a>
+  {% endif %}
+ </div>
