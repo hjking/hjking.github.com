@@ -1,0 +1,11 @@
+---
+layout: layout
+title: "All Archives in HJKing's Blog"
+---
+
+<h2>All Posts</h2>
+<ul>
+  {% for post in site.posts %}
+    <li>{{ post.date | date: "%Y - %B %e" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>

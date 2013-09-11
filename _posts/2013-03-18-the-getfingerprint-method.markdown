@@ -14,6 +14,7 @@ tags:
 
 Read the comment, then the code... If you can't see what's so fundamentally wrong with this then please, never come here again, you're barred!
 
+
     /**
     * getFingerPrint
     * 
@@ -28,4 +29,5 @@ Read the comment, then the code... If you can't see what's so fundamentally wron
         return md5($_SERVER['HTTP_USER_AGENT'] . "|primo");        
     }
 
+    
 I found this wonder of modern development today... Luckily an extensive search of the codebase found it wasn't used, anywhere! What strikes me as concerning is that some monkey wrote it in the first place with the intention of using it.

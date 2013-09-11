@@ -4,7 +4,7 @@ pygments: true
 
 title: HJKing's Blog
 
-url: https://hjking.github.com
+url: https://hjking.github.io
 
 permalink: /:year/:month/:day/:title/
 
@@ -17,6 +17,8 @@ author:
     linkedin: kinghom
     gravatar: http://www.gravatar.com/avatar/f5f95a698d284cdb1acece79504077db.png
 
+paginate: 7
+    
 comments:
     provider: disqus
     disqus:

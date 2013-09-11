@@ -1,0 +1,12 @@
+---
+layout: layout
+title: "Categories in HJKing's Blog"
+---
+
+<h2>Categories</h2>
+<hr />
+<ul>
+    {% for category in site.categories %}
+    <li class="cat-item cat-item-{{category | last | size }}"><a href="/category/{{category | first}}/index.html" title="View all posts filed under {{category | first}}">{{category | first}} ({{category | last | size }})</a></li>
+    {% endfor %}
+</ul>

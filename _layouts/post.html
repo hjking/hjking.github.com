@@ -5,7 +5,7 @@ layout: layout
 <div class="content">
     <div class="row">
         <div class="span7 column">
-            <h1>{{ page.title }}</h1>
+            <h2>{{ page.title }}</h2>
         </div>
     </div>
 
@@ -13,38 +13,77 @@ layout: layout
 
     <div class="row">
         <div class="span7 columns">
+            <hr />
+            <i class="icon-calendar"></i> {{ page.date | date: "%B %e, %Y" }}
+            | <i class="icon-comment"></i> <a href="{{ site.url }}{{ page.url }}#disqus_thread""></a>
+            <hr />
             {{ content }}
+            <hr />
         </div>
     </div>
-
+	
+	<!-- Previous/Next Post Arrow -->
     <div class="pager hidden-phone hidden-tablet">
-        <a class="prev" href="{{ page.previous.url }}" title="Previous Post: {{page.previous.title}}"><i class="icon-arrow-left icon-white"></i></a>
-        <a class="next" href="{{ page.next.url }}" title="Previous Post: {{page.next.title}}"><i class="icon-arrow-right icon-white"></i></a>
+        <a class="next" href="{{ page.next.url }}" title="Next Post: {{page.next.title}}"><i class="icon-arrow-right icon-white"></i></a>
+		<a class="prev" href="{{ page.previous.url }}" title="Previous Post: {{page.previous.title}}"><i class="icon-arrow-left icon-white"></i></a>
     </div>
+	<!-- Previous/Next Post Arrow -->
 
+    <!-- Tags -->
     <div class="row">
         <div class="span7 column">
-            <p>
-              <i class="icon-calendar"></i> {{ page.date | date: "%B %e, %Y" }}
-              | <i class="icon-comment"></i> <a href="{{ site.url }}{{ page.url }}#disqus_thread""></a>
-              <br />
               <i class="icon-tags"></i> Tags :{% for tag in page.tags %} <a href="/tags/{{ tag }}" rel="tooltip" title="View pages tagged with &quot;{{ tag }}&quot;"><span class="label label-info">{{ tag }}</span></a>  {% if forloop.last != true %} {% endif %} {% endfor %}
               <br />
-              <a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ site.author.twitter }}">Tweet</a> <g:plusone size="medium"></g:plusone></h5>
-            </p>
+              <a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ site.author.twitter }}">Tweet</a>
+              <g:plusone size="medium"></g:plusone></h5>
         </div>
     </div>
+	<!-- Tags -->
 
+    
+	<!-- Previous/Next Post Link -->
     <div class="row">
+        <div class="span7 column">
+        <p>
         {% if page.next %}
-          <a class="next" href="{{ page.next.url }}" rel="bookmark">&laquo;&nbsp;{{ page.next.title | truncatewords:5 }}</a>
+			<a class="next" href="{{ page.next.url }}" rel="bookmark">&laquo;&nbsp;{{ page.next.title | truncatewords:5 }}</a>
         {% endif %}
         {% if page.previous %}
             <a class="prev" href="{{ page.previous.url }}" rel="bookmark" style="float:right">{{ page.previous.title | truncatewords:5 }}&nbsp;&raquo;</a>
         {% endif %}
+        </p>
+        </div>
     </div>
+	<!-- Previous/Next Post Link -->
 
-
+    <!-- JiaThis Button BEGIN -->
+    <div class="row">
+        <div class="span7 column">
+            <div class="jiathis_style_32x32">
+                <a class="jiathis_button_qzone"></a>
+                <a class="jiathis_button_tsina"></a>
+                <a class="jiathis_button_tqq"></a>
+                <a class="jiathis_button_renren"></a>
+                <a class="jiathis_button_t163"></a>
+                <a class="jiathis_button_hi"></a>
+                <a class="jiathis_button_fb"></a>
+                <a class="jiathis_button_googleplus"></a>
+                <a class="jiathis_button_twitter"></a>
+                <a class="jiathis_button_linkedin"></a>
+                <a class="jiathis_button_reddit"></a>
+                <a href="http://www.jiathis.com/share?uid=1645446" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                <a class="jiathis_counter_style"></a>
+            </div>
+        </div>
+    </div>
+	<script type="text/javascript">
+		var jiathis_config = {data_track_clickback:'true'};
+	</script>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1340804108559251" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+    
+    <hr />
+    <!-- Comments -->
     {% if page.comments %}
     <div class="row">
         <div class="span7 columns">
@@ -67,11 +106,13 @@ layout: layout
         </div>
     </div>
     {% endif %}
+    <!-- Comments -->
 
     <!-- Twitter -->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <!-- Twitter -->
 
-    <!-- Google + -->
+    <!-- Google+ -->
     <script type="text/javascript">
       (function() {
         var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -79,5 +120,6 @@ layout: layout
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
       })();
     </script>
+    <!-- Google+ -->
 </div>
 

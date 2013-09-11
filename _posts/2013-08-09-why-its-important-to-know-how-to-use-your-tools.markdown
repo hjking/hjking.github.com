@@ -6,6 +6,7 @@ slug: why-its-important-to-know-how-to-use-your-tools
 title: "Why It's Important To Know Your Tools Inside And Out"
 summary: "Here's some good examples why, from one specific area but I think this rings true across multiple areas."
 image: 'why-its-important-to-know-how-to-use-your-tools/cover.png'
+categories: design
 tags:
 - development
 - image editing

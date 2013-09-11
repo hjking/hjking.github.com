@@ -6,6 +6,7 @@ slug: accidentally-committing-to-two-svn-repositories-at-the-same-time
 title: How I Accidentally Commited to Two Subversion Repositories At The Same Time
 summary: 'Otherwise known as "Subversion I Hate You..."'
 image: 'accidentally-committing-to-two-svn-repositories-at-the-same-time/svn.jpg'
+categories: design
 tags:
 - php
 - work
