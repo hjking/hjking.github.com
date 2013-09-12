@@ -1,5 +1,5 @@
 ---
-layout: layout
+layout: index
 title: "HJKing's Blog"
 ---
 <p></p>
@@ -39,27 +39,27 @@ title: "HJKing's Blog"
 <!-- Pagination links -->
 
  {% if paginator.total_pages > 1 %}
-<div class="pagination">
+<div class="pull-right">
   {% if paginator.previous_page %}
-  	{% if paginator.page == 2 %}
-  		<a href="/" rel="bookmark"> << Newer Page</a>
-  	{% else %}
-  		<a href="/page{{ paginator.previous_page }}" rel="bookmark"> << Newer Page</a>
-  	{% endif %}
+    {% if paginator.previous_page == 1 %}
+    <a class="btn btn-default btn-sm" href="/">Home</a>
+    <a class="btn btn-default btn-sm" href="/">&laquo; Newer</a>
+    {% else %}
+    <a class="btn btn-default btn-sm" href="/">Home</a>
+    <a class="btn btn-default btn-sm" href="/page{{paginator.previous_page}}/">&laquo; Newer</a>
+    {% endif %}
+  {% else %}
+    <span><a class="btn btn-default btn-sm disabled" href="/">Home</a></span>
+    <span><a class="btn btn-default btn-sm disabled">&laquo; Newer</a></span>
   {% endif %}
-
-  <!--  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> -->
-  {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-            <span class="num">{{ page }}</span>
-        {% else %}
-            <a class="num" href="/{%if page > 1 %}page{{ page }}/{% endif %}">{{ page }}</a>
-        {% endif %}
-    {% endfor %}
-  
+  <span><a class="btn btn-default btn-sm disabled">Page: {{paginator.page}} of {{paginator.total_pages}}</a></span>
   {% if paginator.next_page %}
-  	<a href="/page{{ paginator.next_page }}" rel="bookmark" style="float:right">Older Page >></a>
+    <a class="btn btn-default btn-sm" href="/page{{paginator.next_page}}/">Older &raquo;</a>
+    <a class="btn btn-default btn-sm" href="/page{{paginator.total_pages}}/">Last</a>
+  {% else if paginator.page == paginator.total_pages %}
+    <span><a class="btn btn-default btn-sm disabled">Older &raquo;</a></span>
+    <span><a class="btn btn-default btn-sm disabled">Last</a></span>
   {% endif %}
- </div>
+</div>
  {% endif %}
  
