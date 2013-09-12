@@ -4,7 +4,7 @@ pygments: true
 
 title: HJKing's Blog
 
-url: https://hjking.github.io
+url: http://hjking.github.io
 
 permalink: /:year/:month/:day/:title/
 
@@ -27,5 +27,14 @@ comments:
 analytics:
     provider: google
     google:
-        tracking_id: 'UA-18015420-1'
-        domain: 'in-the-attic.com'
+        tracking_id: 'UA-6627086-2'
+        domain: 'hjking.github.io'
+
+links:
+    github: https://github.com/hjking
+    linkedin: http://www.linkedin.com/in/kinghom
+    blog: http://hjking.github.io
+    blog_repo: https://github.com/hjking/hjking.github.com
+    weibo: http://weibo.com/hon9jin
+    twitter: https://twitter.com/hon9jin
+    facebook: https://www.facebook.com/hon9jin

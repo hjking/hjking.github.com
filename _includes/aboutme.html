@@ -1,22 +1,28 @@
 <h2>About Me</h2>
+
 <p>
     <img src="{{ site.author.gravatar }}" alt="{{ site.author.name }}" title="Follow me on Twitter @{{ site.author.twitter }}"  class="img-rounded floatLeft" />
-    Hi, there. I'm HJKing. Welcome to my blog built on github pages.I'm ASIC Design Engineer in China. And also a EDA server administator. Hope to get known some guys here. Thanks.
+    Hi, there. I'm HJKing. Welcome to my blog built on github pages.
+    I'm ASIC Design Engineer in China. And also a EDA server administator.
+    This <a href="{{ site.links.blog }}" target="_blank">site</a> is for personal usage to take some notes in my life and work.
+    Hope to get known some guys here. Thanks.
 </p>
+<hr>
 <p>
-    <h6>hjking.github.io</h6>
+    <h6>{{ site.links.blog_repo }}</h6>
     <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user={{ site.author.github }}&repo={{ site.author.github }}.github.com&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>&nbsp;
-    <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user={{ site.author.github }}&repo={{ site.author.github }}.github.com&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
-</p>
+    <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user={{ site.author.github }}&repo={{ site.author.github }}.github.com&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe> <br>
 
-<p>
-    <a href="https://twitter.com/{{ site.author.twitter }}" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @{{ site.author.twitter }}</a>
-</p>
 
-<p>
+
+    <a href="https://twitter.com/{{ site.author.twitter }}" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @{{ site.author.twitter }}</a> <br>
+
+
+
     <ul class="buttons unstyled">
-        <li><a href="https://github.com/{{ site.author.github }}" rel="me" class="social github" title="Go to github.com/{{ site.author.github }}" target="_blank"></a></li>
-        <li><a href="http://www.twitter.com/{{ site.author.twitter }}" rel="me" class="social twitter" title="Go to twitter.com/{{ site.author.twitter }}" target="_blank"></a></li>
-        <li><a href="https://github.com/{{ site.author.github }}/Feedback/issues/new" rel="me" class="social mail" title="Leave feedback for {{ site.author.name  }}"  target="_blank"></a></li>
+        <li><a href="{{ site.links.github }}" rel="me" class="social github" title="Go to github.com/{{ site.author.github }}" target="_blank"></a></li>
+        <li><a href="{{ site.links.twitter }}" rel="me" class="social twitter" title="Go to twitter.com/{{ site.author.twitter }}" target="_blank"></a></li>
+        <li><a href="{{ site.links.github }}/Feedback/issues/new" rel="me" class="social mail" title="Leave feedback for {{ site.author.name  }}"  target="_blank"></a></li><br>
     </ul>
 </p>
+<hr>
