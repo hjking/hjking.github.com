@@ -6,10 +6,12 @@ title: "HJKing's Blog"
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-<div class="row">
+    {% include post_preview.html %}
+<!-- <div class="row">
   <div class="span7">
     <div class="row">
       <div class="span2 hidden-phone hidden-tablet">
+        {{ post.date | date:'%b <div>%d</div> %Y' | replace:'>0','>' }}
         <a href="{{ post.url }}" >
             <img class="listImage img-rounded" border="0" src="/img/posts/{{ post.image }}" alt="{{ post.title }} image">
         </a>
@@ -20,8 +22,8 @@ title: "HJKing's Blog"
           {{ post.summary }}
         </p>
 		<p>
-          <i class="icon-calendar"></i> {{ post.date | date: "%B %e, %Y" }}
-          | <i class="icon-comment"></i> <a href="{{ site.url }}{{ post.url }}#disqus_thread"></a>
+         <!--  <i class="icon-calendar"></i> {{ post.date | date: "%B %e, %Y" }} | 
+          <i class="icon-comment"></i> <a href="{{ site.url }}{{ post.url }}#disqus_thread"></a>
 		  <br />
           <i class="icon-tags"></i> Tags :{% for tag in post.tags %} <a href="/tags/{{ tag }}" rel="tooltip" title="View posts tagged with &quot;{{ tag }}&quot;"><span class="label label-info">{{ tag }}</span></a>  {% if forloop.last != true %} {% endif %} {% endfor %}
         </p>
@@ -30,38 +32,34 @@ title: "HJKing's Blog"
     </div>
 	<hr>
   </div>
-</div>
+</div> -->
+    
 {% endfor %}
 
 <!-- Pagination links -->
-<!-- <div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="/page{{ paginator.previous_page }}" class="previous">Previous Page</a>
-  {% else %}
-    <span class="previous">Previous Page</span>
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="/page{{ paginator.next_page }}" class="next">Next Page</a>
-  {% else %}
-    <span class="next ">Next Page</span>
-  {% endif %}
-</div> -->
+
+ {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
   	{% if paginator.page == 2 %}
-  		<a href="/" rel="bookmark"> << Previous Page</a>
+  		<a href="/" rel="bookmark"> << Newer Page</a>
   	{% else %}
-  		<a href="/page{{ paginator.previous_page }}" rel="bookmark"> << Previous Page</a>
+  		<a href="/page{{ paginator.previous_page }}" rel="bookmark"> << Newer Page</a>
   	{% endif %}
   {% endif %}
-<!--   <div style="text-align: center;">
-    <span class="page_number " style="border:1px solid red;">
-        Page: {{ paginator.page }} of {{ paginator.total_pages }}
-    </span>
-    </div> -->
-    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+  <!--  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> -->
+  {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+            <span class="num">{{ page }}</span>
+        {% else %}
+            <a class="num" href="/{%if page > 1 %}page{{ page }}/{% endif %}">{{ page }}</a>
+        {% endif %}
+    {% endfor %}
+  
   {% if paginator.next_page %}
-  	<a href="/page{{ paginator.next_page }}" rel="bookmark" style="float:right">Next Page >></a>
+  	<a href="/page{{ paginator.next_page }}" rel="bookmark" style="float:right">Older Page >></a>
   {% endif %}
  </div>
+ {% endif %}
+ 
