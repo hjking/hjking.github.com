@@ -16,5 +16,6 @@ def foo
 end
 {% endhighlight %}
 
+
 {% gist kinghom/2026130 %}
 
