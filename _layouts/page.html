@@ -29,13 +29,21 @@
                     {{ content }}
                 </div>
                 <div class="columns">
-                    
-                    
+                  
                     <!-- <h2>Calendar</h2>
                     <script language="javascript" type="text/javascript">
                         calendar();
                     </script>  -->
-                
+                    <h3>Related Posts</h3>
+                        <ul>
+                            {% for post in site.related_posts limit:5 %}
+                            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    <div id="recentcomments" class="dsq-widget">
+                        <h3 class="dsq-widget-title">Recent Comments</h3>
+                        <script type="text/javascript" src="http://chxt6896.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
+                    </div>
                     {% include tag_sidebar.html %}
                 </div>
             </div>
