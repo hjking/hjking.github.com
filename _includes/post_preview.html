@@ -14,6 +14,8 @@
 <!--             {{ post.summary }} -->
             {% if post.content contains "<!-- more -->" %}
                 {{ post.content | split:'<!-- more -->' |first }}
+            {% else if post.summary %}
+                {{post.summary}}
             {% else %}
                 {{ post.content | strip_html | truncatewords:50 }}
             {% endif %}

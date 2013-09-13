@@ -7,9 +7,7 @@ title: "Notes of Design Compiler"
 summary: "Here's some notes of Design Compiler."
 image: 'why-its-important-to-know-how-to-use-your-tools/cover.png'
 categories: eda
-tags:
-- dc
-- eda
+tags: [dc, eda]
 ---
 
 =Setup, Libraries and Objects=

@@ -13,12 +13,12 @@ author:
     email: hon9jin@gmail.com
     github: hjking
     twitter: hon9jin
-    facebook: hon9jin
+    facebook: kin9hom
     linkedin: kinghom
     gravatar: http://www.gravatar.com/avatar/f5f95a698d284cdb1acece79504077db.png
 
 paginate: 7
-    
+
 comments:
     provider: disqus
     disqus:
@@ -37,6 +37,6 @@ links:
     blog_repo: https://github.com/hjking/hjking.github.com
     weibo: http://weibo.com/hon9jin
     twitter: https://twitter.com/hon9jin
-    facebook: https://www.facebook.com/hon9jin
+    facebook: https://www.facebook.com/kin9hom
     gplus: https://plus.google.com/103205960311343871154/posts
     feedback: https://github.com/hjking/Feedback
