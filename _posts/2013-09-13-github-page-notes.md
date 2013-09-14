@@ -10,12 +10,5 @@ categories: git
 tags: [git, github, jekyll, gist]
 ---
 
-{% highlight ruby linenos %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
-
-
 {% gist kinghom/2026130 %}
 
