@@ -1,5 +1,6 @@
 ---
 ---
-{% include css/bootstrap/bootstrap.min.css %}
+
 {% include css/custom.css %}
-{% include css/bootstrap/bootstrap-responsive.min.css %}
+{% include css/jquery.githubwidget.min.css %}
+{% include css/pygments-manni.css %}
