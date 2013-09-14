@@ -40,11 +40,15 @@
     <!-- Le fav and touch icons -->
 
   </head>
-  <body data-spy="scroll" data-target=".subnav" data-offset="50" onload="prettyPrint()">
+  <body data-spy="scroll" data-target=".subnav" data-offset="50" padding="40" onload="prettyPrint()">
     {% include navigation.html %}
 
     {{ content }}
 
+<!--     $(function() {
+        window.prettyPrint && prettyPrint();
+    });
+ -->
     {% include float_footer.html %}
     <hr />
     {% include footer.html %}

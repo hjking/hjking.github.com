@@ -1,6 +1,6 @@
 <footer class="footer">
   <div class="container">
-	<p class="pull-right">
+    <p class="pull-right">
         {% if page.next.url %}
             <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">&laquo; Next Blog Post</a>
         {% endif %}
@@ -9,10 +9,11 @@
             <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">Previous Blog Post &raquo; </a>
         {% endif %}
     </p>        
-	<p>
+    <p>
         Page last generated on {{ site.time | date: "%B %e, %Y" }} <br>
         Powered by <a href="{{ site.links.jekyll }}" target="_blank">Jekyll</a>, <a href="{{ site.links.bootstrap }}" target="_blank">Bootstrap</a> and <a href="{{ site.links.github_pages }}" target="_blank">GitHub Pages</a>.<br>
         <!-- If need be, <a href="https://github.com/{{ site.author.github }}/Feedback/issues/new" title="Leave feedback for {{ site.author.name  }}"  target="_blank" >leave me some feedback</a>. -->
+        <br>
         <br>
     </p>
 	

@@ -14,26 +14,33 @@
     <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}" data-count="horizontal" data-via="{{ site.author.twitter }}" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
     <br>
     <ul class="buttons unstyled">
+        {% if site.links.github %}
         <li><a href="{{ site.links.github }}" rel="me" class="social github" title="Github" target="_blank"></a></li>
+        {% endif %}
+        {% if site.links.twitter %}
         <li><a href="{{ site.links.twitter }}" rel="me" class="social twitter" title="Twitter" target="_blank"></a></li>
+        {% endif %}
+        {% if site.links.linkedin %}
         <li><a href="{{ site.links.linkedin }}" rel="me" class="social linkedin" title="LinkedIn" target="_blank"></a></li>
+        {% endif %}
+        {% if site.links.facebook %}
         <li><a href="{{ site.links.facebook }}" rel="me" class="social facebook" title="Facebook" target="_blank"></a></li>
+        {% endif %}
+        {% if site.links.gplus %}
         <li><a href="{{ site.links.gplus }}" rel="me" class="social gplus" title="Google Plus" target="_blank"></a></li>
+        {% endif %}
+        {% if site.author.email %}
         <li><a href="mailto:{{ site.author.email }}" rel="me" class="social mail" title="Email Me" target="_blank"></a></li>
+        {% endif %}
         <li><a href="/rss.xml" rel="me" class="social rss" title="Subscrible Me" target="_blank"></a></li>
-        <li><a href="{{ site.links.feedback }}/issues/new" rel="me" class="social github" title="Leave feedback for {{ site.author.name  }}"  target="_blank"></a></li><br>
+<!--         {% if site.links.feedback %}
+        <li><a href="{{ site.links.feedback }}/issues/new" rel="me" class="social github" title="Leave feedback for {{ site.author.name  }}"  target="_blank"></a></li>
+        {% endif %} -->
+        <br>
     </ul>
     <br>
-    <!-- {% if site.owner.twitter %} {% endif %} -->
-    <a href="http://twitter.com/{{ site.owner.twitter }}" class="author-social" target="_blank"><i class="icon-twitter"></i> Twitter</a>
-    <a href="http://facebook.com/{{ site.owner.facebook }}" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>
-    <a href="{{ site.owner.google_plus }}" class="author-social" target="_blank"><i class="icon-google-plus"></i> Google+</a>
-    <a href="http://linkedin.com/in/{{ site.owner.linkedin }}" class="author-social" target="_blank"><i class="icon-linkedin"></i> LinkedIn</a>
-    <a href="http://instagram.com/{{ site.owner.instagram }}" class="author-social" target="_blank"><i class="icon-instagram"></i> Instagram</a>
-    <a href="http://github.com/{{ site.owner.github }}" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
-    <a href="http://lastfm.com/{{ site.owner.lastfm }}" class="author-social" target="_blank"><i class="icon-lastfm"></i> Last.fm</a>
-    <a href="http://{{ site.owner.tumblr }}.tumblr.com" class="author-social" target="_blank"><i class="icon-tumblr"></i> Tumblr</a>
-    <br>
+
+
     <h6>Contact Me</h6>
     <ul class="buttons unstyled">
         <li><a href="https://twitter.com/{{ site.author.twitter }}" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @{{ site.author.twitter }}</a></li>
@@ -41,6 +48,7 @@
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
     <ul>
     <br>
+    
     <!-- Facebook Comment -->
     <div class="fb-comments" data-href="{{ site.url }}" data-width="300"></div>
     <div id="fb-root"></div>
