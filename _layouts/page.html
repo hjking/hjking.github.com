@@ -1,5 +1,6 @@
 ---
 layout: default
+sidebar_posts: related
 ---
 
 <div class="container-fluid">
@@ -9,25 +10,15 @@ layout: default
                 {{ content }}
             </div>
             <div class="span4 columns">
-              
-                <!-- <h2>Calendar</h2>
-                <script language="javascript" type="text/javascript">
-                    calendar();
-                </script>  -->
-                {% include tag_sidebar.html %}
-                
-                <h4>Related Posts</h4>
-                <ul>
-                    {% for post in site.related_posts limit:5 %}
-                    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-                    {% endfor %}
-                </ul>
-                
-                <h3 class="dsq-widget-title">Recent Comments</h3>
-<!--                        <ul>
-                        <script type="text/javascript" src="http://chxt6896.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
-                    </ul> -->
-                                    
+             
+                <!-- {% if page.sidebar_posts == 'related' %} -->
+                    {% include sidebar_related-posts.html %}
+                <!-- {% else %}
+                    {% include sidebar_recent-posts.html %}
+                {% endif %} -->
+
+                {% include sidebar_tags.html %}
+
             </div>
         </div>
     </div>

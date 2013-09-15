@@ -1,0 +1,9 @@
+<div class="well well-small">
+  <h5 class="muted">RELATED POSTS</h5>
+  <dl>
+    {% for post in site.related_posts limit: 5 %}
+      <dt class="muted">{{ post.date | date_to_long_string }} &raquo;</dt>
+      <dd><a href="{{ post.url }}">{{ post.title }}</a></dd>
+    {% endfor %}
+  </dl>
+</div>

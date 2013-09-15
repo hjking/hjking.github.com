@@ -10,13 +10,14 @@ layout: default
             </div>
             <div class="span4 columns visible-lg visible-md">
                 {% include aboutme.html %}
-                
-                <!-- <h2>Calendar</h2>
-                <script language="javascript" type="text/javascript">
-                    calendar();
-                </script>
-            
-                {% include tag_sidebar.html %} -->
+
+                <!-- {% if page.sidebar_posts == 'related' %}
+                    {% include sidebar_related-posts.html %}
+                {% else %} -->
+                    {% include sidebar_recent-posts.html %}
+                <!-- {% endif %} -->
+
+                {% include sidebar_tags.html %}
             </div>
         </div>
     </div>

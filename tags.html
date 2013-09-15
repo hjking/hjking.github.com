@@ -3,6 +3,14 @@ layout: layout
 title: "Tags in HJKing's Blog"
 ---
 
-<h2>Tags</h2>
-<hr />
-{% include tag_sidebar.html %}
+<h3>Tags</h3>
+<br />
+{% for tag in site.tags %}
+  <a name="{{ tag[0] }}"></a>
+  <h4 class="muted">{{ tag[0] | upcase }}</h2>
+  <dl class="unstyled">
+    {% for post in tag[1] %}
+      <dd><a href="{{ post.url }}">{{ post.title }}</a></dd>
+    {% endfor %}
+  </dl>
+{% endfor %}

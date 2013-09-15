@@ -2,16 +2,17 @@
   <div class="container">
     <p class="pull-right">
         {% if page.next.url %}
-            <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">&laquo; Next Blog Post</a>
+            <a href="{{page.next.url}}" title="Newer Post: {{page.next.title}}">&laquo; Newer Post</a>
         {% endif %}
-        |  <a href="#">Back to top</a>  |
+        |  <a href="#"><i class="icon-chevron-sign-up"></i>Back to top</a>  |
         {% if page.previous.url %}
-            <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">Previous Blog Post &raquo; </a>
+            <a href="{{page.previous.url}}" title="Older Post: {{page.previous.title}}">Older Post &raquo; </a>
         {% endif %}
     </p>        
     <p>
+        <i class="icon-flag"></i> by HJKing 2013.<br>
         Page last generated on {{ site.time | date: "%B %e, %Y" }} <br>
-        Powered by <a href="{{ site.links.jekyll }}" target="_blank">Jekyll</a>, <a href="{{ site.links.bootstrap }}" target="_blank">Bootstrap</a> and <a href="{{ site.links.github_pages }}" target="_blank">GitHub Pages</a>.<br>
+        Powered by <a href="{{ site.links.jekyll }}" target="_blank">Jekyll</a>, <a href="{{ site.links.bootstrap }}" target="_blank">Twitter Bootstrap</a>, <a href="http://jekyllbootstrap.com" target="_blank">Jekyll Bootstrap</a> and <a href="{{ site.links.github_pages }}" target="_blank">GitHub Pages</a>.<br>
         <!-- If need be, <a href="https://github.com/{{ site.author.github }}/Feedback/issues/new" title="Leave feedback for {{ site.author.name  }}"  target="_blank" >leave me some feedback</a>. -->
         <br>
         <br>

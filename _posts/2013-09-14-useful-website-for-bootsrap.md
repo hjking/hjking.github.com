@@ -10,15 +10,26 @@ categories: web
 tags: [jekyll, bootstrap]
 ---
 
-Bootwatch: Free themes for Twitter Bootstrap
-http://bootswatch.com/
+[Bootwatch](http://bootswatch.com/): Free themes for Twitter Bootstrap
 
 
-Font Awesome: The iconic font designed for Bootstrap
-http://fortawesome.github.io/Font-Awesome/
 
-Bootstrap CDN: provides free CDN support for Bootstrap's CSS and JavaScript.
-http://netdna.bootstrapcdn.com/
+[Font Awesome](http://fortawesome.github.io/Font-Awesome/): The iconic font designed for Bootstrap
 
-GLYPHICONS: a library of precisely prepared monochromatic icons and symbols
-http://glyphicons.com/
+
+[Bootstrap CDN](http://netdna.bootstrapcdn.com/): provides free CDN support for Bootstrap's CSS and JavaScript.
+
+
+[GLYPHICONS](http://glyphicons.com/): a library of precisely prepared monochromatic icons and symbols
+
+[sass](http://sass-lang.com/):  is an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more. 
+
+[Batch](http://adamwhitcroft.com/batch/): A lovingly designed and crafted suite of 300+ icons for web and user interface design.
+
+[othericons](www.othericons.com): another sexy icons.
+
+[Jesse Shawl](http://jesse.sh/awl/makes-3d-buttons-with-sass/): 3D Buttons
+
+[GruntJS](http://gruntjs.com/): The JavaScript Task Runner
+
+[Google Font API](http://www.google.com/fonts): Google Fonts
