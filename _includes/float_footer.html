@@ -3,7 +3,7 @@
 <div class="navbar navbar-fixed-bottom">
   <div class="navbar-inner">
     <ul class="nav pull-right">
-<!--       
+<!--
       {% if site.links.feedback %}
       <li style="padding-top:3px;"><a href="{{ site.links.feedback }}/issues/new" title="Leave feedback for {{ site.author.name  }}"  target="_blank" >Leave Feedback</a></li>
       {% endif %}
@@ -12,20 +12,21 @@
       <li><a title="Stack Overflow Profile" href="{{ site.links.stackoverflow }}"><img src="/img/stackoverflow_32.png" alt="Google+ Profile"/></a>
       <li><a title="Facebook Profile" href="{{ site.links.facebook }}"><img src="/img/facebook_32.png" alt="Facebook Profile"/></a>
       <li><a title="Twitter Profile" href="{{ site.links.twitter }}"><img src="/img/twitter_32.png" alt="Twitter Profile"/></a>
-      <li><a title="Google+ Profile" href="{{ site.links.gplus }}"><img src="/img/googleplus_32.png" alt="Google+ Profile"/></a>        
+      <li><a title="Google+ Profile" href="{{ site.links.gplus }}"><img src="/img/googleplus_32.png" alt="Google+ Profile"/></a>
       <li><a title="RSS Feed" href="/rss.xml"><img src="/img/rss_32.png" alt="RSS Feed"/></a>
        -->
       {% if site.links.feedback %}
       <li><a href="{{ site.links.feedback }}/issues/new" title="Leave feedback for {{ site.author.name  }}"  target="_blank" >Leave Feedback</a></li>
       {% endif %}
-      <li><a title="LinkedIn Profile" href="{{ site.links.linkedin }}"><i class="icon-linkedin"></i></a>
-      <li><a title="GitHub Profile" href="{{ site.links.github }}"><i class="icon-github-alt"></i></a>
-      <li><a title="Stack Overflow Profile" href="{{ site.links.stackoverflow }}"><i class="icon-stackexchange"></i></a>
-      <li><a title="Facebook Profile" href="{{ site.links.facebook }}"><i class="icon-facebook"></i></a>
-      <li><a title="Twitter Profile" href="{{ site.links.twitter }}"><i class="icon-twitter"></i></a>
-      <li><a title="Google+ Profile" href="{{ site.links.gplus }}"><i class="icon-google-plus"></i></a>
-      <li><a title="Instagram Profile" href="{{ site.links.instagram }}"><i class="icon-instagram"></i></a>
-      <li><a title="Foursquare Profile" href="{{ site.links.foursquare }}"><i class="icon-foursquare"></i></a>
+      <li><a title="Email Me" href="mailto:{{ site.author.email }}" target="_blank"><i class="icon-envelope"></i></a>
+      <li><a title="LinkedIn Profile" href="{{ site.links.linkedin }}" target="_blank"><i class="icon-linkedin"></i></a>
+      <li><a title="GitHub Profile" href="{{ site.links.github }}" target="_blank"><i class="icon-github-alt"></i></a>
+      <li><a title="Stack Overflow Profile" href="{{ site.links.stackoverflow }}" target="_blank"><i class="icon-stackexchange"></i></a>
+      <li><a title="Facebook Profile" href="{{ site.links.facebook }}" target="_blank"><i class="icon-facebook"></i></a>
+      <li><a title="Twitter Profile" href="{{ site.links.twitter }}" target="_blank"><i class="icon-twitter"></i></a>
+      <li><a title="Google+ Profile" href="{{ site.links.gplus }}" target="_blank"><i class="icon-google-plus"></i></a>
+      <li><a title="Instagram Profile" href="{{ site.links.instagram }}" target="_blank"><i class="icon-instagram"></i></a>
+      <li><a title="Foursquare Profile" href="{{ site.links.foursquare }}" target="_blank"><i class="icon-foursquare"></i></a>
       <li><a title="RSS Feed" href="/rss.xml"><i class="icon-rss"></i></a>
       <li><a title="Go to Top" href="#"><i class="icon-arrow-up"></i></a>
     </ul>

@@ -8,7 +8,7 @@
         {% if page.previous.url %}
             <a href="{{page.previous.url}}" title="Older Post: {{page.previous.title}}">Older Post &raquo; </a>
         {% endif %}
-    </p>        
+    </p>
     <p>
         <i class="icon-flag"></i>  by HJKing 2013.<br>
         The source code of this site is <a href="{{ site.links.blog_repo }}" target="_blank">HERE</a>
@@ -21,55 +21,49 @@
         <br>
         <br>
     </p>
-	
-    
+
+
     <!-- ************* Buttons to toggle theme CSS ********************** -->
     <!-- <div class="row">
       <div class="span12">
         <form style="font-size:10px" class="pull-right">
-          <a onclick="switch_style('dark'); 
-                      recordOutboundLink(this, 'Outbound Links', 'dark theme'); 
-                      return false;" 
-             name="theme" value="dark" id="dark" 
-             class="btn btn-mini"><span class="showtooltip" 
+          <a onclick="switch_style('dark');
+                      recordOutboundLink(this, 'Outbound Links', 'dark theme');
+                      return false;"
+             name="theme" value="dark" id="dark"
+             class="btn btn-mini"><span class="showtooltip"
                                         title="switch to dark theme"><i class="icon-adjust"></i>
                                    </span></a>
-          
-          <a onclick="switch_style('light'); 
-                      recordOutboundLink(this, 'Outbound Links', 'light theme'); 
-                      return false;" 
-             name="theme" value="light" id="light" 
-             class="btn btn-mini"><span class="showtooltip" 
+
+          <a onclick="switch_style('light');
+                      recordOutboundLink(this, 'Outbound Links', 'light theme');
+                      return false;"
+             name="theme" value="light" id="light"
+             class="btn btn-mini"><span class="showtooltip"
                                         title="switch to light theme"><i class="icon-certificate"></i>
                                   </span></a>
 
 
-           <a onclick="switch_style('white'); 
-                      recordOutboundLink(this, 'Outbound Links', 'white theme'); 
-                      return false;" 
-              name="theme" value="white" id="white" 
-              class="btn btn-mini"><span class="showtooltip" 
+           <a onclick="switch_style('white');
+                      recordOutboundLink(this, 'Outbound Links', 'white theme');
+                      return false;"
+              name="theme" value="white" id="white"
+              class="btn btn-mini"><span class="showtooltip"
                                         title="switch to white theme"><i class="icon-circle-blank"></i>
                                  </span></a>
         </form>
       </div>
     </div> -->
-    
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>	
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   </div>
 </footer>
 
 
 <!-- Google Analytics -->
 <script type="text/javascript">
-
   var _gaq = _gaq || [];
-  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
   _gaq.push(['_setAccount', '{{ site.analytics.google.tracking_id }}']);
-  _gaq.push(['_setDomainName', '{{ site.analytics.google.domain }}']);
-  _gaq.push(['_setAllowLinker', true]);
-  
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -77,5 +71,4 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>
