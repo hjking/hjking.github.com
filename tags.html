@@ -7,7 +7,7 @@ title: "Tags in HJKing's Blog"
 <br />
 {% for tag in site.tags %}
   <a name="{{ tag[0] }}"></a>
-  <i class="icon-tags"></i><h4 class="muted">{{ tag[0] | upcase }}</h4>
+  <h4 class="muted"><i class="icon-tags"></i>{{ tag[0] | upcase }}</h4>
   <dl class="unstyled">
     {% for post in tag[1] %}
       <dd><a href="{{ post.url }}">{{ post.title }}</a></dd>
