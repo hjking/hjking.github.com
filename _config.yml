@@ -30,6 +30,9 @@ analytics:
         tracking_id: 'UA-6627086-2'
         domain: 'hjking.github.io'
 
+tags_path: tags.html
+category: category
+
 links:
     github: https://github.com/hjking
     linkedin: http://www.linkedin.com/in/kinghom
@@ -47,3 +50,4 @@ links:
     lastfm: http://www.last.fm/user/KingHom
     tumblr: http://kinghom.tumblr.com
     stackoverflow: http://stackoverflow.com/users/1605724/hjking
+    foursquare: https://foursquare.com/kinghom

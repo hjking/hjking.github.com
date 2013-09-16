@@ -33,3 +33,14 @@ tags: [jekyll, bootstrap]
 [GruntJS](http://gruntjs.com/): The JavaScript Task Runner
 
 [Google Font API](http://www.google.com/fonts): Google Fonts
+
+[jQuery UI Bootstrap](http://addyosmani.github.io/jquery-ui-bootstrap/): A Bootstrap-themed kickstart for jQuery UI widgets
+
+ Installation
+Download the archive
+Unzip archive
+Locate the folder custom-theme inside the css folder inside the newly uncompressed file
+Move that folder inside the "css" 
+directory of the website for which you want to use jquery-ui-bootstrap
+Include the appropriate .css files in the layout of your website
+

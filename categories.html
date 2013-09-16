@@ -7,6 +7,8 @@ title: "Categories in HJKing's Blog"
 <hr />
 <ul>
     {% for category in site.categories %}
-    <li class="cat-item cat-item-{{category | last | size }}"><a href="/category/{{category | first}}/index.html" title="View all posts filed under {{category | first}}">{{category | first}} ({{category | last | size }})</a></li>
+    <li class="cat-item cat-item-{{category | last | size }}">
+    	<i class="icon-folder-open"></i><a href="/category/{{category | first}}/index.html" title="View all posts filed under {{category | first}}">{{category | first}} ({{category | last | size }})</a>
+    </li>
     {% endfor %}
 </ul>

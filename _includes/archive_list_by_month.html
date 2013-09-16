@@ -1,0 +1,11 @@
+
+<h1 class="category"><strong>{{ page.title }}</strong></h1>
+{% for post in page.posts %}
+	<div class="post_list">		
+			<span class="post-title"><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></span>
+			<span class="alt-font">Posted at : {{ post.date | date: "%Y-%m-%d"}}</span> 
+			<span class="comments-link">
+			      <a href="{{ post.url }}#disqus_thread"></a>
+			</span>
+	</div>
+{% endfor %}

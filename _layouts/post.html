@@ -46,7 +46,15 @@ sidebar_posts: related
 
     <!-- Tags -->
     <div>
-          <i class="icon-tags"></i> Tags :{% for tag in page.tags %} <a href="/tags/{{ tag }}" rel="tooltip" title="View pages tagged with &quot;{{ tag }}&quot;"><span class="label label-info">{{ tag }}</span></a>  {% if forloop.last != true %} {% endif %} {% endfor %}
+          <i class="icon-tags"></i> Tags :
+          {% for tag in page.tags %}
+            <!-- <a href="/tags/{{ tag }}" rel="tooltip" title="View pages tagged with &quot;{{ tag }}&quot;"> -->
+            <a href="/{{ site.tags_path }}/#{{ tag }}" rel="tooltip" title="View pages tagged with &quot;{{ tag }}&quot;">
+            <span class="label label-info">{{ tag }}</span>
+            </a>
+            {% if forloop.last != true %}
+            {% endif %}
+          {% endfor %}
     </div>
 	<!-- Tags -->
 

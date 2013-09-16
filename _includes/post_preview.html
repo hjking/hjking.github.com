@@ -1,6 +1,6 @@
 
-<div class="row-fluid">
-  <div class="span3 hidden-phone hidden-tablet">
+<div class="row-fluid well well-small">
+  <div class="span3">
     <h5>{{ post.date | date:'%b %d %Y' | replace:'>0','>' }}</h5>
     <a href="{{ post.url }}" >
         <img class="listImage img-rounded" border="0" src="/img/posts/{{ post.image }}" alt="{{ post.title }} image">
@@ -9,7 +9,23 @@
   
   <div class="span8">
     <h3><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h3>
-    
+    {% if post.subtitle %}
+        <h4>{{ post.subtitle }}</h4>
+    {% endif %}
+    {% if post.alert or post.notice %}
+          <br>
+          {% if post.alert %}
+          <div class="alert alert-block">
+            {{ post.alert }}
+          </div>
+          {% endif %}
+
+          {% if post.notice %}
+          <div class="alert alert-block alert-success">
+            {{ post.notice }}
+          </div>
+          {% endif %}
+    {% endif %}
     <div class="summary-post-content">
     <p class="lead">
 <!--             {{ post.summary }} -->
@@ -30,17 +46,22 @@
     
     <p>
      <!--  <i class="icon-calendar"></i> {{ post.date | date: "%B %e, %Y" }} | -->
-      <i class="icon-comment"></i> <a href="{{ post.url }}#disqus_thread">0</a>
-      <br />
-      <i class="icon-tags"></i> Tags :
-        {% for tag in post.tags %}
-            <a href="/tags/{{ tag }}" rel="tooltip" title="View posts tagged with &quot;{{ tag }}&quot;"><span class="label label-info">{{ tag }}</span></a>
-                {% if forloop.last != true %}
-                {% endif %}
-        {% endfor %}
+        <i class="icon-comment"></i> <a href="{{ post.url }}#disqus_thread">0</a>
+        <br />
+        <i class="icon-tags"></i> Tags :
+            {% for tag in post.tags %}
+              <a href="/{{ site.tags_path }}/#{{ tag }}" rel="tooltip" title="View posts tagged with &quot;{{ tag }}&quot;"><span class="label label-info">{{ tag }}</span></a>
+              {% if forloop.last != true %}
+              {% endif %}
+            {% endfor %}
+        <br />
+        <i class="icon-folder-open"></i> Category: 
+            <a href="/{{ site.category }}/{{ post.categories }}">{{ post.categories }}
+            </a>
+        <br>
     </p>
 
   </div>
 </div>
-<hr>
 
+<hr>

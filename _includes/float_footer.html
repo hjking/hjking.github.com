@@ -3,8 +3,9 @@
 <div class="navbar navbar-fixed-bottom">
   <div class="navbar-inner">
     <ul class="nav pull-right">
+<!--       
       {% if site.links.feedback %}
-      <li style="padding-top:5px;"><a href="{{ site.links.feedback }}/issues/new" title="Leave feedback for {{ site.author.name  }}"  target="_blank" >Leave Feedback</a></li>
+      <li style="padding-top:3px;"><a href="{{ site.links.feedback }}/issues/new" title="Leave feedback for {{ site.author.name  }}"  target="_blank" >Leave Feedback</a></li>
       {% endif %}
       <li><a title="LinkedIn Profile" href="{{ site.links.linkedin }}"><img src="/img/linkedin_32.png" alt="LinkedIn Profile"/></a>
       <li><a title="GitHub Profile" href="{{ site.links.github }}"><img src="/img/github_32.png" alt="GitHub Profile"/></a>
@@ -13,7 +14,20 @@
       <li><a title="Twitter Profile" href="{{ site.links.twitter }}"><img src="/img/twitter_32.png" alt="Twitter Profile"/></a>
       <li><a title="Google+ Profile" href="{{ site.links.gplus }}"><img src="/img/googleplus_32.png" alt="Google+ Profile"/></a>        
       <li><a title="RSS Feed" href="/rss.xml"><img src="/img/rss_32.png" alt="RSS Feed"/></a>
-      <li><a title="Go to Top" href="#"><i class="icon-arrow-up  icon-2x"></i></a>
+       -->
+      {% if site.links.feedback %}
+      <li><a href="{{ site.links.feedback }}/issues/new" title="Leave feedback for {{ site.author.name  }}"  target="_blank" >Leave Feedback</a></li>
+      {% endif %}
+      <li><a title="LinkedIn Profile" href="{{ site.links.linkedin }}"><i class="icon-linkedin"></i></a>
+      <li><a title="GitHub Profile" href="{{ site.links.github }}"><i class="icon-github-alt"></i></a>
+      <li><a title="Stack Overflow Profile" href="{{ site.links.stackoverflow }}"><i class="icon-stackexchange"></i></a>
+      <li><a title="Facebook Profile" href="{{ site.links.facebook }}"><i class="icon-facebook"></i></a>
+      <li><a title="Twitter Profile" href="{{ site.links.twitter }}"><i class="icon-twitter"></i></a>
+      <li><a title="Google+ Profile" href="{{ site.links.gplus }}"><i class="icon-google-plus"></i></a>
+      <li><a title="Instagram Profile" href="{{ site.links.instagram }}"><i class="icon-instagram"></i></a>
+      <li><a title="Foursquare Profile" href="{{ site.links.foursquare }}"><i class="icon-foursquare"></i></a>
+      <li><a title="RSS Feed" href="/rss.xml"><i class="icon-rss"></i></a>
+      <li><a title="Go to Top" href="#"><i class="icon-arrow-up"></i></a>
     </ul>
   </div>
 </div>
