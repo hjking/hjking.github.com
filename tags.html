@@ -3,14 +3,16 @@ layout: layout
 title: "Tags in HJKing's Blog"
 ---
 
-<h3>Tags</h3>
-<br />
+<h2>Tags</h2>
+<hr />
 {% for tag in site.tags %}
   <a name="{{ tag[0] }}"></a>
-  <h4 class="muted"><i class="icon-tags"></i>{{ tag[0] | upcase }}</h4>
+  <!-- <h4 class="muted"><i class="icon-tags"></i>{{ tag[0] | upcase }}</h4> -->
+  <h4 class="cat-item"><i class="icon-tags"></i>{{ tag[0] | upcase }}</h4>
   <dl class="unstyled">
     {% for post in tag[1] %}
-      <dd><a href="{{ post.url }}">{{ post.title }}</a></dd>
+      <!-- <dd><a href="{{ post.url }}">{{ post.title }}</a></dd> -->
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </dl>
 {% endfor %}
