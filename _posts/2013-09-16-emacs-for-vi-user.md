@@ -11,11 +11,6 @@ categories: emacs
 tags: [emacs, vim]
 ---
 
----
-layout: default
-title: Emacs for vi users
----
-
 # Emacs for vi users
 
   "Why can't I enter command mode?"
