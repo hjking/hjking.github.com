@@ -12,7 +12,7 @@ sidebar_posts: related
     <div>
         <hr />
         <i class="icon-calendar"></i> {{ page.date | date: "%A, %B %e, %Y" }}
-        | <i class="icon-comment"></i> <a href="{{ site.url }}{{ page.url }}#disqus_thread""></a>
+        | <i class="icon-comment"></i> <a href="{{ site.url }}{{ page.url }}#disqus_thread"></a>
         <br />
         <ul class="buttons unstyled">
             <!-- twitter -->
@@ -36,37 +36,37 @@ sidebar_posts: related
         {{ content }}
         <hr />
     </div>
-	
+
 	<!-- Previous/Next Post Arrow -->
-    <div class="pager hidden-phone hidden-tablet">
-        <a class="next" href="{{ page.previous.url }}" title="Older Post: {{page.previous.title}}"><i class="icon-arrow-right icon-white"></i></a>
-		<a class="prev" href="{{ page.next.url }}" title="Newer Post: {{page.next.title}}"><i class="icon-arrow-left icon-white"></i></a>
-    </div>
+    <!-- <div class="pager hidden-phone hidden-tablet">
+        <a class="next" href="{{ page.previous.url }}" title="Older Post: {{page.previous.title}}"><i class="icon-arrow-right"></i></a>
+		<a class="previous" href="{{ page.next.url }}" title="Newer Post: {{page.next.title}}"><i class="icon-arrow-left icon-white"></i></a>
+    </div> -->
 	<!-- Previous/Next Post Arrow -->
 
     <!-- Tags -->
     <div>
-          <i class="icon-tags"></i> Tags :
-          {% for tag in page.tags %}
+        <i class="icon-tags"></i> Tags :
+        {% for tag in page.tags %}
             <!-- <a href="/tags/{{ tag }}" rel="tooltip" title="View pages tagged with &quot;{{ tag }}&quot;"> -->
             <a href="/{{ site.tags_path }}/#{{ tag }}" rel="tooltip" title="View pages tagged with &quot;{{ tag }}&quot;">
             <span class="label label-info">{{ tag }}</span>
             </a>
             {% if forloop.last != true %}
             {% endif %}
-          {% endfor %}
+        {% endfor %}
     </div>
 	<!-- Tags -->
 
-    
+
 	<!-- Previous/Next Post Link -->
     <div>
         <p>
         {% if page.next %}
-			<a class="next" href="{{ page.next.url }}" rel="bookmark">&laquo;&nbsp;{{ page.next.title | truncatewords:5 }}</a>
+			<a class="next" href="{{ page.next.url }}" rel="bookmark"><i class="icon-backward"></i> {{ page.next.title | truncatewords:5 }}</a>
         {% endif %}
         {% if page.previous %}
-            <a class="prev" href="{{ page.previous.url }}" rel="bookmark" style="float:right">{{ page.previous.title | truncatewords:5 }}&nbsp;&raquo;</a>
+            <a class="prev" href="{{ page.previous.url }}" rel="bookmark" style="float:right">{{ page.previous.title | truncatewords:5 }} <i class="icon-forward"></i></a>
         {% endif %}
         </p>
         <br>
@@ -97,7 +97,7 @@ sidebar_posts: related
 	</script>
 	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1340804108559251" charset="utf-8"></script>
 	<!-- JiaThis Button END -->
-    
+
     <hr />
     <!-- Comments -->
     {% if page.comments %}
@@ -136,15 +136,15 @@ sidebar_posts: related
       })();
     </script>
     <!-- Google+ -->
-    
+
     <!-- Send to Pocket -->
     <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
     <!-- Send to Pocket -->
-    
+
     <!-- Send to Readability -->
     <script type="text/javascript">(function() {var s = document.getElementsByTagName("script")[0],rdb = document.createElement("script"); rdb.type = "text/javascript"; rdb.async = true; rdb.src = document.location.protocol + "//www.readability.com/embed.js"; s.parentNode.insertBefore(rdb, s); })();</script>
     <!-- Send to Readability -->
-    
+
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -153,6 +153,6 @@ sidebar_posts: related
       js.src = "//connect.facebook.net/zh_CN/all.js#xfbml=1";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-    
+
 </div>
 
