@@ -21,7 +21,7 @@ title: "HJKing's Blog"
           {{ post.summary }}
         </p>
 		<p>
-         <!--  <i class="icon-calendar"></i> {{ post.date | date: "%B %e, %Y" }} | 
+         <!--  <i class="icon-calendar"></i> {{ post.date | date: "%B %e, %Y" }} |
           <i class="icon-comment"></i> <a href="{{ site.url }}{{ post.url }}#disqus_thread"></a>
 		  <br />
           <i class="icon-tags"></i> Tags :{% for tag in post.tags %} <a href="/tags/{{ tag }}" rel="tooltip" title="View posts tagged with &quot;{{ tag }}&quot;"><span class="label label-info">{{ tag }}</span></a>  {% if forloop.last != true %} {% endif %} {% endfor %}
@@ -32,12 +32,12 @@ title: "HJKing's Blog"
 	<hr>
   </div>
 </div> -->
-    
+
 {% endfor %}
 
 <!-- Pagination links -->
 
- {% if paginator.total_pages > 1 %}
+{% if paginator.total_pages > 1 %}
 <div class="pull-right">
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
@@ -47,7 +47,7 @@ title: "HJKing's Blog"
     <a class="btn btn-default btn-sm" href="/">Home</a>
     <a class="btn btn-default btn-sm" href="/page{{paginator.previous_page}}/">&laquo; Newer</a>
     {% endif %}
-  {% else %}
+{% else %}
     <span><a class="btn btn-default btn-sm disabled" href="/">Home</a></span>
     <span><a class="btn btn-default btn-sm disabled">&laquo; Newer</a></span>
   {% endif %}
@@ -60,5 +60,4 @@ title: "HJKing's Blog"
     <span><a class="btn btn-default btn-sm disabled">Last</a></span>
   {% endif %}
 </div>
- {% endif %}
- 
+{% endif %}
