@@ -2,8 +2,8 @@
   <h5 class="muted">RECENT POSTS</h5>
   <dl class="posts">
     {% for post in site.posts limit: 5 %}
-    <dt class="muted">{{ post.date | date_to_long_string }} &raquo;</dt>
-    <dd><a href="{{ post.url }}">{{ post.title }}</a></dd>
+      <dt class="muted">{{ post.date | date_to_long_string }} &raquo;</dt>
+      <dd><a href="{{ post.url }}">{{ post.title }}</a></dd>
     {% endfor %}
   </dl>
 </div>
