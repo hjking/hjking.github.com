@@ -16,3 +16,44 @@ title: "Tags in HJKing's Blog"
     {% endfor %}
   </dl>
 {% endfor %}
+
+<!-- <ul class="tag_box inline">
+ {% for tag in site.tags %} 
+ <li>
+    <a href="#{{ tag[0] }}-ref">{{ tag[0] }} </a>
+    {%if tag[1].size > 10 %}
+    <span class="badge badge-important">{{ tag[1].size }}</span>
+    
+    {% else %}
+    <span class="badge">{{ tag[1].size }}</span>
+    {% endif %}
+ </li>
+ {% endfor %}
+</ul>
+
+
+<hr/>
+
+
+
+{% for tag in site.tags %} 
+  <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
+  <ul><span>
+    {% assign pages_list = tag[1] %}  
+    {% for node in pages_list %}
+  {% if node.title != null %}
+    {% if group == null or group == node.group %}
+
+        <li>{{ node.date | date: "%Y-%m-%d" }}{% for cat in node.categories %}
+        <a class="badge" href="/pages/categories.html#{{cat}}-ref">{{cat}}</a>&nbsp;
+        {% endfor %}
+         &raquo; <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a>
+        </li>
+      
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% assign pages_list = nil %}
+{% assign group = nil %}
+  </ul>
+{% endfor %} -->

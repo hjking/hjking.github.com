@@ -8,19 +8,34 @@
  	{% endif %}
  {% endfor %}
   -->
-
-
 <div class="well well-small">
-    <h5 class="muted">TAG CLOUD</h5>
-    <!-- {% tag_cloud %} -->
-<!--       {% for tag in site.tags %}
-    <a href="#posts-tag"
-      id="{{ forloop.index }}" class="__tag" style="margin: 5px">{{tag[0]}}
-    </a>
-    <ul id="list_{{ forloop.index }}" style="display:none;">
-      {% for post in tag[1] %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-  {% endfor %} -->
+  <h5 class="muted">TAG CLOUD</h5>
+   {% for tag in site.tags %}
+      <a href="/tags.html#{{ tag[0] }}-ref" id="{{ forloop.index }}" class="__tag" style="margin: 5px">{{ tag[0] }}</a>
+   {% endfor %}
 </div>
+ 
+<script type="text/javascript">
+   $(function() {
+      var minFont = 12.0,
+          maxFont = 36.0,
+          diffFont = maxFont - minFont,
+          size = 0;
+ 
+      {% assign max = 1.0 %}
+      {% for tag in site.tags %}
+         {% if tag[1].size > max %}
+            {% assign max = tag[1].size %}
+         {% endif %}
+      {% endfor %}
+ 
+      {% for tag in site.tags %}
+         size = (Math.log({{ tag[1].size }}) / Math.log({{ max }})) * diffFont + minFont;
+         $("#{{ forloop.index }}").css("font-size", size + "px");
+      {% endfor %}
+   });
+</script>
+
+<!-- <div class="well well-small">
+    <h5 class="muted">TAG CLOUD</h5>
+</div> -->
