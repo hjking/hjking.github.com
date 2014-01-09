@@ -4,7 +4,22 @@ title: "Tags in HJKing's Blog"
 ---
 
 <h2>Tags</h2>
+<ul class="tag_box inline">
+ {% for tag in site.tags %}
+ <li>
+         <a href="#{{ tag[0] }}">{{ tag[0] }} </a>
+         {%if tag[1].size > 10 %}
+         <span class="badge badge-important">{{ tag[1].size }}</span>
+
+         {% else %}
+         <span class="badge">{{ tag[1].size }}</span>
+         {% endif %}
+ </li>
+ {% endfor %}
+</ul>
+
 <hr />
+
 {% for tag in site.tags %}
   <a name="{{ tag[0] }}"></a>
   <!-- <h4 class="muted"><i class="icon-tags"></i>{{ tag[0] | upcase }}</h4> -->
@@ -12,18 +27,18 @@ title: "Tags in HJKing's Blog"
   <dl class="unstyled">
     {% for post in tag[1] %}
       <!-- <dd><a href="{{ post.url }}">{{ post.title }}</a></dd> -->
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li>{{ post.date | date: "%Y-%m-%d" }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </dl>
 {% endfor %}
 
 <!-- <ul class="tag_box inline">
- {% for tag in site.tags %} 
+ {% for tag in site.tags %}
  <li>
     <a href="#{{ tag[0] }}-ref">{{ tag[0] }} </a>
     {%if tag[1].size > 10 %}
     <span class="badge badge-important">{{ tag[1].size }}</span>
-    
+
     {% else %}
     <span class="badge">{{ tag[1].size }}</span>
     {% endif %}
@@ -36,10 +51,10 @@ title: "Tags in HJKing's Blog"
 
 
 
-{% for tag in site.tags %} 
+{% for tag in site.tags %}
   <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
   <ul><span>
-    {% assign pages_list = tag[1] %}  
+    {% assign pages_list = tag[1] %}
     {% for node in pages_list %}
   {% if node.title != null %}
     {% if group == null or group == node.group %}
@@ -49,7 +64,7 @@ title: "Tags in HJKing's Blog"
         {% endfor %}
          &raquo; <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a>
         </li>
-      
+
     {% endif %}
   {% endif %}
 {% endfor %}

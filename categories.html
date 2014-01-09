@@ -4,18 +4,37 @@ title: "Categories in HJKing's Blog"
 ---
 
 <h2>Categories</h2>
+<ul class="tag_box inline">
+  {% assign categories_list = site.categories %}
+  {% if categories_list.first[0] == null %}
+    {% for category in categories_list %}
+            <li><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}" rel="category">
+                    {{ category | join: "/" }}
+            </a><span class="badge">{{ site.categories[category].size }}</span></li>
+    {% endfor %}
+  {% else %}
+    {% for category in categories_list %}
+            <li><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category[0] }}" rel="category">
+                    {{ category[0] | join: "/" }}
+            </a><span class="badge" style="vertical-align: super;">{{ category[1].size }}</span></li>
+    {% endfor %}
+  {% endif %}
+  {% assign categories_list = nil %}
+</ul>
+
+
 <hr />
+
+
 <ul>
     {% for category in site.categories %}
-    <!-- <li class="cat-item cat-item-{{category | last | size }}">
-    	<i class="icon-folder-open"></i><a href="/category/{{category | first}}/index.html" title="View all posts filed under {{category | first}}"><strong>{{category | first}} ({{category | last | size }})</strong></a>
-    </li> -->
+
     <h4 class="cat-item cat-item-{{category | last | size }}">
-    	<i class="icon-folder-open"></i><a href="/category/{{category | first}}/index.html" title="View all posts filed under {{category | first}}"><strong>{{category | first}} ({{category | last | size }})</strong></a></h4>
+        <i class="icon-folder-open"></i><a href="/category/{{category | first}}/index.html" title="View all posts filed under {{category | first}}"><strong>{{category | first}} ({{category | last | size }})</strong></a></h4>
     <dl class="unstyled">
-    	{% for post in category[1] %}
-    		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    	{% endfor %}
+        {% for post in category[1] %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
     </dl>
     {% endfor %}
 </ul>
