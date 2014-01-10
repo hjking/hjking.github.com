@@ -32,7 +32,7 @@ analytics:
         tracking_id: 'UA-6627086-2'
         domain: 'hjking.github.io'
 
-tags_path: tags.html
+tags_path: /tags.html
 category: category
 
 links:
