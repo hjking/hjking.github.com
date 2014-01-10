@@ -3,13 +3,15 @@ markdown: rdiscount
 pygments: true
 
 title: HJKing's Blog
+description: "Personal website for HJKing, an ASIC engineer in Wuhan, China."
 
 url: http://hjking.github.io
 
 permalink: /:year/:month/:day/:title/
 
 author:
-    name: Jin Hong
+    name: HJKing
+    username: hjking
     email: hon9jin@gmail.com
     github: hjking
     twitter: hon9jin
