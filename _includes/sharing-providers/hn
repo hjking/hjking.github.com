@@ -11,7 +11,7 @@
                     + "&title="
                     + encodeURIComponent("{{ page.title }}");
       hn_like.innerHTML="iframes not supported by your browser";
-      
+
       var where = document.getElementById("hnews");
       where.parentNode.insertBefore(
         hn_like,

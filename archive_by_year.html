@@ -30,10 +30,10 @@ title: "Archives in HJKing's Blog"
         {% assign current_year = post.date | date: "%Y" %}
         {% if year != current_year %}
             {% if year != nil %}
-                
+
             {% endif %}
             <h2{% if year == nil %} class="top"{% endif %}>{{ current_year }}</h2>
-            
+
             {% assign year = current_year %}
         {% endif %}
         <!-- <tr>

@@ -22,9 +22,10 @@ author:
 paginate: 7
 
 comments:
-    provider: disqus
+    provider: uyan
     disqus:
         short_name: hjking
+    uyan:
 
 analytics:
     provider: google
@@ -40,6 +41,7 @@ category: category
 
 links:
     github: https://github.com/hjking
+    bitbucket: https://www.bitbucket.org/kinghom
     linkedin: http://www.linkedin.com/in/kinghom
     blog: http://hjking.github.io
     blog_repo: https://github.com/hjking/hjking.github.com

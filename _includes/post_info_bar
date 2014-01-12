@@ -1,0 +1,10 @@
+<!-- {{ post.date|date:"%Y-%m-%d" }} -->
+
+&sdot; Category:
+    <a href="/categories.html#{{ post.categories }}" title="View posts in category &quot;{{ post.categories }}&quot;"><span class="radius label">{{ post.categories }}</span></a>&nbsp;
+<!--    <a href="/{{ site.category }}/{{ post.categories }}">{{ post.categories }}</a> -->
+
+&sdot; Tag:
+{% for tag in post.tags %}
+    <a href="/tags.html#{{tag}}" title="View posts tagged with &quot;{{ tag }}&quot;"><span class="radius label">{{tag}}</span></a>&nbsp;
+{% endfor %}
