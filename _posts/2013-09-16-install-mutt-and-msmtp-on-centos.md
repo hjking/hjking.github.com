@@ -27,7 +27,7 @@ tags: [gmail, mutt, msmtp, centos, mail]
 ## Install
 ### Install dependence
 	{% highlight bash linenos %}
-	[root@localhost ~]# rpm -ivh libgsasl-1.4.4-1.el5.x86_64.rpm 
+	[root@localhost ~]# rpm -ivh libgsasl-1.4.4-1.el5.x86_64.rpm
 	[root@localhost ~]# rpm -ivh libntlm-1.2-1.el5.x86_64.rpm
 	{% endhighlight %}
 
@@ -50,32 +50,32 @@ tags: [gmail, mutt, msmtp, centos, mail]
 	{% highlight bash linenos %}
 	set from = "username@gmail.com"
 	set realname = "YourName"
-	 
+
 	set imap_user = "username@gmail.com"
 	set imap_pass = "password"
-	 
+
 	set folder = "imaps://imap.gmail.com:993"
 	set spoolfile = "+INBOX"
 	set postponed = "+[Gmail]/Drafts"
 	set certificate_file = ~/.mutt/certificates
-	 
+
 	set sendmail="/usr/local/bin/msmtp"
 	set use_from=yes
 	set envelope_from=yes
-	 
+
 	set move = no
 	set imap_keepalive = 900
-	 
+
 	set charset=”UTF-8″
 
 	set send_charset=”UTF-8″
-	 
+
 	set locale=”zh_CN.UTF-8″
-	 
+
 	charset-hook ^us-ascii$ gb2312
-	 
+
 	charset-hook !UTF-8 gb2312
-	 
+
 	set sort=reverse-threads
 	set sort_aux=last-date-received
 	set editor = "vim"
