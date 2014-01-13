@@ -37,6 +37,7 @@ analytics:
 
 
 tags_path: /tags.html
+categories_path: /categories.html
 category: category
 
 links:
@@ -73,7 +74,7 @@ links:
 # Set 'provider' to false to turn sharing off globally.
 #
 sharing :
-    provider : all
+    provider : jiathis
     twitter :
         size :
         via :
@@ -90,3 +91,6 @@ sharing :
         annotation : bubble
     linkedin :
         counter : right
+    jiathis:
+        user_id : 1887218
+    baidu:

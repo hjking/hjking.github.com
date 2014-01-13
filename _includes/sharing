@@ -11,6 +11,10 @@
         {% include sharing-providers/linkedin %}
     {% when "hn" %}
         {% include sharing-providers/hn %}
+    {% when "jiathis" %}
+        {% include sharing-providers/jiathis %}
+    {% when "baidu" %}
+        {% include sharing-providers/baidu %}
     {% when "all" %}
         {% include sharing-providers/global %}
   {% endcase %}

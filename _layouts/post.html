@@ -8,12 +8,26 @@ sidebar_posts: related
         <h2>{{ page.title }}</h2>
     </div>
 
-
     <div>
         <hr />
+        <p>
         <i class="icon-calendar"></i> {{ page.date | date: "%A, %B %e, %Y" }}
         | <i class="icon-comment"></i> <a href="{{ site.url }}{{ page.url }}#disqus_thread"></a>
-        <br />
+        </p>
+        <p>
+        <i class="icon-folder-open"></i> Category :
+        <a href="/categories.html#{{ page.categories }}" title="View posts in category &quot;{{ page.categories }}&quot;"><span class="label label-info">{{ page.categories }}</span></a>
+        &sdot; 
+        <i class="icon-tags"></i> Tags :
+        {% for tag in page.tags %}
+            <!-- <a href="/tags/{{ tag }}" rel="tooltip" title="View pages tagged with &quot;{{ tag }}&quot;"> -->
+            <a href="/{{ site.tags_path }}/#{{ tag }}" rel="tooltip" title="View pages tagged with &quot;{{ tag }}&quot;">
+            <span class="label label-info">{{ tag }}</span>
+            </a>
+            {% if forloop.last != true %}
+            {% endif %}
+        {% endfor %}
+        </p>
         <ul class="buttons unstyled">
             <!-- twitter -->
             <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ site.author.twitter }}">Tweet</a></li>
@@ -39,22 +53,6 @@ sidebar_posts: related
         <hr />
     </div>
 
-    <!-- Tags -->
-    <div>
-        <p>
-        <i class="icon-tags"></i> Tags :
-        {% for tag in page.tags %}
-            <!-- <a href="/tags/{{ tag }}" rel="tooltip" title="View pages tagged with &quot;{{ tag }}&quot;"> -->
-            <a href="/{{ site.tags_path }}/#{{ tag }}" rel="tooltip" title="View pages tagged with &quot;{{ tag }}&quot;">
-            <span class="label label-info">{{ tag }}</span>
-            </a>
-            {% if forloop.last != true %}
-            {% endif %}
-        {% endfor %}
-        </p>
-    </div>
-    <!-- Tags -->
-
 
     <!-- Previous/Next Post Link -->
     <div>
@@ -71,7 +69,7 @@ sidebar_posts: related
     <!-- Previous/Next Post Link -->
 
     <!-- JiaThis Button BEGIN -->
-    {% include sharing-providers/jiathis %}
+    {% include sharing %}
     <!-- JiaThis Button END -->
 
     <hr />
@@ -117,4 +115,3 @@ sidebar_posts: related
     }(document, 'script', 'facebook-jssdk'));</script>
 
 </div>
-
