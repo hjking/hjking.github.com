@@ -28,26 +28,7 @@ sidebar_posts: related
             {% endif %}
         {% endfor %}
         </p>
-        <ul class="buttons unstyled">
-            <!-- twitter -->
-            <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ site.author.twitter }}">Tweet</a></li>
-            <!-- google plus -->
-            <li><g:plusone size="medium"></g:plusone></li>
-            <!-- Pocket -->
-            <li><a data-pocket-label="pocket" data-pocket-count="none" class="pocket-btn" data-lang="en"></a>&nbsp;&nbsp;</li>
-            <!-- Instapaper -->
-            <li><iframe border="0" scrolling="no" width="78" height="17" allowtransparency="true" frameborder="0"
-                style="margin-bottom: -3px; z-index: 1338; border: 0px; background-color: transparent; overflow: hidden;"
-                src="http://www.instapaper.com/e2?url={{ site.url }}{{ page.url }}&title={{ page.title }}&description={{ page.title }}">
-            </iframe>&nbsp;&nbsp;</li>
-            <!-- Readability -->
-            <li><div class="rdbWrapper" data-show-read-now="0" data-show-read-later="1" data-show-send-to-kindle="0" data-show-print="0" data-show-email="1" data-orientation="0" data-version="1"></div></li>
-            <!-- Facebook Like -->
-            <li><div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-width="50" data-layout="button_count" data-show-faces="false" data-send="false"></div></li>
-            <!-- Reddit -->
-            <li><a href="http://www.reddit.com/submit" onclick="window.location = 'http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"> <img src="http://www.reddit.com/static/spreddit7.gif" alt="submit to reddit" border="0" /> </a></li>
-        </ul>
-        <br />
+
         <hr />
         {{ content }}
         <hr />
@@ -82,36 +63,5 @@ sidebar_posts: related
     </div>
     {% endif %}
     <!-- Comments -->
-
-    <!-- Twitter -->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    <!-- Twitter -->
-
-    <!-- Google+ -->
-    <script type="text/javascript">
-      (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-      })();
-    </script>
-    <!-- Google+ -->
-
-    <!-- Send to Pocket -->
-    <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
-    <!-- Send to Pocket -->
-
-    <!-- Send to Readability -->
-    <script type="text/javascript">(function() {var s = document.getElementsByTagName("script")[0],rdb = document.createElement("script"); rdb.type = "text/javascript"; rdb.async = true; rdb.src = document.location.protocol + "//www.readability.com/embed.js"; s.parentNode.insertBefore(rdb, s); })();</script>
-    <!-- Send to Readability -->
-
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/zh_CN/all.js#xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
 
 </div>
