@@ -22,7 +22,7 @@ author:
 paginate: 7
 
 comments:
-    provider: uyan
+    provider: duoshuo
     disqus:
         short_name: hjking
     uyan:
