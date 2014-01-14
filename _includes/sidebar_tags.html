@@ -1,14 +1,6 @@
-<!--
-<i class="icon-tags"></i> Tags :<br>
-{% for tag in site.tags %}
- 	<a href="/tags/{{ tag[0] }}" rel="tooltip" title="View posts tagged with &quot;{{ tag[0] }}&quot;">
- 		<span class="label label-info">{{ tag[0] }}</span>
- 	</a>
- 	{% if forloop.last != true %}
- 	{% endif %}
- {% endfor %} -->
+
 <div class="well well-small">
-  <h5 class="muted">TAG CLOUD</h5>
+  <h5><i class="icon-tags"></i> Tag Cloud</h5>
    {% for tag in site.tags %}
       <a href="/tags.html#{{ tag[0] }}" id="{{ forloop.index }}" class="__tag" style="margin: 5px">{{ tag[0] }}</a>
    {% endfor %}
