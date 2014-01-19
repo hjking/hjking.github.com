@@ -3,20 +3,8 @@
 <div class="navbar navbar-fixed-bottom">
   <div class="navbar-inner">
     <ul class="nav pull-right">
-<!--
       {% if site.links.feedback %}
-      <li style="padding-top:3px;"><a href="{{ site.links.feedback }}/issues/new" title="Leave feedback for {{ site.author.name  }}"  target="_blank" >Leave Feedback</a></li>
-      {% endif %}
-      <li><a title="LinkedIn Profile" href="{{ site.links.linkedin }}"><img src="/img/linkedin_32.png" alt="LinkedIn Profile"/></a>
-      <li><a title="GitHub Profile" href="{{ site.links.github }}"><img src="/img/github_32.png" alt="GitHub Profile"/></a>
-      <li><a title="Stack Overflow Profile" href="{{ site.links.stackoverflow }}"><img src="/img/stackoverflow_32.png" alt="Google+ Profile"/></a>
-      <li><a title="Facebook Profile" href="{{ site.links.facebook }}"><img src="/img/facebook_32.png" alt="Facebook Profile"/></a>
-      <li><a title="Twitter Profile" href="{{ site.links.twitter }}"><img src="/img/twitter_32.png" alt="Twitter Profile"/></a>
-      <li><a title="Google+ Profile" href="{{ site.links.gplus }}"><img src="/img/googleplus_32.png" alt="Google+ Profile"/></a>
-      <li><a title="RSS Feed" href="/rss.xml"><img src="/img/rss_32.png" alt="RSS Feed"/></a>
-       -->
-      {% if site.links.feedback %}
-      <li><a href="{{ site.links.feedback }}/issues/new" title="Leave feedback for {{ site.author.name  }}"  target="_blank" >Leave Feedback</a></li>
+      <li><a href="{{ site.links.feedback }}" title="Leave feedback for {{ site.author.name  }}"  target="_blank" >Leave Feedback</a></li>
       {% endif %}
       <li><a title="Email Me" href="mailto:{{ site.author.email }}" target="_blank"><i class="fa fa-envelope"></i></a>
       <li><a title="LinkedIn" href="{{ site.links.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a>
