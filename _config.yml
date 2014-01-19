@@ -43,25 +43,12 @@ category: category
 links:
     github: https://github.com/hjking
     bitbucket: https://www.bitbucket.org/kinghom
-    linkedin: http://www.linkedin.com/in/kinghom
     blog: http://hjking.github.io
     blog_repo: https://github.com/hjking/hjking.github.com
-    weibo: http://weibo.com/hon9jin
-    twitter: https://twitter.com/hon9jin
-    facebook: https://www.facebook.com/kin9hom
-    gplus: https://plus.google.com/103205960311343871154/posts
     feedback: https://github.com/hjking/hjking.github.com/issues/new
     bootstrap: http://getbootstrap.com
     jekyll: http://jekyllrb.com
     github_pages: https://pages.github.com
-    instagram: http://instagram.com/kinghom
-    lastfm: http://www.last.fm/user/KingHom
-    tumblr: http://kinghom.tumblr.com
-    stackoverflow: http://stackoverflow.com/users/1605724/hjking
-    foursquare: https://foursquare.com/kinghom
-    flickr: http://www.flickr.com/photos/kinghom
-    weibo: http://weibo.com/hon9jin
-    renren: http://www.renren.com/200047031/profile
 
 # Settings for sharing
 # Sharing is for things like tweet, plusone, hn upvotes, like, linkedin
@@ -94,3 +81,50 @@ sharing :
     jiathis:
         user_id : 1887218
     baidu:
+
+sociallink:
+  - title: LinkedIn
+    href: http://www.linkedin.com/in/kinghom
+    class: fa fa-linkedin
+  - title: GitHub
+    href: https://github.com/hjking
+    class: fa fa-github-alt
+  - title: Bitbucket
+    href: https://www.bitbucket.org/kinghom
+    class: fa fa-bitbucket
+  - title: Stack Overflow
+    href: http://stackoverflow.com/users/1605724/hjking
+    class: fa fa-stack-overflow
+  - title: Facebook
+    href: https://www.facebook.com/kin9hom
+    class: fa fa-facebook
+  - title: Twitter
+    href: https://twitter.com/hon9jin
+    class: fa fa-twitter
+  - title: Google+
+    href: https://plus.google.com/103205960311343871154/posts
+    class: fa fa-google-plus
+  - title: Instagram
+    href: http://instagram.com/kinghom
+    class: fa fa-instagram
+  - title: Flickr
+    href: http://www.flickr.com/photos/kinghom
+    class: fa fa-flickr
+  - title: Foursquare
+    href: https://foursquare.com/kinghom
+    class: fa fa-foursquare
+  - title: Weibo
+    href: http://weibo.com/hon9jin
+    class: fa fa-weibo
+  - title: Renren
+    href: http://www.renren.com/200047031/profile
+    class: fa fa-renren
+  - title: LastFM
+    href: http://www.last.fm/user/KingHom
+    class: fa fa-music
+  - title: Tumblr
+    href: http://kinghom.tumblr.com
+    class: fa fa-tumblr
+  - title: 500px
+    href: http://500px.com/hjking
+    class: fa fa-picture-o

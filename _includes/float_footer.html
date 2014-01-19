@@ -7,7 +7,7 @@
       <li><a href="{{ site.links.feedback }}" title="Leave feedback for {{ site.author.name  }}"  target="_blank" >Leave Feedback</a></li>
       {% endif %}
       <li><a title="Email Me" href="mailto:{{ site.author.email }}" target="_blank"><i class="fa fa-envelope"></i></a>
-      <li><a title="LinkedIn" href="{{ site.links.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a>
+<!--       <li><a title="LinkedIn" href="{{ site.links.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a>
       <li><a title="GitHub" href="{{ site.links.github }}" target="_blank"><i class="fa fa-github-alt"></i></a>
       <li><a title="Bitbucket" href="{{ site.links.bitbucket }}" target="_blank"><i class="fa fa-bitbucket"></i></a>
       <li><a title="Stack Overflow" href="{{ site.links.stackoverflow }}" target="_blank"><i class="fa fa-stack-overflow"></i></a>
@@ -18,7 +18,10 @@
       <li><a title="Flickr" href="{{ site.links.flickr }}" target="_blank"><i class="fa fa-flickr"></i></a>
       <li><a title="Foursquare" href="{{ site.links.foursquare }}" target="_blank"><i class="fa fa-foursquare"></i></a>
       <li><a title="Weibo" href="{{ site.links.weibo }}" target="_blank"><i class="fa fa-weibo"></i></a>
-      <li><a title="Renren" href="{{ site.links.renren }}" target="_blank"><i class="fa fa-renren"></i></a>
+      <li><a title="Renren" href="{{ site.links.renren }}" target="_blank"><i class="fa fa-renren"></i></a> -->
+      {% for nav in site.sociallink %}
+          <li><a title="{{ nav.title }}" href="{{ nav.href }}" target="_blank"><i class="{{ nav.class }}"></i></a>
+      {% endfor %}
       <li><a title="RSS Feed" href="/rss.xml"><i class="fa fa-rss"></i></a>
       <li><a title="Go to Top" href="#"><i class="fa fa-arrow-circle-up"></i></a>
     </ul>

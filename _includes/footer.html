@@ -12,7 +12,8 @@
     <p class="muted">
         <small>
         Thanks for stopping by.<br>
-        <i class="icon-flag"></i>Copyright &copy; 2014 HJKing. All rights reserved.<br>
+        {% assign first_post = site.posts | last %}
+        Copyright &copy; {{ first_post.date | date: "%Y" }} ~ {{ site.time | date: "%Y" }} {{ site.author.name }}. All rights reserved.<br>
         The source code of this site is <a href="{{ site.links.blog_repo }}" target="_blank">HERE</a>
         <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user={{ site.author.github }}&repo={{ site.author.github }}.github.com&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>&nbsp;
         <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user={{ site.author.github }}&repo={{ site.author.github }}.github.com&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
