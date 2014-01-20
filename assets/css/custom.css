@@ -1,135 +1,70 @@
+/* fixed navbar*/
 body {
-    padding-top: 50px;
-}
-
-ul.buttons li {
+    padding-top: 40px;
     margin: 0;
-    padding: 0;
-    list-style: none;
-    display: inline;
-    float:left;
-}
-
-img.floatLeft {
-    float: left;
-    margin: 4px 8px 4px 0px;
-}
-
-img.img-rounded {
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-}
-
-a.social {
-  display: block;
-  width:  34px;
-  height: 34px;
-  background: url(/img/social_icons.png);
-  margin: 3px;
-}
-
-a.social.github {
-  background: url(/img/social_icons.png) -68px 0px no-repeat;
-}
-
-a.social.github:hover {
-  background: url(/img/social_icons.png) -68px -34px no-repeat;
-}
-
-a.social.linkedin {
-  background: url(/img/social_icons.png) -102px 0px no-repeat;
-}
-
-a.social.linkedin:hover {
-  background: url(/img/social_icons.png) -102px -34px no-repeat;
-}
-
-a.social.twitter {
-  background: url(/img/social_icons.png) 0 0px no-repeat;
-}
-
-a.social.twitter:hover {
-  background: url(/img/social_icons.png) 0px -34px no-repeat;
-}
-
-a.social.rss {
-  background: url(/img/social_icons.png) -34px 0px no-repeat;
-}
-
-a.social.rss:hover {
-  background: url(/img/social_icons.png) -34px -34px no-repeat;
-}
-
-a.social.mail {
-  background: url(/img/social_icons.png) -136px 0px no-repeat;
-}
-
-a.social.mail:hover {
-  background: url(/img/social_icons.png) -136px -34px no-repeat;
-}
-
-a.social.gplus {
-  background: url(/img/social_icons.png) -170px 0px no-repeat;
-}
-
-a.social.gplus:hover {
-  background: url(/img/social_icons.png) -170px -34px no-repeat;
-}
-
-body {
-    margin: 0;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Droid Sans", "Inconsolata", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 18px;
     color: #444444;
     background-color: #F0F0F0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Droid Sans", "Yanone Kaffeesatz", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #333;
     font-weight: bold;
 }
 
+h1,h2 {
+    border-bottom: 1px solid #ccc;
+}
+
 h1 {
-    font-size: 38px;
-    line-height: 57px;
+    line-height: 36px;
+    font-size: 32px;
+    margin-top: 18px;
+    margin-bottom: .15em;
 }
 
 h2 {
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 15px;
 }
 
 h3 {
-    font-size: 26px;
-    line-height: 39px;
+    line-height: 26px;
+    color: #777;
+    font-size: 24px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 h4 {
-    font-size: 22px;
-    line-height: 33px;
+    line-height: 22px;
+    font-size: 20px;
+    padding-bottom: 5px;
 }
 
 h5 {
     font-size: 18px;
-    line-height: 27px;
+    line-height: 22px;
 }
 
 h6 {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 22px;
 }
 
 p {
     margin-bottom: 32px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Droid Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
 }
 
 input, button, select, textarea {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Droid Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 li#search {
@@ -220,7 +155,6 @@ ol#search-results li {
 .pager .icon-arrow-left { position: fixed; left: 0; }
 .pager .icon-arrow-right { position: fixed; }
 
-
 .headerButton {
     display: inline-block;
     padding-top: 20px;
@@ -229,58 +163,51 @@ ol#search-results li {
     margin-right: 10px;
     height: 100%;
     border-bottom: 0px solid transparent;
-	width: 92px;
-	text-align: center;
+    width: 92px;
+    text-align: center;
     color: black;
-	font-weight: 400;
+    font-weight: 400;
     font-size: 18px;
-	transition: .2s ease;
-	-webkit-transition: .2s ease;
-	box-sizing: border-box;
+    transition: .2s ease;
+    -webkit-transition: .2s ease;
+    box-sizing: border-box;
 
-	&:hover {
-		border-bottom: 4px solid #0e76a8;
-		color: #8d8d8d;
-	}
+    &:hover {
+        border-bottom: 4px solid #0e76a8;
+        color: #8d8d8d;
+    }
 }
 
 .contactButton {
-	display: inline-block;
+    display: inline-block;
     padding-top: 5px;
     height: 35px;
     border-radius: 5px;
     margin: 6px;
     font-weight: 400;
     font-size: 15px;
-	width: 90px;
-	box-sizing: border-box;
+    width: 90px;
+    box-sizing: border-box;
 }
 
-
-#email {
-	border: 2px solid #84ce67; color: #84ce67;
-	&:hover { border: 2px solid #a7da92; }
-	&:active { border: 2px solid #5bb935; }
+ul.buttons li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline;
+    float:left;
 }
 
-#twitter {
-	border: 2px solid #00acee; color: #00acee;
-	&:hover { border: 2px solid #00C4FF; }
-	&:active { border: 2px solid #00a0d1; }
+img.floatLeft {
+    float: left;
+    margin: 4px 8px 4px 0px;
 }
 
-#google {
-	border: 2px solid #d96254; color: #d96254;
-	&:hover { border: 2px solid #e3958b; }
-	&:active { border: 2px solid #be2c1c; }
+img.img-rounded {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
 }
-
-#linkedin {
-	border: 2px solid #0e76a8; color: #0e76a8;
-	&:hover	{ border: 2px solid #5ea5c6; }
-	&:active { border: 2px solid #036fa0; }
-}
-
 
 
 #header {
@@ -296,14 +223,14 @@ ol#search-results li {
     font-weight: 300;
     margin-top: -4px;
     opacity: 0.850;
-	list-style: none;
+    list-style: none;
 }
 
 .wrap {
     position: relative;
     margin: 0 auto;
     max-width: 700px;
-	width: 92%;
+    width: 92%;
 }
 
 .headercontainer {
@@ -325,4 +252,59 @@ ol#search-results li {
     height: 35%;
     width: 70%;
     overflow: hidden; /* so right doesn't wrap below left */
+}
+
+#post .authoring{
+  margin-bottom: 17px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  padding-left: 0px;
+  font-size: 16px;
+  color: #777;
+}
+
+.posts .post_date{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.brand {
+  font-family: "Dancing Script", Inconsolata, sans-serif;
+}
+
+#footer {
+  margin-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+
+/* tag_box ======================================================== */
+
+.tag_box {
+    list-style:none;
+    margin:0;
+    padding:5px 0 ;
+    overflow:hidden;
+}
+.tag_box li {
+    line-height:28px;
+}
+.tag_box.inline li {
+    float:left;
+}
+.tag_box a {
+    padding: 3px 6px;
+    margin: 2px;
+    background: #eee;
+    color:#005F6B;
+    border-radius: 3px;
+    text-decoration:none;
+}
+.tag_box a span{
+    vertical-align:super;
+    font-size:0.8em;
+}
+.tag_box a.active {
+    background:#57A957;
+    border:1px solid #4C964D;
+    color:#FFF;
 }

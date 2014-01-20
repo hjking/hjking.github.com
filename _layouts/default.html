@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-<!--     <title>{{ page.title }}</title> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--     <meta name="description" content="HJKing's Blog"> -->
     <meta name="description" content="{% if page.description == null %}{{ site.description }}{% else %}{{ page.description }}{% endif %}" />
     <meta name="author" content="{{ site.author.name }}">
 
@@ -16,49 +14,33 @@
     <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/atom.xml" />
     <link rel="shortcut icon" href="/favicon.ico">
 
-    <link href="/assets/css/custom.css" rel="stylesheet" />
     <link href="/assets/css/normalize.css" rel="stylesheet" />
     <link href="/assets/css/jquery.githubwidget.min.css" rel="stylesheet" />
-    <link href="/assets/css/syntax.css" rel="stylesheet" />
 
-    <!-- <script src="http://code.jquery.com/jquery.js"></script> -->
-
+    <!-- bootstrap 2 -->
     <link href="/assets/bootstrap/2.3.2/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="/assets/bootstrap/2.3.2/css/bootstrap-responsive.min.css" type="text/css" rel="stylesheet" />
+    <!-- bootstrap 3 -->
     <!-- <link href="/assets/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css" rel="stylesheet" /> -->
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-
+    <!-- syntax highlighting with google -->
     <!-- <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script> -->
     <link href="/assets/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" media="screen" />
     <link href="/assets/google-code-prettify/styles/desert.css" type="text/css" rel="stylesheet" media="screen" />
-
-    <!--  <link href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/amelia/bootstrap.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/cosmo/bootstrap.min.css" rel="stylesheet">
-    -->
-
-
+    <!-- Buttons -->
     <!-- <link href="/assets/Buttons/css/buttons.css" type="text/css" rel="stylesheet"> -->
-
+    <!-- Flat UI -->
     <!-- <link href="/assets/flat-ui/css/flat-ui.css" rel="stylesheet"> -->
-
-    <!--
-    <link href="/css/light.css" rel="alternate stylesheet" type="text/css" id="stl" title="light" />
-    <link href="/css/dark.css" rel="alternate stylesheet" type="text/css" title="dark" />
-    <script type="text/javascript" src="/js/switch-css.js"></script>
-    <script type="text/javascript">set_style_from_cookie(); </script>
-    -->
-
-    <!--
-    <link href="/css/pygments-manni.css" type="text/css" rel="stylesheet"> -->
-
-    <link href="/assets/bootstrap/2.3.2/css/bootstrap-responsive.min.css" type="text/css" rel="stylesheet" />
+    <!-- Font Awesome -->
     <!-- <link href="/assets/font-awesome/3.2.1/css/font-awesome.min.css" type="text/css" rel="stylesheet"> -->
     <link href="/assets/font-awesome/4.0.3/css/font-awesome.min.css" type="text/css" rel="stylesheet">
     <!-- Moot style -->
     <link rel="stylesheet" type="text/css" href="//cdn.moot.it/1/moot.css">
+    <!-- syntax highlighting CSS -->
+    <link href="/assets/css/syntax.css" rel="stylesheet" />
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata|Droid+Sans|Dancing+Script|Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <!-- Custom CSS-->
+    <link href="/assets/css/custom.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -73,10 +55,6 @@
 
     {{ content }}
 
-<!--     $(function() {
-        window.prettyPrint && prettyPrint();
-    });
- -->
     {% include float_footer.html %}
     <hr />
     {% include footer.html %}
