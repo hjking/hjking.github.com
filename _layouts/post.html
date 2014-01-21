@@ -12,7 +12,8 @@ sidebar_posts: related
         <hr />
         <p>
         <i class="icon-calendar"></i> {{ page.date | date: "%A, %B %e, %Y" }}
-        | <i class="fa fa-comments"></i> <a href="{{ site.url }}{{ page.url }}#disqus_thread"></a><br>
+        | <i class="fa fa-comments"></i> <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}">View Comments</a>
+        <br>
         <i class="icon-folder-open"></i> Category :
         <a href="/categories.html#{{ page.categories }}" title="View posts in category &quot;{{ page.categories }}&quot;"><span class="label label-info">{{ page.categories }}</span></a>
         &sdot; 

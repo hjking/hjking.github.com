@@ -7,18 +7,6 @@
       <li><a href="{{ site.links.feedback }}" title="Leave feedback for {{ site.author.name  }}"  target="_blank" >Leave Feedback</a></li>
       {% endif %}
       <li><a title="Email Me" href="mailto:{{ site.author.email }}" target="_blank"><i class="fa fa-envelope"></i></a>
-<!--       <li><a title="LinkedIn" href="{{ site.links.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a>
-      <li><a title="GitHub" href="{{ site.links.github }}" target="_blank"><i class="fa fa-github-alt"></i></a>
-      <li><a title="Bitbucket" href="{{ site.links.bitbucket }}" target="_blank"><i class="fa fa-bitbucket"></i></a>
-      <li><a title="Stack Overflow" href="{{ site.links.stackoverflow }}" target="_blank"><i class="fa fa-stack-overflow"></i></a>
-      <li><a title="Facebook" href="{{ site.links.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a>
-      <li><a title="Twitter" href="{{ site.links.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
-      <li><a title="Google+" href="{{ site.links.gplus }}" target="_blank"><i class="fa fa-google-plus"></i></a>
-      <li><a title="Instagram" href="{{ site.links.instagram }}" target="_blank"><i class="fa fa-instagram"></i></a>
-      <li><a title="Flickr" href="{{ site.links.flickr }}" target="_blank"><i class="fa fa-flickr"></i></a>
-      <li><a title="Foursquare" href="{{ site.links.foursquare }}" target="_blank"><i class="fa fa-foursquare"></i></a>
-      <li><a title="Weibo" href="{{ site.links.weibo }}" target="_blank"><i class="fa fa-weibo"></i></a>
-      <li><a title="Renren" href="{{ site.links.renren }}" target="_blank"><i class="fa fa-renren"></i></a> -->
       {% for nav in site.sociallink %}
           <li><a title="{{ nav.title }}" href="{{ nav.href }}" target="_blank"><i class="{{ nav.class }}"></i></a>
       {% endfor %}

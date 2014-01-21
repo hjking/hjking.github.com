@@ -7,7 +7,7 @@ description: "Personal website for HJKing, an ASIC engineer in Wuhan, China."
 
 url: http://hjking.github.io
 
-permalink: /:year/:month/:day/:title/
+permalink: /blog/:year/:month/:day/:title
 
 author:
     name: HJKing
