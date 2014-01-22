@@ -12,30 +12,4 @@
 <!-- Moot application -->
 <script src="//cdn.moot.it/latest/moot.min.js"></script>
 
-<script>
-$(function() {
-      $.ajax({
-          url: "/sitemap.xml",
-          dataType: "xml",
-          success: function( xmlResponse ) {
-             var data = $( "article", xmlResponse ).map(function() {
-                  return {
-                      value: $( "title", this ).text() + ", " +
-                          ( $.trim( $( "date", this ).text() ) ),
-                      desc: $("description", this).text(),
-                      url: $("url", this).text()
-                  };
-              }).get();
-
-              $( "#j_search" ).autocomplete({
-                  source: data,
-                  minLength: 0,
-                  position: { my : "right top", at: "right bottom" } 
-                  select: function( event, ui ) {
-                    window.location.href = ui.item.url;
-                  }
-              });
-          }
-      });
-  });
-  </script>
+{% include my_google_search.html %}
