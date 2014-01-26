@@ -4,173 +4,146 @@ date: 2013-09-16 12:29:00
 layout: post
 slug: emacs-for-vi-users
 title: "Emacs for Vi Users"
-summary: "This is intended as an introductory guide for vi users wishing to learn the
-basics of Emacs."
-image: 'why-its-important-to-know-how-to-use-your-tools/cover.png'
+summary: "本文旨在给那些想要学习Emacs的Vi用户做一个基本的Emacs介绍。"
 categories: emacs
 tags: [emacs, vim]
 ---
 
-# Emacs for vi users
+# 从Vi到Emacs
 
-  "Why can't I enter command mode?"
-
-
-## Introduction
-
-This is intended as an introductory guide for vi users wishing to learn the
-basics of Emacs.  I'm writing it because I'm one of them, and I suspect that I'm
-not alone in being mystified by the lack of a command mode, text objects and an
-underlying `ex` editor, as well as the plethora of strange and unfamiliar key
-combinations.  The intent is to give fledgling Emacs users a basic set of
-commands, sufficient for basic editing.
-
-This page is a basic Emacs survival guide for the vi user.  It is grounded in
-familiarity of vi and (quite naturally) assumes a vi-centric view of the world.
-Since the structure is that of a list of corresponding commands, I will not list
-features that are unique to Emacs.  I believe there to be sufficient overlap
-between the capabilities of each editor to motivate this approach.
-
-This is not a joke.  It is not about religion or the
-[Editor war](http://en.wikipedia.org/wiki/Editor_war) and I will not present one
-editor as better than the other.  Neither is it about the Emacs mindset, since
-I have yet to acquire it myself.  Finally, it is not a proper Emacs tutorial.
-If you want to learn Emacs propely, go find a proper tutorial.  There is one
-built into Emacs, for example.
-
-Finally, it is not complete and I
-[welcome contributions](mailto:public@elmindreda.org).
+  "为什么我进不了命令行？！"
 
 
-## Basics
+## 介绍
 
-Emacs doesn't have a separate command mode.  In a sense, you're always in
-insert mode.  Therefore, special modifier keys are needed to tell commands
-apart from typed characters.  The two commonly used modifiers are
-*Control* and *Meta*.  On many systems, the Alt key can be used as
-Meta.  If your system lacks a functional Meta key, you can type Escape before
-the specified key.
+本文旨在给那些想要学习Emacs的Vi用户做一个基本的Emacs介绍。我刚好就是其中之一，而且我肯定不只是我一个人对缺少命令模式，文本对象，大量的奇怪的键组合感到迷茫。本文将会给毫无Emacs经验的你介绍一系列在文本编辑中足够使用的命令。
 
-Since Control and Meta are so frequently used in Emacs, they have created a
-special convention for writing such commands, so for example **C-a**
-corresponds to *Control+A*, and **M-f** corresponds to *Meta+F*.
-The Emacs command column will use this convention.  This is also consistent
-with the documentation in Emacs.
+本文是一份Vi用户的Emacs生存指南。本文假设你已经对Vi比较熟悉，并且会用Vi的视角去看待世界。本文不会列出Emacs独有的功能，而是一一列出与Vi对应的相同功能。我相信它们的功能之间应该有很多相同之处。
 
-Many Emacs commands take numerical prefixes, but you need to hold down Meta
-while typing them.  So, for example, type M-2 M-3 M-g g instead of 23G to go to
-line 23.
+我并不想卷入[编辑器之战](http://zh.wikipedia.org/wiki/%E7%BC%96%E8%BE%91%E5%99%A8%E4%B9%8B%E6%88%98)，所以我不会评论Emacs和Vi谁优谁劣。另外我也不会阐述Emacs的设计理念。最后，这不是一个完整的Emacs初学指南，如果你想系统地学习Emacs，那你得自己找一份完整的学习指南，比如Emacs内置的一份初学指南。
+
+最最后，本文并不完整，欢迎你提出[建议](mailto:hon9jin@gmail.com)。
 
 
-## Commands
+## 基本功能
 
-### Program operations
+Emacs并没有分开独立的命令模式，你会一直处在插入模式下。因此你需要用特殊的方式来将输入的字符和命令予以区分开来。*Control键* 和 *Meta键* 就是解决办法。在很多系统里，*Alt键* 可以充当 *META键* ，如果你的系统缺少META键，你可以在需要的时候按下ESC来代替。
 
-| Action                               | vi                  | Emacs           | Notes on Emacs                                          |
+由于Control和Meta键会被频繁地在Emacs中用到，所以需要作出一个特殊的约定来输入这些命令。比如 **C-a** 对应 *Control+A* ，**M-f** 对应 *Meta-F* 。下文中Emacs命令列会用到这些约定。同时这也是Emacs文档里使用的方法。
+
+有时，Emacs命令会被执行多次，那么需要你在输入数字的时候按住Meta键。比如输入 M-2 M-3 M-g g 来跳转到23行，而在Vi中只需要按下23G即可。
+
+
+## 命令
+
+### 程序操作
+
+| 动作                                 | vi                  | Emacs           | Emacs说明                                          |
 | ------------------------------------ | ------------------- | --------------- | ------------------------------------------------------- |
-| Exit program                         | :q *Enter*          | C-x C-c         | If changes exist, will ask whether or not to save them. |
-| Unconditionally exit program         | :q! *Enter*         | C-x C-c         | Just say no.                                            |
-| Save current buffer and exit program | :wq *Enter*         | C-x C-s C-x C-c |                                                         |
-| Cancel command                       | *Ctrl+c*            | C-g             |                                                         |
+| 退出程序                             | :q *Enter*          | C-x C-c         | 如果文件有修改，Emacs会提示是否保存                     |
+| 强制退出程序                         | :q! *Enter*         | C-x C-c         | 回答no                                                  |
+| 保存当前文件并退出                   | :wq *Enter*         | C-x C-s C-x C-c |                                                         |
+| 取消输入的命令                       | *Ctrl+c*            | C-g             |                                                         |
 | Redraw screen                        | *Ctrl+l*            | C-l             |                                                         |
-| Command line                         | :                   | M-x             |                                                         |
+| 进入命令行                           | :                   | M-x             |                                                         |
 
 
-### File operations
+### 文件操作
 
-| Action                             | vi                  | Emacs              | Notes on Emacs                        |
+| 动作                               | vi                  | Emacs              | Emacs说明                             |
 | ---------------------------------- | ------------------- | ------------------ | ------------------------------------- |
-| Open file, or create named buffer  | :e *filename Enter* | C-x C-f *filename* |                                       |
-| Save current buffer                | :w *Enter*          | C-x C-s            | Will not save a new, unmodified file. |
-| Save current buffer under new name | :w *filename Enter* | C-x C-w *filename* |                                       |
-| Move to next buffer                | :n *Enter*          | C-x b *buffer*     |                                       |
-| Move to previous buffer            | :prev *Enter*       | C-x b *Enter*      |                                       |
+| 打开指定的文件或者新建一个缓冲区   | :e *filename Enter* | C-x C-f *filename* |                                       |
+| 保存当前缓冲区                     | :w *Enter*          | C-x C-s            | 不会保存成一个新的未修改的文件        |
+| 保存成一个新的文件                 | :w *filename Enter* | C-x C-w *filename* |                                       |
+| 进入下一个缓冲区                   | :n *Enter*          | C-x b *buffer*     |                                       |
+| 进入前一个缓冲区                   | :prev *Enter*       | C-x b *Enter*      |                                       |
 
 
-### Navigation
+### 移动
 
-| Action                             | vi       | Emacs           | Notes on Emacs                                     |
+| 动作                               | vi       | Emacs           | Emacs说明                                          |
 | ---------------------------------- | -------- | --------------- | -------------------------------------------------- |
-| Go to beginning of buffer          | 1G       | M-<             |                                                    |
-| Go to end of buffer                | G        | M->             |                                                    |
-| Go left one character              | h        | C-b             | Will wrap to previous line.                        |
-| Go right one character             | l        | C-f             | Will wrap to next line.                            |
-| Go up one line                     | k        | C-p             |                                                    |
-| Go down one line                   | j        | C-n             |                                                    |
-| Go to line *n*                     | *n*G     | M-g g *n* Enter |                                                    |
-| Go to beginning of line            | 0        | C-a             |                                                    |
-| Go to end of line                  | $        | C-e             | Places cursor one step beyond last character.      |
-| Go to next word                    | w        | M-f             | Stops at first non-word character before the word. |
-| Go to previous word                | b        | M-b             |                                                    |
-| Go to next page                    | *Ctrl+f* | C-v             |                                                    |
-| Go to previous page                | *Ctrl+b* | M-v             |                                                    |
-| Set mark *x*                       | m*x*     | C-x r Space *x* |                                                    |
-| Go to mark *x*                     | '*x*     | C-x r j *x*     |                                                    |
+| 移至缓冲区开头                     | 1G       | M-<             |                                                    |
+| 移至缓冲区结尾                     | G        | M->             |                                                    |
+| 向左移动一个字符                   | h        | C-b             | 会自动折向前一行                                   |
+| 向右移动一个字符                   | l        | C-f             | 会自动折向后一行                                   |
+| 移至上一行                         | k        | C-p             |                                                    |
+| 移至下一行                         | j        | C-n             |                                                    |
+| 移至第 *n* 行                      | *n*G     | M-g g *n* Enter |                                                    |
+| 移至行首                           | 0        | C-a             |                                                    |
+| 移至行尾                           | $        | C-e             | 光标处于最后一个字符的后面                         |
+| 移至下一个单词                     | w        | M-f             | 光标处于下个单词的非字符处                         |
+| 移至前一个单词                     | b        | M-b             |                                                    |
+| 下一页                             | *Ctrl+f* | C-v             |                                                    |
+| 上一页                             | *Ctrl+b* | M-v             |                                                    |
+| 设置标志 *x*                       | m*x*     | C-x r Space *x* |                                                    |
+| 跳转至标志 *x*                     | '*x*     | C-x r j *x*     |                                                    |
 | Go to first displayed line         | H        |                 |                                                    |
 | Go to last displayed line          | L        |                 |                                                    |
-| Move buffer one line up            | *Ctrl+y* | C-1 M-v         |                                                    |
-| Move buffer one line down          | *Ctrl+e* | C-1 C-v         |                                                    |
+| 缓冲区向上移动一行                 | *Ctrl+y* | C-1 M-v         |                                                    |
+| 缓冲区向下移动一行                 | *Ctrl+e* | C-1 C-v         |                                                    |
 
 
-### Text editing
+### 文本编辑
 
-| Action                             | vi  | Emacs       | Notes on Emacs                                     |
+| 动作                               | vi       | Emacs           | Emacs说明                                          |
 | ---------------------------------- | --- | ----------- | -------------------------------------------------- |
-| Insert text                        | i   |             | Always in insert mode.                             |
-| Append text                        | a   | C-f         | Only cursor movement is needed.                    |
-| Insert at beginning of line        | I   | C-a         | Only cursor movement is needed.                    |
-| Append to end of line              | A   | C-e         | Only cursor movement is needed.                    |
-| Delete character forwards          | x   | C-d         |                                                    |
-| Delete character backwards         | X   | Backspace   |                                                    |
-| Change to end of line              | C   | C-k         | Only deletion is needed.                           |
-| Delete to end of line              | D   | C-k         | Removes line entirely if empty.                    |
-| Delete entire line                 | dd  | C-a C-k     | For empty lines.                                   |
-|                                    |     | C-a C-k C-k | For non-empty lines.                               |
-| Delete word forwards               | dw  | M-d         | Does not delete whitespace before next word.       |
-| Delete word backwards              | db  | M-Backspace |                                                    |
-| Open line above                    | O   | C-o         |                                                    |
-| Open line below                    | o   | C-e Enter   |                                                    |
-| Join lines                         | J   | C-n M-^     |                                                    |
-| Undo last edit                     | u   | C-x u       |                                                    |
+| 插入文本                           | i   |             |  一直出入插入模式                                  |
+| 附加文本                           | a   | C-f         | 只需要移动光标                                     |
+| 在行首插入文本                     | I   | C-a         | 只需要移动光标                                     |
+| 行尾附加文本                       | A   | C-e         | 只需要移动光标                                     |
+| 向前删除字符                       | x   | C-d         |                                                    |
+| 向后删除字符                       | X   | Backspace   |                                                    |
+| 修改至行尾                         | C   | C-k         | 删除即可                                           |
+| 删除至行尾                         | D   | C-k         | 如果是空行，则删除整行                             |
+| 删除整行                           | dd  | C-a C-k     | 空行                                               |
+|                                    |     | C-a C-k C-k | 非空行                                             |
+| 向前删除单词                       | dw  | M-d         | 不删除下个单词前的空格                             |
+| 向后删除单词                       | db  | M-Backspace |                                                    |
+| 在上一行添加空行                   | O   | C-o         |                                                    |
+| 在下方添加空行                     | o   | C-e Enter   |                                                    |
+| 连接两行                           | J   | C-n M-^     |                                                    |
+| 撤销上次操作                       | u   | C-x u       |                                                    |
 
 
-### Yanking and placing
+### 复制和粘贴
 
-| Action                             | vi    | Emacs       | Notes on Emacs                         |
+| 动作                               | vi    | Emacs       | Emacs说明                              |
 | ---------------------------------- | ----- | ----------- | -------------------------------------- |
-| Yank line                          | yy    | C-a C-k     | For empty lines.                       |
-|                                    |       | C-a C-k C-k | For non-empty lines.                   |
-| Yank *n* lines                     | *n*yy | C-Space *(move to line below last desired)* M-w |    |
-| Cut *n* lines down                 | *n*dd | M-*n* C-k   |                                        |
-| Paste before cursor                | P     | C-y         |                                        |
-| Paste after cursor                 | p     |             |                                        |
+| 复制一行                           | yy    | C-a C-k     | 空行                                   |
+|                                    |       | C-a C-k C-k | 非空行                                 |
+| 复制 *n* 行                        | *n*yy | C-Space *(move to line below last desired)* M-w |    |
+| 剪切 *n* 行                        | *n*dd | M-*n* C-k   |                                        |
+| 光标前粘贴                         | P     | C-y         |                                        |
+| 光标后粘贴                         | p     |             |                                        |
 
 
-### Searching and substitution
+### 搜索和替换
 
-| Action              | vi                              | Emacs                              | Notes on Emacs |
-| ------------------- | ----------------                | ---------------------------------- | -------------- |
-| Search forwards     | /*pattern Enter*                | C-s *pattern* Enter                |                |
-| Search backwards    | ?*pattern Enter*                | C-r *pattern* Enter                |                |
-| Global replace text | :%s/*pattern*/*with*/gc *Enter* | M-% *word* Enter *with* Enter      |                |
+| 动作                | vi                              | Emacs                              | Emacs说明      |
+| ------------------- | --------------------------------| ---------------------------------- | -------------- |
+| 向前搜索            | /*pattern Enter*                | C-s *pattern* Enter                |                |
+| 向后搜索            | ?*pattern Enter*                | C-r *pattern* Enter                |                |
+| 替换                | :%s/*pattern*/*with*/gc *Enter* | M-% *word* Enter *with* Enter      |                |
 |                     |                                 | C-M-% *pattern* Enter *with* Enter |                |
 
 
-### Window operations
+### 窗口操作
 
-| Action                        | Vim         | Emacs | Notes on Emacs |
-| -------------------           | ----------- | ----- | -------------- |
-| Split horizontally            | *Ctrl+w s*  | C-x 2 |                |
-| Split vertically              | *Ctrl+w v*  | C-x 3 |                |
-| Close current window          | *Ctrl+w c*  | C-x 0 |                |
-| Close all but current windows | *Ctrl+w o*  | C-x 1 |                |
+| 动作                          | vi          | Emacs | Emacs说明      |
+| ------------------------------| ----------- | ----- | -------------- |
+| 水平分割                      | *Ctrl+w s*  | C-x 2 |                |
+| 垂直分割                      | *Ctrl+w v*  | C-x 3 |                |
+| 关闭当前窗口                  | *Ctrl+w c*  | C-x 0 |                |
+| 关闭除当前窗口以外的所有窗口  | *Ctrl+w o*  | C-x 1 |                |
 
 
-## Credits
+## 许可
 
-This page was partly inspired by
-[Emacs for Vi Programmers](http://grok2.tripod.com/).
+本文原文来自 [Emacs for vi users](http://www.elmindreda.org/emacs.html)。
 
-Thanks to Kaj, magda, Ian D, LeViMS, C. Warrington, E. Bowler and R. Pereira
-for Emacs commands.
+原文灵感来自 [Emacs for Vi Programmers](http://grok2.tripod.com/)。
 
+在此一并表示感谢！
+
+同时欢迎各位发来意见和指正。

@@ -85,3 +85,19 @@ end
 
     endmodule
 {% endhighlight %}
+
+{% highlight vim linenos %}
+    if !has('gui_running')
+          finish
+    endif
+
+    let g:gvimrc_loaded = 1
+
+    " Max width
+    set columns=90
+
+    " Color Setting
+    colo molokai
+    set background=dark
+
+{% endhighlight %}
