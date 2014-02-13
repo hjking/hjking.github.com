@@ -4,12 +4,31 @@ date: 2013-09-13 21:39:00
 layout: post
 slug: highlight-code-with-google-code-prettify
 title: "Highlight Code with Google-code-prettify"
-summary: "This post shows how to highlight code with google-code-prettify in Github Pages."
-image: 'why-its-important-to-know-how-to-use-your-tools/cover.png'
-categories: git
-tags: [git, github, jekyll, gist, prettify]
+summary: "This post shows how to highlight code with google-code-prettify in Jekyll."
+categories: jekyll
+tags: [jekyll, prettify]
 ---
 
+本文介绍在Jekyll中使用[google-code-prettify](https://code.google.com/p/google-code-prettify/)来高亮显示代码。
+
+#### 1.下载google-code-prettify
+
+直接到[google-code-prettify](https://code.google.com/p/google-code-prettify/)官网下载代码，解压后放到项目里。
+
+#### 2.加载css和js
+
+    <link rel="stylesheet" href="/assets/google-code-prettify/prettify.css">
+    <script src="/assets/google-code-prettify/prettify.js"></script>
+    <body onload="prettyPrint()">
+
+还可以使用自动加载，具体可参考[Wiki](https://code.google.com/p/google-code-prettify/wiki/GettingStarted)。
+
+#### 3.更换主题
+只要更换加载的prettify.css即可，可以到[这里](http://google-code-prettify.googlecode.com/svn/trunk/styles/index.html)选择自己喜欢的主题，然后在google-code-prettify目录下styles里找到对应的css文件加载即可。比如：
+
+    <link rel="stylesheet" href="/assets/google-code-prettify/styles/desert.css">
+
+#### 4.示例
 
 <code class="prettyprint">
     class Voila {
@@ -18,7 +37,7 @@ tags: [git, github, jekyll, gist, prettify]
             static const string VOILA = "Voila";
 
         // will not interfere with embedded tags.
-}
+    }
 </code>
 
 <pre class="prettyprint linenums">
@@ -46,7 +65,7 @@ tags: [git, github, jekyll, gist, prettify]
 </pre>
 
 
-<pre class="prettyprint lang-vhdl">
+<pre class="prettyprint lang-vhdl linenums">
 
     module encoder(clk, rstn, ilevel, ivld, irdy, imsg, ilen, ovld, ordy, omsg, olen, olevel);
      input             clk;
