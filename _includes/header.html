@@ -1,0 +1,47 @@
+
+    <meta charset="utf-8">
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% if page.description == null %}{{ site.description }}{% else %}{{ page.description }}{% endif %}" />
+    <meta name="author" content="{{ site.author.name }}">
+
+    {% if page.url == "/404.html" %}<meta http-equiv="refresh" content="5; url=/">{% endif %}
+    <title>{% if page.url != "/index.html" %} {{ page.title }} - {% endif %} {{ site.title }} </title>
+
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/rss.xml" />
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/atom.xml" />
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <link href="/assets/css/normalize.css" rel="stylesheet" />
+    <link href="/assets/css/jquery.githubwidget.min.css" rel="stylesheet" />
+    <link href="http://code.jquery.com/ui/1.10.3/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />
+    <!-- bootstrap 2 -->
+    <link href="/assets/bootstrap/2.3.2/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="/assets/bootstrap/2.3.2/css/bootstrap-responsive.min.css" type="text/css" rel="stylesheet" />
+    <!-- bootstrap 3 -->
+    <!-- <link href="/assets/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css" rel="stylesheet" /> -->
+    <!-- syntax highlighting with google -->
+    <!-- <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script> -->
+    <link href="/assets/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="/assets/google-code-prettify/styles/desert.css" type="text/css" rel="stylesheet" media="screen" />
+    <!-- Buttons -->
+    <!-- <link href="/assets/Buttons/css/buttons.css" type="text/css" rel="stylesheet"> -->
+    <!-- Flat UI -->
+    <!-- <link href="/assets/flat-ui/css/flat-ui.css" rel="stylesheet"> -->
+    <!-- Font Awesome -->
+    <!-- <link href="/assets/font-awesome/3.2.1/css/font-awesome.min.css" type="text/css" rel="stylesheet"> -->
+    <link href="/assets/font-awesome/4.0.3/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <!-- Moot style -->
+    <link rel="stylesheet" type="text/css" href="//cdn.moot.it/1/moot.css">
+    <!-- syntax highlighting CSS -->
+    <!-- <link href="/assets/css/syntax.css" rel="stylesheet" /> -->
+    <link href="/assets/css/zenburn.css" rel="stylesheet" />
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata|Droid+Sans|Dancing+Script|Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <!-- Custom CSS-->
+    <link href="/assets/css/custom.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
