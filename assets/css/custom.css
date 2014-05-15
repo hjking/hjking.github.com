@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-h1,h2 {
+h1,h2,h3,h4 {
     border-bottom: 1px solid #ccc;
 }
 
@@ -34,7 +34,6 @@ h2 {
 
 h3 {
     line-height: 26px;
-    color: #777;
     font-size: 24px;
     padding-bottom: 5px;
     margin-bottom: 10px;
@@ -54,6 +53,84 @@ h5 {
 h6 {
     font-size: 16px;
     line-height: 22px;
+}
+
+h2, h2 a {
+    font-size:26px;
+    color:#333 !important;
+}
+h2 a:hover {
+    color:#333 !important;
+    text-decoration: underline;
+}
+
+h3, h4, h5, h6, h3 a, h4 a, h5 a, h6 a {
+    color:#444 !important;
+}
+
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+    color:#444 !important;
+    text-decoration: underline;
+}
+
+a {
+    color:#6491b2;
+    text-decoration:none;
+}
+
+a:hover,
+a:active {
+    color:#4f738d;
+    text-decoration: underline;
+}
+
+a small {
+    font-size:11px;
+    color:#777;
+    margin-top:-0.6em;
+    display:block;
+}
+
+a:hover small {
+    color:#777;
+}
+
+strong {
+    color:#222;
+    font-weight:700;
+}
+
+section {
+    width:600px;
+    float:right;
+    padding-bottom:50px;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+small {
+    font-size:11px;
+}
+
+hr {
+    border:0;
+    background:#e5e5e5;
+    height:1px;
+    margin:0 0 20px;
+}
+
+blockquote {
+    border-left:1px solid #e5e5e5;
+    margin:0;
+    padding:0 0 0 20px;
+    font-style:italic;
+}
+
+p, ul, ol, table, pre, dl {
+    margin:0 0 20px;
 }
 
 p {
@@ -328,4 +405,33 @@ img.img-rounded {
     background:#57A957;
     border:1px solid #4C964D;
     color:#FFF;
+}
+
+/* =============================================================================
+   scroll to top
+   ========================================================================== */
+
+#gotop{
+  display:block;
+  width:36px;
+  height:36px;
+  position:fixed;
+  bottom:40px;
+  right:30px;
+  border-radius:7px;
+  text-decoration:none;
+  display:none;
+  background-color:#999999;
+}
+#gotop span{
+  display:block;
+  color:#dddddd;
+}
+#gotop span:hover{
+  color:#cccccc;
+}
+#gotop span{
+  font-size:24px;
+  text-align:center;
+  margin-top:7px;
 }

@@ -1,5 +1,8 @@
-<footer class="footer">
-  <div class="container">
+
+<div class="container-narrow">
+
+<footer>
+<!--   <div class="container"> -->
     <p class="pull-right">
         {% if page.next.url %}
             <a href="{{page.next.url}}" title="Newer Post: {{page.next.title}}">&laquo; Newer Post</a>
@@ -11,15 +14,15 @@
     </p>
     <p class="muted">
         <small>
-        Thanks for stopping by.<br>
         {% assign first_post = site.posts | last %}
-        Copyright &copy; {{ first_post.date | date: "%Y" }} ~ {{ site.time | date: "%Y" }} {{ site.author.name }}. All rights reserved.<br>
+        Copyright &copy; {{ first_post.date | date: "%Y" }} ~ {{ site.time | date: "%Y" }} {{ site.author.name }}.
+         Powered by <a href="{{ site.links.jekyll }}" target="_blank">Jekyll</a>, <a href="{{ site.links.bootstrap }}" target="_blank">Twitter Bootstrap</a>, <a href="http://jekyllbootstrap.com" target="_blank">Jekyll Bootstrap</a> and <a href="{{ site.links.github_pages }}" target="_blank">GitHub Pages</a>.<br>
         The source code of this site is <a href="{{ site.links.blog_repo }}" target="_blank">HERE</a>
         <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user={{ site.author.github }}&repo={{ site.author.github }}.github.com&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>&nbsp;
         <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user={{ site.author.github }}&repo={{ site.author.github }}.github.com&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
         <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}" data-count="horizontal" data-via="{{ site.author.twitter }}" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
         <br>
-        Powered by <a href="{{ site.links.jekyll }}" target="_blank">Jekyll</a>, <a href="{{ site.links.bootstrap }}" target="_blank">Twitter Bootstrap</a>, <a href="http://jekyllbootstrap.com" target="_blank">Jekyll Bootstrap</a> and <a href="{{ site.links.github_pages }}" target="_blank">GitHub Pages</a>.<br>
+
         </small>
         <br>
         <br>
@@ -59,9 +62,15 @@
     </div> -->
 
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-  </div>
+<!--   </div> -->
+
 </footer>
 
+</div>
+
+  <a id="gotop" href="#">
+    <span>▲</span>
+  </a>
 
 <!-- Google Analytics -->
 {% include analytics %}
