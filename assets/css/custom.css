@@ -296,6 +296,42 @@ ul.buttons li {
     float:left;
 }
 
+img {
+  max-width: 97.5%;
+  margin: 15px auto;
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+img.avatar {
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    width:72px;
+    height:72px;
+}
+
+img.profile {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    width:100px;
+    height:100px;
+}
+
+img.pull-right {
+    max-width: 40%;
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+img.pull-left {
+    max-width: 40%;
+    float: right;
+    margin: 0 1em 1em 0;
+}
+
 img.floatLeft {
     float: left;
     margin: 4px 8px 4px 0px;
