@@ -128,3 +128,6 @@ sociallink:
   - title: 500px
     href: http://500px.com/hjking
     class: fa fa-picture-o
+
+# Custom vars
+cover:      /assets/img/cover.jpg
