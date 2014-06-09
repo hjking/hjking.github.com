@@ -1,66 +1,76 @@
 ---
-layout: page
+layout: default
 sidebar_posts: related
 ---
 
 <div class="content">
-    <div>
-        <h2>{{ page.title }}</h2>
-    </div>
+    <div class="row-fluid">
+        <div class="span8 columns">
+          <div id="article">
+            <div>
+                <h2>{{ page.title }}</h2>
+            </div>
 
-    <div>
-        <hr />
-        <p>
-        <i class="icon-calendar"></i> {{ page.date | date: "%A, %B %e, %Y" }}
-        | <i class="fa fa-comments"></i> <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}">View Comments</a>
-        <br>
-        <i class="icon-folder-open"></i> Category :
-        <a href="/categories.html#{{ page.categories }}" title="View posts in category &quot;{{ page.categories }}&quot;"><span class="label label-info">{{ page.categories }}</span></a>
-        &sdot; 
-        <i class="icon-tags"></i> Tags :
-        {% for tag in page.tags %}
-            <!-- <a href="/tags/{{ tag }}" rel="tooltip" title="View pages tagged with &quot;{{ tag }}&quot;"> -->
-            <a href="/{{ site.tags_path }}/#{{ tag }}" rel="tooltip" title="View posts tagged with &quot;{{ tag }}&quot;">
-            <span class="label label-info">{{ tag }}</span>
-            </a>
-            {% if forloop.last != true %}
+            <div>
+                <hr />
+                <p>
+                <i class="icon-calendar"></i> {{ page.date | date: "%A, %B %e, %Y" }}
+                | <i class="fa fa-comments"></i> <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}">View Comments</a>
+                <br>
+                <i class="icon-folder-open"></i> Category :
+                <a href="/categories.html#{{ page.categories }}" title="View posts in category &quot;{{ page.categories }}&quot;"><span class="label label-info">{{ page.categories }}</span></a>
+                &sdot;
+                <i class="icon-tags"></i> Tags :
+                {% for tag in page.tags %}
+                    <!-- <a href="/tags/{{ tag }}" rel="tooltip" title="View pages tagged with &quot;{{ tag }}&quot;"> -->
+                    <a href="/{{ site.tags_path }}/#{{ tag }}" rel="tooltip" title="View posts tagged with &quot;{{ tag }}&quot;">
+                    <span class="label label-info">{{ tag }}</span>
+                    </a>
+                    {% if forloop.last != true %}
+                    {% endif %}
+                {% endfor %}
+                </p>
+
+                <hr>
+                {{ content }}
+                <hr>
+            </div>
+          </div>
+
+
+            <!-- Previous/Next Post Link -->
+            <div>
+                <p>
+                {% if page.next %}
+                    <a class="next" href="{{ page.next.url }}" rel="bookmark"><i class="icon-backward"></i> {{ page.next.title | truncatewords:5 }}</a>
+                {% endif %}
+                {% if page.previous %}
+                    <a class="prev" href="{{ page.previous.url }}" rel="bookmark" style="float:right">{{ page.previous.title | truncatewords:5 }} <i class="icon-forward"></i></a>
+                {% endif %}
+                </p>
+                <br>
+            </div>
+            <!-- Previous/Next Post Link -->
+
+            <!-- JiaThis Button BEGIN -->
+            {% include sharing %}
+            <!-- JiaThis Button END -->
+
+            <hr />
+
+            <!-- Comments -->
+            {% if page.comments %}
+            <div>
+                <h3>Comments Section</h3>
+                {% include comments %}
+            </div>
             {% endif %}
-        {% endfor %}
-        </p>
+            <!-- Comments -->
+        </div>
 
-        <hr>
-        {{ content }}
-        <hr>
+        <div class="span4 columns">
+            {% include sidebar_related-posts.html %}
+            {% include sidebar_tags.html %}
+        </div>
     </div>
-
-
-    <!-- Previous/Next Post Link -->
-    <div>
-        <p>
-        {% if page.next %}
-            <a class="next" href="{{ page.next.url }}" rel="bookmark"><i class="icon-backward"></i> {{ page.next.title | truncatewords:5 }}</a>
-        {% endif %}
-        {% if page.previous %}
-            <a class="prev" href="{{ page.previous.url }}" rel="bookmark" style="float:right">{{ page.previous.title | truncatewords:5 }} <i class="icon-forward"></i></a>
-        {% endif %}
-        </p>
-        <br>
-    </div>
-    <!-- Previous/Next Post Link -->
-
-    <!-- JiaThis Button BEGIN -->
-    {% include sharing %}
-    <!-- JiaThis Button END -->
-
-    <hr />
-
-    <!-- Comments -->
-    {% if page.comments %}
-    <div>
-        <h3>Comments Section</h3>
-        {% include comments %}
-    </div>
-    {% endif %}
-    <!-- Comments -->
-
 </div>
