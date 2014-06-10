@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html class="fuelux" lang="en">
 
-  <!----head -->
+  <!-- head -->
   {% include head.html %}
 
   <body id="{% include page-id %}" data-spy="scroll" data-target=".subnav" data-offset="50" padding="40" onload="prettyPrint()">
+    
     {% include navigation.html %}
+
+    <!-- head image -->
+    <!-- {% if page.image.feature %}
+    <div class="entry-header">
+      {% if page.image.credit %}
+        <div class="image-credit">Image source: {% if page.image.creditlink %}<a href="{{ page.image.creditlink }}">{% endif %}{{ page.image.credit }}{% if page.image.creditlink %}</a>{% endif %}
+        </div>
+      {% endif %}
+      <div class="entry-image">
+        <img src="/assets/img/{{ page.image.feature }}" alt="{{ page.title }}">
+      </div>
+    </div>
+    {% endif %} -->
 
     {{ content }}
 

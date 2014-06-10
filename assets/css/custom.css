@@ -471,3 +471,14 @@ img.img-rounded {
   text-align:center;
   margin-top:7px;
 }
+
+
+.pagination {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.pagination li {
+  padding-right: 4px;
+  padding-left: 4px;
+}

@@ -28,7 +28,7 @@ comments:
     uyan:
 
 analytics:
-    provider: google
+    provider: baidu
     google:
         tracking_id: 'UA-6627086-2'
         domain: 'hjking.github.io'
