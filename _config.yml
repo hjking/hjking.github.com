@@ -39,6 +39,7 @@ analytics:
 about_path: /about.html
 tags_path: /tags.html
 categories_path: /categories.html
+archive_path: /all_archives.html
 category: category
 
 links:
