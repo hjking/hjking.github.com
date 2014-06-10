@@ -3,25 +3,11 @@ layout: default
 sidebar_posts: related
 ---
 
-<!-- <div class="container-fluid">
-    <div class="content">
-        <div class="row-fluid">
-            <div class="span8 columns">
-                {{ content }}
-            </div>
-            <div class="span4 columns">
-
-                {% include sidebar_related-posts.html %}
-
-                {% include sidebar_tags.html %}
-
-            </div>
-        </div>
-    </div>
-</div> -->
-
 <div id="middle">
-    <div id="article">
+    <div id="page">
+        <h1 class="page-title">{{ page.title }}</h1>
+        <section class="page-content">
         {{ content }}
+        </section>
     </div>
 </div>

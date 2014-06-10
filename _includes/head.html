@@ -5,8 +5,15 @@
     <meta name="description" content="{% if page.description == null %}{{ site.description }}{% else %}{{ page.description }}{% endif %}" />
     <meta name="author" content="{{ site.author.name }}">
 
-    {% if page.url == "/404.html" %}<meta http-equiv="refresh" content="5; url=/">{% endif %}
-    <title>{% if page.url != "/index.html" %} {{ page.title }} - {% endif %} {{ site.title }} </title>
+    {% if page.url == "/404.html" %}
+        <meta http-equiv="refresh" content="5; url=/">
+    {% endif %}
+    <title>
+      {% if page.url != "/index.html" %}
+        {{ page.title }} -
+      {% endif %}
+      {{ site.title }}
+    </title>
 
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/rss.xml" />
     <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/atom.xml" />

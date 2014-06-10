@@ -7,8 +7,8 @@ sidebar_posts: related
     <div class="row-fluid">
         <div class="span8 columns">
           <div id="article">
-            <div>
-                <h2>{{ page.title }}</h2>
+            <div class="post-title">
+                <h2 class="post-title">{{ page.title }}</h2>
             </div>
 
             <div>
@@ -32,14 +32,16 @@ sidebar_posts: related
                 </p>
 
                 <hr>
+                <section class="post-content">
                 {{ content }}
+                </section>
                 <hr>
             </div>
           </div>
 
-
+          <footer class="post-footer">
             <!-- Previous/Next Post Link -->
-            <div>
+            <section class="link">
                 <p>
                 {% if page.next %}
                     <a class="next" href="{{ page.next.url }}" rel="bookmark"><i class="icon-backward"></i> {{ page.next.title | truncatewords:5 }}</a>
@@ -48,24 +50,28 @@ sidebar_posts: related
                     <a class="prev" href="{{ page.previous.url }}" rel="bookmark" style="float:right">{{ page.previous.title | truncatewords:5 }} <i class="icon-forward"></i></a>
                 {% endif %}
                 </p>
-                <br>
-            </div>
+            </section>
             <!-- Previous/Next Post Link -->
 
             <!-- JiaThis Button BEGIN -->
+            <section class="social">
+            <p>
             {% include sharing %}
+            </p>
+            </section>
             <!-- JiaThis Button END -->
 
             <hr />
 
             <!-- Comments -->
             {% if page.comments %}
-            <div>
+            <section class="comment">
                 <h3>Comments Section</h3>
                 {% include comments %}
-            </div>
+            </section>
             {% endif %}
             <!-- Comments -->
+          </footer>
         </div>
 
         <div class="span4 columns">

@@ -28,7 +28,7 @@ comments:
     uyan:
 
 analytics:
-    provider: baidu
+    provider: google
     google:
         tracking_id: 'UA-6627086-2'
         domain: 'hjking.github.io'
@@ -36,6 +36,7 @@ analytics:
         site_id :
 
 
+about_path: /about.html
 tags_path: /tags.html
 categories_path: /categories.html
 category: category
@@ -85,25 +86,25 @@ sharing :
 sociallink:
   - title: LinkedIn
     href: http://www.linkedin.com/in/kinghom
-    class: fa fa-linkedin
+    class: fa fa-linkedin-square
   - title: GitHub
     href: https://github.com/hjking
-    class: fa fa-github-alt
+    class: fa fa-github-square
   - title: Bitbucket
     href: https://www.bitbucket.org/kinghom
-    class: fa fa-bitbucket
+    class: fa fa-bitbucket-square
   - title: Stack Overflow
     href: http://stackoverflow.com/users/1605724/hjking
     class: fa fa-stack-overflow
   - title: Facebook
     href: https://www.facebook.com/kin9hom
-    class: fa fa-facebook
+    class: fa fa-facebook-square
   - title: Twitter
     href: https://twitter.com/hon9jin
-    class: fa fa-twitter
+    class: fa fa-twitter-square
   - title: Google+
     href: https://plus.google.com/103205960311343871154/posts
-    class: fa fa-google-plus
+    class: fa fa-google-plus-square
   - title: Instagram
     href: http://instagram.com/kinghom
     class: fa fa-instagram
@@ -124,7 +125,7 @@ sociallink:
     class: fa fa-music
   - title: Tumblr
     href: http://kinghom.tumblr.com
-    class: fa fa-tumblr
+    class: fa fa-tumblr-square
   - title: 500px
     href: http://500px.com/hjking
     class: fa fa-picture-o
