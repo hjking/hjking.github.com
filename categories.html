@@ -27,15 +27,14 @@ title: "Categories"
 <hr />
 
 
-<ul>
-    {% for category in site.categories %}
+{% for category in site.categories %}
     <a name="{{ category | first }}"></a>
-    <h4 class="cat-item cat-item-{{category | last | size }}">
+    <h4 id="{{ category | first }}">
         <i class="icon-folder-open"></i><a href="/category/{{category | first}}/index.html" title="View all posts under {{category | first}}"> <strong>{{category | first}} ({{category | last | size }})</strong></a></h4>
-    <dl class="unstyled" id="{{ category[0] }}">
+    <ul id="{{ category[0] }}">
         {% for post in category[1] %}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
         {% endfor %}
-    </dl>
-    {% endfor %}
-</ul>
+    </ul>
+{% endfor %}
+

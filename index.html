@@ -7,55 +7,56 @@ image:
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
+  <section class="index">
     {% include post_preview.html %}
+  </section>
 {% endfor %}
 
 <!-- Pagination links -->
-
-<!-- <div class="pull-right"> -->
+<section class="pagination">
 <div class="pagination">
 <!-- {% if paginator.total_pages > 1 %} -->
-  {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-      <a class="btn" href="/">Home</a>
-      <a class="btn" href="/">&laquo; Newer</a>
+  <ul class="inline">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <li><a class="btn btn-outline" href="/">Home</a></li>
+        <li><a class="btn btn-outline" href="/">&laquo; Newer</a></li>
+      {% else %}
+        <li><a class="btn btn-outline" href="/">Home</a></li>
+        <li><a class="btn btn-outline" href="/page{{paginator.previous_page}}/">&laquo; Newer</a></li>
+      {% endif %}
     {% else %}
-      <a class="btn" href="/">Home</a>
-      <a class="btn" href="/page{{paginator.previous_page}}/">&laquo; Newer</a>
+      <li><a class="btn btn-outline disabled" href="/">Home</a></li>
+      <li><a class="btn btn-outline disabled">&laquo; Newer</a></li>
     {% endif %}
-  {% else %}
-    <span><a class="btn disabled" href="/">Home</a></span>
-    <span><a class="btn disabled">&laquo; Newer</a></span>
-  {% endif %}
 
-  <!-- <span><a class="btn disabled">Page: {{paginator.page}} of {{paginator.total_pages}}</a></span> -->
-  <ul class="inline-list">
     <li>
       {% if paginator.page == 1 %}
-        <span class="current-page">1</span>
+        <a class="btn btn-outline disabled">1</a>
       {% else %}
-        <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">1</a>
+        <a class="btn btn-outline" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">1</a>
       {% endif %}
     </li>
     {% for count in (2..paginator.total_pages) %}
       <li>
         {% if count == paginator.page %}
-          <span class="current-page">{{ count }}</span>
+          <a class="btn btn-outline disabled">{{ count }}</a>
         {% else %}
-          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}">{{ count }}</a>
+          <a class="btn btn-outline" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}">{{ count }}</a>
         {% endif %}
       </li>
     {% endfor %}
+
+
+    {% if paginator.next_page %}
+      <li><a class="btn btn-outline" href="/page{{paginator.next_page}}/">Older &raquo;</a></li>
+      <li><a class="btn btn-outline" href="/page{{paginator.total_pages}}/">Last</a></li>
+    {% else if paginator.page == paginator.total_pages %}
+      <li><a class="btn btn-outline disabled">Older &raquo;</a></li>
+      <li><a class="btn btn-outline disabled">Last</a></li>
+    {% endif %}
   </ul>
-
-  {% if paginator.next_page %}
-    <a class="btn" href="/page{{paginator.next_page}}/">Older &raquo;</a>
-    <a class="btn" href="/page{{paginator.total_pages}}/">Last</a>
-  {% else if paginator.page == paginator.total_pages %}
-    <span><a class="btn disabled">Older &raquo;</a></span>
-    <span><a class="btn disabled">Last</a></span>
-  {% endif %}
-
 <!-- {% endif %} -->
 </div>
+</section>
 <!-- </div> -->
