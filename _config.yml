@@ -21,6 +21,9 @@ author:
 
 paginate: 7
 
+blog:
+    cover: true
+
 comments:
     provider: disqus
     disqus:
@@ -47,6 +50,7 @@ links:
     bitbucket: https://www.bitbucket.org/kinghom
     blog: http://hjking.github.io
     blog_repo: https://github.com/hjking/hjking.github.com
+    blog_zip: https://github.com/hjking/hjking.github.com/archive/master.zip
     feedback: https://github.com/hjking/hjking.github.com/issues/new
     bootstrap: http://getbootstrap.com
     jekyll: http://jekyllrb.com

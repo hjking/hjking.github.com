@@ -2,7 +2,8 @@
 <div class="container-narrow">
 
 <footer class="site-footer" style="background-image: url({{ site.cover }}); background-position: bottom; height: 60px;" data-stellar-background-ratio="0.5" data-stellar-horizontal-offset="50" data-stellar-vertical-offset="50">
-    <p class="muted">
+    <!-- <p class="muted"> -->
+    <div class="container">
         <small>
         {% assign first_post = site.posts | last %}
         Copyright &copy; {{ first_post.date | date: "%Y" }} ~ {{ site.time | date: "%Y" }} {{ site.author.name }}.
@@ -17,7 +18,7 @@
 
         </small>
         <br>
-    </p>
+    </div>
 
 </footer>
 

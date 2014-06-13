@@ -3,6 +3,7 @@ layout: page
 title: About
 ---
 
+<section id="about">
 ### About Me
 Hey there! I'm HJKing. Welcome to my blog built on github pages. I'm an ASIC Design Engineer from China, also an EDA server administrator.
 
@@ -17,9 +18,17 @@ Have questions or suggestions? Feel free to <a href="{{ site.links.feedback }}" 
 
 Thanks for reading!
 
+<p>
+<a href="{{ site.links.blog_zip }}" class="btn">Download</a>
+ · 
+<a href="{{ site.links.blog_repo }}" target="_blank" class="btn">View in Github</a>
+ · 
+<a href="{{ site.links.feedback }}" target="_blank" class="btn">Feedback</a> 
+</p>
+
+
 ### Follow me:
 <div id="stalker">
-
   <ul class="inline">
   <li><a title="Email Me" href="mailto:{{ site.author.email }}" target="_blank">
     <i class="fa fa-envelope"></i>
@@ -36,5 +45,6 @@ Thanks for reading!
     <i class="fa fa-rss-square"></i>
   </a>
   </ul>
-
 </div>
+
+</section>

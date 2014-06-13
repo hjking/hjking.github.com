@@ -2,40 +2,39 @@
 
 <div class="row-fluid well well-small">
 
-<div class="span2">
-  <div class="article-date">
-    <a href="{{ post.url }}"><span class="radius secondary label">{{ post.date | date_to_string }}</span></a>
-  </div>
-</div>
-
-<div class="span10">
-  <header>
-  <div class="article-title">
-    <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
-  </div>
-  <div class="article-info">
-	<div class="timestamp in"><span class="in">{% include post_info_bar %}</span></div>
-  </div>
-  </header>
-
-  <hr>
-
-  <div class="article-summary">
-    <p>
-        {% if post.content contains "<!-- more -->" %}
-            {{ post.content | split:'<!-- more -->' |first }}
-        {% else if post.summary %}
-            {{post.summary}}
-        {% else %}
-            {{ post.content | markdownify  | truncatewords:50 }}
-        {% endif %}
-
-        <a class="btn btn-default btn-small pull-right" href="{{ post.url }}"><span class="readmore">Read More &raquo; </span></a>
-
-        <div class="clearfix"></div>
-    </p>
+  <div class="span2">
+    <div class="article-date">
+      <a href="{{ post.url }}"><span class="radius secondary label">{{ post.date | date_to_string }}</span></a>
+    </div>
   </div>
 
-</div>
+  <div class="span10">
+    <header>
+    <div class="article-title">
+      <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+    </div>
+    <div class="article-info">
+  	<div class="timestamp in"><span class="in">{% include post_info_bar %}</span></div>
+    </div>
+    </header>
+
+    <hr>
+
+    <div class="article-summary">
+      <p>
+          {% if post.content contains "<!-- more -->" %}
+              {{ post.content | split:'<!-- more -->' |first }}
+          {% else if post.summary %}
+              {{post.summary}}
+          {% else %}
+              {{ post.content | markdownify  | truncatewords:50 }}
+          {% endif %}
+
+          <a class="btn btn-default btn-small pull-right" href="{{ post.url }}"><span class="readmore">Read More &raquo; </span></a>
+
+      </p>
+    </div>
+
+  </div>
 
 </div>
