@@ -5,7 +5,7 @@ sidebar_posts: related
 
 <div class="container-fluid">
     <div class="row-fluid">
-        <div class="span8 columns">
+        <div class="span9 columns">
           <div id="article">
             <div class="post-title">
                 <h2 class="post-title">{{ page.title }}</h2>
@@ -32,7 +32,7 @@ sidebar_posts: related
                 </p>
 
                 <hr>
-                <section class="post-content">
+                <section id="post-content">
                 {{ content }}
                 </section>
                 <hr>
@@ -41,32 +41,36 @@ sidebar_posts: related
 
           <footer class="post-footer">
             <!-- Previous/Next Post Link -->
-            <section class="link">
-                <p>
-                {% if page.next %}
-                    <a class="next" href="{{ page.next.url }}" rel="bookmark"><i class="icon-backward"></i> {{ page.next.title | truncatewords:5 }}</a>
-                {% endif %}
-                {% if page.previous %}
-                    <a class="prev" href="{{ page.previous.url }}" rel="bookmark" style="float:right">{{ page.previous.title | truncatewords:5 }} <i class="icon-forward"></i></a>
-                {% endif %}
-                </p>
+            <section id="link">
+            <div class="pagination">
+                <ul class="inline">
+                    <li>
+                        {% if page.next %}
+                            <a class="next" href="{{ page.next.url }}" rel="bookmark"><i class="icon-backward"></i> {{ page.next.title | truncatewords:5 }}</a>
+                        {% endif %}
+                    <li>
+                    <li>
+                    <li>
+                        {% if page.previous %}
+                            <a class="prev" href="{{ page.previous.url }}" rel="bookmark">{{ page.previous.title | truncatewords:5 }} <i class="icon-forward"></i></a>
+                        {% endif %}
+                </ul>
+            </div>
             </section>
             <!-- Previous/Next Post Link -->
 
             <!-- JiaThis Button BEGIN -->
-            <section class="social">
+            <section id="social">
             <p>
             {% include sharing %}
             </p>
             </section>
             <!-- JiaThis Button END -->
-
-            <hr />
-
+            <br>
             <!-- Comments -->
             {% if page.comments %}
-            <section class="comment">
-                <h3>Comments Section</h3>
+            <section id="comment">
+                <h3>Comments</h3>
                 {% include comments %}
             </section>
             {% endif %}
@@ -74,9 +78,14 @@ sidebar_posts: related
           </footer>
         </div>
 
-        <div class="span4 columns">
-            {% include sidebar_related-posts.html %}
-            {% include sidebar_tags.html %}
+        <div class="span3 columns">
+            <!-- {% include sidebar_related-posts.html %}
+            {% include sidebar_tags.html %} -->
+            <div class="toc" id="toc"></div>
         </div>
     </div>
 </div>
+
+<script>
+    $('#toc').toc();
+</script>

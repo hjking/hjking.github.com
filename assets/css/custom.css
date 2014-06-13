@@ -122,7 +122,7 @@ blockquote {
     font-style:italic;
 }
 
-p, ol, table, pre, dl {
+p, table, pre, dl {
     margin:0 0 20px;
 }
 
@@ -483,8 +483,9 @@ img.img-rounded {
 }
 
 .blog-cover h1{
+  font-family: Lato;
   font-size: 46px;
-  line-height: 50px;
+  line-height: 150px;
   margin-top: 0px;
   margin-bottom: .15em;
 }
@@ -500,4 +501,14 @@ img.img-rounded {
   display: inline-block;
   margin: 0 0.5em;
   border-bottom: 2px solid #ccc;
+}
+
+.container-fluid {
+  padding-top: 10px;
+}
+
+#link > div {
+  width: 90%;
+  height: 25px;
+  margin: 5px;
 }

@@ -6,17 +6,18 @@ image:
 ---
 
 <!-- This loops through the paginated posts -->
+<section id="index">
 {% for post in paginator.posts %}
   <section class="index">
     {% include post_preview.html %}
   </section>
 {% endfor %}
+</section>
 
 <!-- Pagination links -->
-<section class="pagination">
+<section id="pagination">
 <div class="pagination">
-<!-- {% if paginator.total_pages > 1 %} -->
-  <ul class="inline">
+<!-- {% if paginator.total_pages > 1 %} -->  <ul class="inline">
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
         <li><a class="btn btn-outline" href="/">Home</a></li>
