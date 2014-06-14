@@ -1,4 +1,3 @@
-<header class="header-wrap" id='top'>
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container-narrow">
@@ -9,67 +8,59 @@
                 </a>
                 <!-- <a class="brand" href="{{ site.url }}">{{ site.title }}</a> -->
                 <a class="brand" href="/index.html">  {{ site.title }}</a>
-                <div class="nav-collapse">
+                <div class="nav-collapse collapse navbar-responsive-collapse">
                     <ul class="nav">
-                        <li class="active"><a href="/index.html"><i class="fa fa-home"></i> Home</a></li>
+                        <li class="active">
+                            <a href="/index.html"><i class="fa fa-home"></i> Home</a>
+                        </li>
 
                         <!-- Linux -->
-                        <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-list-ul"></i> Linux <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class=""><a href="/category/shell/index.html" title="Shell">Shell</a></li>
-                            <li class=""><a href="/category/vim/index.html" title="Vim">Vim</a></li>
-                            <li class=""><a href="/category/emacs/index.html" title="Emacs">Emacs</a></li>
-                            <li class=""><a href="/category/git/index.html" title="Emacs">Git</a></li>
-                            <li class=""><a href="/category/admin/index.html" title="Admin">Admin</a></li>
-                        </ul> <!--/.dropdown-menu -->
-                        </li> <!--/.dropdown -->
+<!--                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-list-ul"></i> Linux <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/category/shell/index.html" title="Shell">Shell</a></li>
+                                <li><a href="/category/vim/index.html" title="Vim">Vim</a></li>
+                                <li><a href="/category/emacs/index.html" title="Emacs">Emacs</a></li>
+                                <li><a href="/category/git/index.html" title="Emacs">Git</a></li>
+                                <li><a href="/category/admin/index.html" title="Admin">Admin</a></li>
+                            </ul>
+                        </li> -->
 
                         <!-- Programming -->
-                        <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-list-ul"></i> Programing <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class=""><a href="/category/python/index.html" title="Python">Python</a></li>
-                            <li class=""><a href="/category/perl/index.html" title="Perl">Perl</a></li>
-                            <li class=""><a href="/category/c/index.html" title="C">C</a></li>
-                            <li class=""><a href="/category/web/index.html" title="Web">Web</a></li>
-                        </ul> <!--/.dropdown-menu -->
-                        </li> <!--/.dropdown -->
+<!--                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-list-ul"></i> Programing <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/category/python/index.html" title="Python">Python</a></li>
+                                <li><a href="/category/perl/index.html" title="Perl">Perl</a></li>
+                                <li><a href="/category/c/index.html" title="C">C</a></li>
+                                <li><a href="/category/web/index.html" title="Web">Web</a></li>
+                            </ul>
+                        </li> -->
 
                         <!-- IC -->
-                        <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-list-ul"></i> IC <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class=""><a href="/category/eda/index.html" title="EDA">EDA</a></li>
-                            <li class=""><a href="/category/verilog/index.html" title="Verilog">Verilog</a></li>
-                            <li class=""><a href="/category/verification/index.html" title="Verification">Verification</a></li>
-                            <li class=""><a href="/category/design/index.html" title="Design">Design</a></li>
-                        </ul> <!--/.dropdown-menu -->
-                        </li> <!--/.dropdown -->
+<!--                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-list-ul"></i> IC <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/category/eda/index.html" title="EDA">EDA</a></li>
+                                <li><a href="/category/verilog/index.html" title="Verilog">Verilog</a></li>
+                                <li><a href="/category/verification/index.html" title="Verification">Verification</a></li>
+                                <li><a href="/category/design/index.html" title="Design">Design</a></li>
+                            </ul>
+                        </li> -->
 
                         <!-- Projects -->
-                        <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-list-ul"></i> Projects <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class=""><a href="https://github.com/kinghom/mydotfiles" title="Go to my dotfiles github page" target="_blank">Dotfiles</a></li>
-                            <li class=""><a href="https://github.com/kinghom/myscript" title="Go to my scripts github page" target="_blank">Scripts</a></li>
-                            <li class=""><a href="https://github.com/kinghom/mydotvim" title="Go to my .vim github page" target="_blank">Dotvim</a></li>
-                            <li class=""><a href="https://github.com/kinghom/Feedback" title="Go to my Feedback github page" target="_blank">Feedback</a></li>
-                        </ul> <!--/.dropdown-menu -->
-                        </li> <!--/.dropdown -->
+                        <li><a href="/project.html"><i class="fa fa-code"></i> Projects </a></li>
 
                         <!-- Archives -->
-                        <li class=""><a href="{{ site.archive_path }}"><i class="fa fa-tags"></i> Archives </a></li>
+                        <li><a href="{{ site.archive_path }}"><i class="fa fa-archive"></i> Archives </a></li>
 
-                        <li class=""><a href="{{ site.about_path }}"><i class="fa fa-male"></i> About </a></li>
+                        <li><a href="{{ site.about_path }}"><i class="fa fa-male"></i> About </a></li>
 
                     </ul> <!--/.nav -->
                 </div> <!--/.nav-collapse -->
@@ -80,4 +71,3 @@
             </div> <!-- /.container -->
         </div> <!--/.navbar-inner-->
     </div> <!--/.navbar-->
-</header>
