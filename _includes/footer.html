@@ -1,12 +1,9 @@
 
-<div class="container-narrow">
+<footer>
 
-<footer class="site-footer" style="background-image: url({{ site.cover }}); background-position: bottom; height: 60px;" data-stellar-background-ratio="0.5" data-stellar-horizontal-offset="50" data-stellar-vertical-offset="50">
-    <!-- <p class="muted"> -->
-    <div class="container">
         <small>
         {% assign first_post = site.posts | last %}
-        Copyright &copy; {{ first_post.date | date: "%Y" }} ~ {{ site.time | date: "%Y" }} {{ site.author.name }}.
+        Copyright &copy; {{ first_post.date | date: "%Y" }} ~ {{ site.time | date: "%Y" }} <a href="/about.html">{{ site.author.name }}</a>.
         <br>
         Powered by <a href="{{ site.links.jekyll }}" target="_blank">Jekyll</a>, <a href="{{ site.links.bootstrap }}" target="_blank">Twitter Bootstrap</a>, <a href="http://jekyllbootstrap.com" target="_blank">Jekyll Bootstrap</a> and <a href="{{ site.links.github_pages }}" target="_blank">GitHub Pages</a>.
          <!-- <br> -->
@@ -18,12 +15,5 @@
 
         </small>
         <br>
-    </div>
 
 </footer>
-
-</div>
-
-<a id="gotop" href="#">
-    <span>▲</span>
-</a>

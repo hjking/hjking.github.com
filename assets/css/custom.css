@@ -419,12 +419,16 @@ img.img-rounded {
   font-family: "Dancing Script", Inconsolata, sans-serif;
 }
 
-#footer {
-  margin-top: 20px;
-  padding-bottom: 10px;
+footer {
+  background: #ccc;
   text-align: center;
 }
 
+#footer {
+  margin-top: 21px;
+  padding-bottom: 2px;
+  text-align: center;
+}
 
 /* tag_box ======================================================== */
 
@@ -461,7 +465,7 @@ img.img-rounded {
 /* =============================================================================
    scroll to top
    ========================================================================== */
-
+/*
 #gotop{
   display:block;
   width:36px;
@@ -486,14 +490,12 @@ img.img-rounded {
   text-align:center;
   margin-top:7px;
 }
-
+*/
 
 .pagination {
   margin: 20px 10px;
   text-align: center;
 }
-
-
 
 .blog-cover {
   height: 160px;
@@ -545,3 +547,18 @@ div.post_older {
   text-align: right;
   float: right;
 }
+
+/* =============================================================================
+   scrollup.js
+   ========================================================================== */
+/*
+
+/* Image style */
+#scrollUp {
+  bottom: 80px;
+  right: 20px;
+  height: 38px;  /* Height of image */
+  width: 38px; /* Width of image */
+  background: url(/assets/img/top.png) no-repeat;
+}
+

@@ -6,7 +6,9 @@
 
   <body id="{% include page-id %}" data-spy="scroll" data-target=".subnav" data-offset="50" padding="40" onload="prettyPrint()">
 
+    <header class="header-wrap" id='top'>
     {% include navigation.html %}
+    </header>
 
     <!-- head image -->
     {% if site.blog.cover %}
@@ -20,12 +22,14 @@
     {% endif %}
 
     <div id="content">
+    <div class="content container">
     {{ content }}
     </div>
-
-    <div id="footer">
-    {% include footer.html %}
     </div>
+
+<!--     <div id="footer" class="footer"> -->
+    {% include footer.html %}
+<!--     </div> -->
 
     {% include scripts.html %}
 
