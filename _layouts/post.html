@@ -43,18 +43,19 @@ sidebar_posts: related
             <!-- Previous/Next Post Link -->
             <section id="link">
             <div class="pagination">
-                <ul class="inline">
-                    <li>
+                <div class="pre_next">
+                    <div class="post_newer">
                         {% if page.next %}
                             <a class="next" href="{{ page.next.url }}" rel="bookmark"><i class="icon-backward"></i> {{ page.next.title | truncatewords:5 }}</a>
                         {% endif %}
-                    <li>
-                    <li>
-                    <li>
+                    </div>
+                    <div class="post_older">
                         {% if page.previous %}
                             <a class="prev" href="{{ page.previous.url }}" rel="bookmark">{{ page.previous.title | truncatewords:5 }} <i class="icon-forward"></i></a>
                         {% endif %}
-                </ul>
+                    </div>
+                </div>
+
             </div>
             </section>
             <!-- Previous/Next Post Link -->

@@ -9,13 +9,21 @@ body {
     background-color: #F0F0F0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Droid Sans", "Yanone Kaffeesatz", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #333;
     font-weight: bold;
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
     border-bottom: 1px solid #ccc;
 }
 
@@ -64,7 +72,14 @@ h2 a:hover {
     text-decoration: underline;
 }
 
-h3, h4, h5, h6, h3 a, h4 a, h5 a, h6 a {
+h3,
+h4,
+h5,
+h6,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
     color:#444 !important;
 }
 
@@ -122,7 +137,10 @@ blockquote {
     font-style:italic;
 }
 
-p, table, pre, dl {
+p,
+table,
+pre,
+dl {
     margin:0 0 20px;
 }
 
@@ -133,7 +151,10 @@ p {
     line-height: 20px;
 }
 
-input, button, select, textarea {
+input,
+button,
+select,
+textarea {
     font-family: "Droid Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
@@ -197,7 +218,8 @@ ol#search-results li {
     filter: none;
 }
 
-.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+.navbar-inverse .brand,
+.navbar-inverse .nav > li > a {
     color: #999999;/* CHANGE COLOR HERE*/
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -508,7 +530,18 @@ img.img-rounded {
 }
 
 #link > div {
-  width: 90%;
   height: 25px;
   margin: 5px;
+}
+
+div.post_newer {
+  width: 50%;
+  text-align: left;
+  float: left;
+}
+
+div.post_older {
+  width: 50%;
+  text-align: right;
+  float: right;
 }
