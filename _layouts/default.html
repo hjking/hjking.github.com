@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<html class="fuelux" lang="en">
+<html class="fuelux" lang="zh-cn">
 
   <!-- head -->
   {% include head.html %}
 
-  <body id="{% include page-id %}" data-spy="scroll" data-target=".subnav" data-offset="50" padding="40" onload="prettyPrint()">
+  <body id="{% include page-id %}" data-spy="scroll" data-target=".subnav" data-offset="50" onload="prettyPrint()">
 
-    <header class="header-wrap" id='top'>
-    {% include navigation.html %}
-    </header>
+    <div id="wrap">
 
-    <!-- head image -->
-    {% if site.blog.cover %}
-    <div class="blog-cover" style="background-image:url(/assets/img/cover.jpg);">
-      <section>
-      <div>
-        <h1>To Be is To Do</h1>
+      <header class="header-wrap" id='top'>
+      {% include navigation.html %}
+      </header>
+
+      <!-- head image -->
+      {% if site.blog.cover %}
+      <div class="blog-cover" style="background-image:url(/assets/img/cover.jpg);">
+        <section>
+        <div>
+          <h1>To Be is To Do</h1>
+        </div>
+        </section>
       </div>
-      </section>
-    </div>
-    {% endif %}
+      {% endif %}
 
-    <div id="content">
-    <div class="content container">
-    {{ content }}
+      <div class="container" id="content">
+        {{ content }}
+      </div>
     </div>
-    </div>
+
 
 <!--     <div id="footer" class="footer"> -->
+    <div id="footer">
     {% include footer.html %}
+    </div id="footer">
 <!--     </div> -->
 
     {% include scripts.html %}

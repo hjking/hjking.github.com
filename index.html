@@ -15,49 +15,46 @@ image:
 </section>
 
 <!-- Pagination links -->
-<section id="pagination">
-<div class="pagination">
-<!-- {% if paginator.total_pages > 1 %} -->  <ul class="inline">
+<!-- <section id="pagination"> -->
+<!-- <div class="pagination"> -->
+  <ul class="pagination">
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-        <li><a class="btn btn-outline" href="/">Home</a></li>
-        <li><a class="btn btn-outline" href="/">&laquo; Newer</a></li>
+        <li><a class="btn btn-default btn-outline" href="/" role="button">Home</a></li>
+        <li><a class="btn btn-default btn-outline" href="/" role="button">&laquo; Newer</a></li>
       {% else %}
-        <li><a class="btn btn-outline" href="/">Home</a></li>
-        <li><a class="btn btn-outline" href="/page{{paginator.previous_page}}/">&laquo; Newer</a></li>
+        <li><a class="btn btn-default btn-outline" href="/" role="button">Home</a></li>
+        <li><a class="btn btn-default btn-outline" href="/page{{paginator.previous_page}}/" role="button">&laquo; Newer</a></li>
       {% endif %}
     {% else %}
-      <li><a class="btn btn-outline disabled" href="/">Home</a></li>
-      <li><a class="btn btn-outline disabled">&laquo; Newer</a></li>
+      <li><a class="btn btn-default btn-outline disabled" href="/" role="button">Home</a></li>
+      <li><a class="btn btn-default btn-outline disabled" role="button">&laquo; Newer</a></li>
     {% endif %}
 
     <li>
       {% if paginator.page == 1 %}
-        <a class="btn btn-outline disabled">1</a>
+        <a class="btn btn-default btn-outline disabled" role="button">1</a>
       {% else %}
-        <a class="btn btn-outline" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">1</a>
+        <a class="btn btn-default btn-outline" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}" role="button">1</a>
       {% endif %}
     </li>
     {% for count in (2..paginator.total_pages) %}
       <li>
         {% if count == paginator.page %}
-          <a class="btn btn-outline disabled">{{ count }}</a>
+          <a class="btn btn-default btn-outline disabled" role="button">{{ count }}</a>
         {% else %}
-          <a class="btn btn-outline" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}">{{ count }}</a>
+          <a class="btn btn-default btn-outline" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}" role="button">{{ count }}</a>
         {% endif %}
       </li>
     {% endfor %}
 
-
     {% if paginator.next_page %}
-      <li><a class="btn btn-outline" href="/page{{paginator.next_page}}/">Older &raquo;</a></li>
-      <li><a class="btn btn-outline" href="/page{{paginator.total_pages}}/">Last</a></li>
+      <li><a class="btn btn-default btn-outline" href="/page{{paginator.next_page}}/" role="button">Older &raquo;</a></li>
+      <li><a class="btn btn-default btn-outline" href="/page{{paginator.total_pages}}/" role="button">Last</a></li>
     {% else if paginator.page == paginator.total_pages %}
-      <li><a class="btn btn-outline disabled">Older &raquo;</a></li>
-      <li><a class="btn btn-outline disabled">Last</a></li>
+      <li><a class="btn btn-default btn-outline disabled" role="button">Older &raquo;</a></li>
+      <li><a class="btn btn-default btn-outline disabled" role="button">Last</a></li>
     {% endif %}
   </ul>
-<!-- {% endif %} -->
-</div>
-</section>
 <!-- </div> -->
+<!-- </section> -->

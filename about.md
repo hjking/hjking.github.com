@@ -29,7 +29,7 @@ Thanks for reading!
 
 ### Follow me:
 <div id="stalker">
-  <ul class="inline">
+  <ul class="list-inline">
   <li><a title="Email Me" href="mailto:{{ site.author.email }}" target="_blank">
     <i class="fa fa-envelope"></i>
   </a>

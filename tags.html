@@ -5,7 +5,7 @@ nav-tag: true
 ---
 
 <h2>Tags</h2>
-<ul class="tag_box inline">
+<ul class="tag_box list-inline">
  {% for tag in site.tags %}
  <li>
          <a href="#{{ tag[0] }}">{{ tag[0] }} </a>
@@ -22,7 +22,7 @@ nav-tag: true
 
 {% for tag in site.tags %}
   <a name="{{ tag[0] }}"></a>
-  <h4 id="{{ tag[0] }}"><i class="icon-tags"></i> {{ tag[0] }}</h4>
+  <h4 id="{{ tag[0] }}"><i class="glyphicon glyphicon-tags"></i> {{ tag[0] }}</h4>
   <ul>
     {% for post in tag[1] %}
       <li>{{ post.date | date: "%Y-%m-%d" }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>

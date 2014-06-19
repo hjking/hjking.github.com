@@ -1,10 +1,10 @@
 
 body {
-    padding-top: 40px;
+/*    padding-top: 40px;*/
     margin: 0;
     font-family: "Droid Sans", "Inconsolata", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 16px;
-    line-height: 18px;
+/*    line-height: 18px;*/
     color: #444444;
     background-color: #F0F0F0;
 }
@@ -233,8 +233,13 @@ ol#search-results li {
     text-shadow: 0 1px 0 #ffffff;
 }
 
+.global-nav {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
 /* Next/Prev pager */
-.pager a {
+/*.pager a {
   position:fixed;
   top:50%;
   z-index:101;
@@ -267,7 +272,7 @@ ol#search-results li {
 .pager a:hover .icon.prev { background-position:-80px -70px; }
 .pager a:hover .icon.next { background-position:-100px -70px; }
 .pager .icon-arrow-left { position: fixed; left: 0; }
-.pager .icon-arrow-right { position: fixed; }
+.pager .icon-arrow-right { position: fixed; }*/
 
 .headerButton {
     display: inline-block;
@@ -493,13 +498,13 @@ footer {
 }
 */
 
-.pagination {
+/*.pagination {
   margin: 20px 10px;
   text-align: center;
-}
+}*/
 
 .blog-cover {
-  height: 160px;
+  height: 150px;
   background-position: center center;
 }
 
@@ -556,7 +561,7 @@ div.post_older {
 
 /* Image style */
 #scrollUp {
-  bottom: 80px;
+  bottom: 30px;
   right: 20px;
   height: 38px;  /* Height of image */
   width: 38px; /* Width of image */
@@ -602,4 +607,9 @@ div.post_older {
 #toc .toc-active {
     background: #336699;
     box-shadow: inset -5px 0px 10px -5px #000;
+}
+
+.page-header {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }

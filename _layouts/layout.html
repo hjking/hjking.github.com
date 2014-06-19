@@ -2,18 +2,11 @@
 layout: default
 ---
 
-<div class="container-fluid">
-    <div class="content">
-        <div class="row-fluid">
-            <div class="span8 columns">
-                {{ content }}
-            </div>
-            <div class="span4 columns visible-lg visible-md">
-<!--                 {% include aboutme.html %} -->
-
-                {% include sidebar_recent-posts.html %}
-
-            </div>
-        </div>
+<div class="row">
+    <div class="col-md-8 columns">
+        {{ content }}
+    </div>
+    <div class="col-md-4 columns visible-lg visible-md">
+        {% include sidebar_recent-posts.html %}
     </div>
 </div>

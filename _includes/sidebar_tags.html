@@ -1,8 +1,8 @@
 
 <div class="well well-small">
-  <h5><i class="icon-tags"></i> Tag Cloud</h5>
+  <h5><i class="glyphicon glyphicon-tags"></i> Tag Cloud</h5>
    {% for tag in site.tags %}
-      <a href="/tags.html#{{ tag[0] }}" id="{{ forloop.index }}" class="__tag" style="margin: 5px">{{ tag[0] }}</a>({{ tag[1].size }})
+      <a href="/tags.html#{{ tag[0] }}" id="{{ forloop.index }}" class="__tag" style="margin: 2px">{{ tag[0] }}</a>({{ tag[1].size }})
    {% endfor %}
 </div>
 

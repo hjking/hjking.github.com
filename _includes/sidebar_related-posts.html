@@ -1,8 +1,8 @@
 <div class="well well-small">
-  <h5><i class="icon-star-empty"></i> Related Posts</h5>
+  <h5><i class="glyphicon glyphicon-star-empty"></i> Related Posts</h5>
   <dl class="posts">
     {% for post in site.related_posts limit: 5 %}
-      <dt class="muted">{{ post.date | date: "%Y-%m-%d" }} &raquo;</dt>
+      <dt class="text-muted">{{ post.date | date: "%Y-%m-%d" }} &raquo;</dt>
       <dd><a href="{{ post.url }}">{{ post.title }}</a></dd>
     {% endfor %}
   </dl>
