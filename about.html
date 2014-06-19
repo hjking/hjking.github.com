@@ -1,0 +1,140 @@
+---
+layout: page
+title: About
+---
+
+<div data-spy="affix" id="dot-nav">
+    <ul>
+      <li class="awesome-tooltip active" title="Me"><a href="#me"></a></li>
+      <li class="awesome-tooltip" title="Blog"><a href="#blog"></a></li>
+      <li class="awesome-tooltip" title="Projects"><a href="#projects"></a></li>
+      <li class="awesome-tooltip" title="Contact"><a href="#social"></a></li>
+    </ul>
+</div>
+
+<div id="main" class="row">
+  <div class="col-md-10">
+    <section id="me">
+      <article>
+          <div class="row">
+              <div class="col-md-10">
+                <h1>About Me <small>Secondary text</small></h1>
+                <div class="col-xs-12 col-sm-8">
+                  <h3>HJKing</h3>
+                  <p><strong>Location: </strong> Wuhan, China. </p>
+                  <p><strong>About: </strong> ASIC Design / Verification / EDA . </p>
+                  <p><strong>Hobbies: </strong> Read, out with friends, music, Sports and learn new things. </p>
+                  <p><strong>Skills: </strong>
+                      <span class="tags">verilog</span>
+                      <span class="tags">linux</span>
+                      <span class="tags">shell</span>
+                      <span class="tags">SystemC</span>
+                      <span class="tags">SystemVerilog</span>
+                      <span class="tags">UVM</span>
+                  </p>
+                </div>
+                <div class="col-xs-12 col-sm-4 text-center">
+                    <figure>
+                        <img src="/assets/img/bio-photo.jpg" alt="" class="img-circle img-responsive">
+                        <figcaption class="ratings">
+                            <p>Ratings
+                            <a href="#">
+                                <span class="fa fa-star"></span>
+                            </a>
+                            <a href="#">
+                                <span class="fa fa-star"></span>
+                            </a>
+                            <a href="#">
+                                <span class="fa fa-star"></span>
+                            </a>
+                            <a href="#">
+                                <span class="fa fa-star"></span>
+                            </a>
+                            <a href="#">
+                                <span class="fa fa-star-o"></span>
+                            </a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+              </div>
+          </div>
+      </article>
+    </section>
+
+    <section id="blog">
+       <article>
+           <div class="row">
+               <div class="col-md-12">
+                <h1>About Blog <small>Secondary text</small></h1>
+                   <p>
+                    This <a href="{{ site.links.blog }}" target="_blank">site</a> is for personal usage to take some notes and share things in my life and work.
+                    </p>
+                    <p>
+                    The source code of this site is <a href="{{ site.links.blog_repo }}" target="_blank">HERE</a>. Feel free to fork it.
+                    </p>
+                    <p>
+                    Have questions or suggestions? Feel free to <a href="{{ site.links.feedback }}" title="Leave a feedback for {{ site.author.name }}"  target="_blank" >Leave a Feedback</a>.
+                    </p>
+                    <p>
+                    Thanks for reading!
+                   </p>
+                   <a href="{{ site.links.blog_zip }}" class="btn btn-default">Download</a>
+                     ·
+                    <a href="{{ site.links.blog_repo }}" target="_blank" class="btn btn-default">View in Github</a>
+                     ·
+                    <a href="{{ site.links.feedback }}" target="_blank" class="btn btn-default">Feedback</a>
+               </div>
+           </div>
+       </article>
+    </section>
+
+    <section id="projects">
+       <article>
+           <div class="row">
+               <div class="col-md-12">
+                <h1>Projects <small>Secondary text</small></h1>
+                  <h3>My Dotfiles</h3>
+                  <p>
+                  My <a href="https://github.com/kinghom/mydotfiles" target="_blank">Dotfiles</a> is for personal usage to take some notes and share things in my life and work.
+                  </p>
+                  <h3>My Dotvim</h3>
+                  <p>
+                  The source code of this site is <a href="https://github.com/kinghom/mydotvim" target="_blank">HERE</a>. Feel free to fork it.
+                  </p>
+               </div>
+           </div>
+       </article>
+    </section>
+
+    <section id="social">
+       <article>
+           <div class="row">
+               <div class="col-md-12">
+                <h1>Contact <small>Secondary text</small></h1>
+                   <!-- <p> -->
+                    <div id="stalker">
+                      <ul class="list-inline">
+                      <li><a title="Email Me" href="mailto:{{ site.author.email }}" target="_blank">
+                        <i class="fa fa-envelope"></i>
+                      </a>
+                      {% for nav in site.sociallink %}
+                          <li><a title="{{ nav.title }}" href="{{ nav.href }}" target="_blank">
+                            <i class="{{ nav.class }}"></i>
+                          </a>
+                      {% endfor %}
+                      <li><a title="Wechat" href="/wechat.html">
+                        <i class="fa fa-wechat"></i>
+                      </a>
+                      <li><a title="RSS Feed" href="/rss.xml">
+                        <i class="fa fa-rss-square"></i>
+                      </a>
+                      </ul>
+                    </div>
+                   <!-- </p> -->
+               </div>
+           </div>
+       </article>
+    </section>
+  </div>
+</div>
