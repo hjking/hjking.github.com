@@ -1,18 +1,19 @@
 <!-- <nav class="navbar navbar-default navbar-fixed-top"> -->
 <!-- <nav class="navbar navbar-default navbar-inverse global-nav" role="navigation"> -->
 <nav class="navbar navbar-default global-nav" role="navigation">
-    <div class="navbar-header">
+<div class="container" id="navbar">
+    <div class="navbar-header" id="nav-logo">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
             <span class="glyphicon glyphicon-bar"></span>
             <span class="glyphicon glyphicon-bar"></span>
             <span class="glyphicon glyphicon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/index.html">  {{ site.title }}</a>
+        <a class="navbar-brand" href="/">  {{ site.title }} </a>
     </div>
-    <div class="navbar-collapse collapse">
+    <div class="navbar-collapse collapse" id="nav-link">
         <ul class="nav navbar-nav">
-            <li class="active" id="index">
-                <a href="/index.html"><i class="glyphicon glyphicon-home"></i> Home</a>
+            <li id="index">
+                <a class="nav-index" href="/"><i class="glyphicon glyphicon-home"></i> Home</a>
             </li>
 
             <!-- Linux -->
@@ -56,12 +57,12 @@
             </li> -->
 
             <!-- Projects -->
-            <li id="project"><a href="/about.html#projects"><i class="fa fa-code"></i> Projects </a></li>
+            <li id="project"><a class="nav-project" href="{{ site.about_path }}#projects"><i class="fa fa-code"></i> Projects </a></li>
 
             <!-- Archives -->
-            <li id="archive"><a href="{{ site.archive_path }}"><i class="fa fa-archive"></i> Archives </a></li>
+            <li id="archive"><a class="nav-archive" href="{{ site.archive_path }}"><i class="fa fa-archive"></i> Archives </a></li>
 
-            <li id="about"><a href="/about.html"><i class="glyphicon glyphicon-user"></i> About </a></li>
+            <li id="about"><a class="nav-about" href="{{ site.about_path }}"><i class="glyphicon glyphicon-user"></i> About </a></li>
         </ul> <!--/.nav -->
         <!-- <ul class="nav navbar-nav pull-right">
             <form class="navbar-form navbar-right" role="search" action="http://google.com/search" method="get">
@@ -73,7 +74,8 @@
             </form>
         </ul> -->
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#search">Search</a></li>
+            <li><a href="#search"><i class="glyphicon glyphicon-search"></i> Search</a></li>
         </ul>
     </div> <!--/.nav-collapse -->
+    </div>
 </nav> <!--/.navbar-->

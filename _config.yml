@@ -2,7 +2,7 @@ markdown: rdiscount
 pygments: true
 encoding: utf-8
 
-title: HJKing's Blog
+title: HJKing
 description: "Personal website for HJKing, an ASIC engineer in Wuhan, China."
 
 url: http://hjking.github.io

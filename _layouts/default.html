@@ -4,13 +4,13 @@
   <!-- head -->
   {% include head.html %}
 
-  <body id="{% include page-id %}" data-spy="scroll" data-target=".subnav" data-offset="50" onload="prettyPrint()">
+  <body id="{% include page-id %}" onload="prettyPrint()">
 
     <div id="wrap">
 
-      <header class="header-wrap" id='top'>
+      <!-- <header class="header-wrap" id='top'> -->
       {% include navigation.html %}
-      </header>
+      <!-- </header> -->
 
       <!-- head image -->
       {% if site.blog.cover %}

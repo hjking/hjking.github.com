@@ -1,7 +1,6 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
 <script src="/assets/js/jquery-ui.min.js" type="text/javascript"></script>
-
 <script src="/assets/google-code-prettify/prettify.js" type="text/javascript"></script>
 <script src="/assets/js/jquery.githubwidget.min.js" type="text/javascript"></script>
 <script src="/assets/js/custom.js" type="text/javascript"></script>
@@ -9,10 +8,20 @@
 <!-- <script src="/assets/bootstrap/2.3.2/js/bootstrap.min.js" type="text/javascript"></script> -->
 <script src="/assets/bootstrap/3.1.0/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="/assets/js/toc.min.js"></script>
+<script src="/assets/js/jquery.lazyload.min.js" type="text/javascript"></script>
 
 <!-- Moot application -->
 <script src="//cdn.moot.it/latest/moot.min.js"></script>
+
+<script src="/assets/js/impress.js"></script>
+<script>impress().init();</script>
+
 {% include my_google_search.html %}
 
 <!-- Analytics -->
 {% include analytics %}
+
+<script>
+    // delay load images
+    $("img.lazy").lazyload({effect : "fadeIn", skip_invisible : false});
+</script>
