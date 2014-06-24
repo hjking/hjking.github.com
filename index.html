@@ -15,8 +15,7 @@ image:
 </section>
 
 <!-- Pagination links -->
-<!-- <section id="pagination"> -->
-<!-- <div class="pagination"> -->
+<div class="pagination">
   <ul class="pagination">
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
@@ -33,7 +32,7 @@ image:
 
     <li>
       {% if paginator.page == 1 %}
-        <a class="btn btn-default btn-outline disabled" role="button">1</a>
+        <a class="btn btn-default btn-outline active" role="button">1</a>
       {% else %}
         <a class="btn btn-default btn-outline" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}" role="button">1</a>
       {% endif %}
@@ -41,7 +40,7 @@ image:
     {% for count in (2..paginator.total_pages) %}
       <li>
         {% if count == paginator.page %}
-          <a class="btn btn-default btn-outline disabled" role="button">{{ count }}</a>
+          <a class="btn btn-default btn-outline active" role="button">{{ count }}</a>
         {% else %}
           <a class="btn btn-default btn-outline" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}" role="button">{{ count }}</a>
         {% endif %}
@@ -56,5 +55,4 @@ image:
       <li><a class="btn btn-default btn-outline disabled" role="button">Last</a></li>
     {% endif %}
   </ul>
-<!-- </div> -->
-<!-- </section> -->
+</div>
