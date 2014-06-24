@@ -4,8 +4,7 @@ title: "All Archives"
 nav-arc: true
 ---
 
-<h2>All Posts</h2>
-<hr />
+
 <ul>
   {% for post in site.posts %}
     <li>{{ post.date | date: "%Y-%m-%d" }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
