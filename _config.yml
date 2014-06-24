@@ -39,10 +39,10 @@ analytics:
         site_id :
 
 
-about_path: /about.html
-tags_path: /tags.html
-categories_path: /categories.html
-archive_path: /all_archives.html
+about_path: /pages/about.html
+tags_path: /pages/tags.html
+categories_path: /pages/categories.html
+archive_path: /pages/all_archives.html
 category: category
 
 links:

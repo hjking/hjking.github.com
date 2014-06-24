@@ -5,15 +5,15 @@ nav-tag: true
 ---
 
 <h2>Tags</h2>
-<ul class="tag_box list-inline">
+<ul class="tag_box inline">
  {% for tag in site.tags %}
- <li>
-         <a href="#{{ tag[0] }}">{{ tag[0] }} </a>
-         {% if tag[1].size > 10 %}
+ <li class="btn btn-mini">
+         <a href="#{{ tag[0] }}">{{ tag[0] }}
+         <!-- {% if tag[1].size > 10 %}
             <span class="badge badge-important">{{ tag[1].size }}</span>
-         {% else %}
-            <span class="badge">{{ tag[1].size }}</span>
-         {% endif %}
+         {% else %} -->
+            <span>{{ tag[1].size }}</span></a>
+         <!-- {% endif %} -->
  </li>
  {% endfor %}
 </ul>
