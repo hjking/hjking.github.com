@@ -4,9 +4,9 @@ body {
     margin: 0;
     font-family: "Droid Sans", "Inconsolata", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 16px;
-/*    line-height: 18px;*/
-    color: #444444;
-    background-color: #F0F0F0;
+    line-height: 30px;
+    color: #001d33;
+    background-color: #F5F5F5;
 }
 
 h1,
@@ -96,10 +96,10 @@ a {
     line-height: 1.1;
     color: #de7568; /* #268bd2; #02cf6c; */
     text-decoration: none;
-    -webkit-transition: color 0.25s ease-in;
-    -moz-transition: color 0.25s ease-in;
-    -ms-transition: color 0.25s ease-in;
-    transition: color 0.25s ease-in;
+    -webkit-transition: color 0.25s ease-in-out;
+    -moz-transition: color 0.25s ease-in-out;
+    -ms-transition: color 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out;
 }
 
 a:hover,
@@ -386,6 +386,7 @@ img.img-rounded {
 footer {
   background: #ccc;
   text-align: center;
+  line-height: 20px;
 }
 
 #footer {
@@ -950,4 +951,13 @@ section #social{
 
 .pagination {
   display: block;
+}
+
+#post-content p {
+  margin: 0 0 2em 0;
+  line-height: 2em;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0px;
+  word-wrap: break-word;
 }
