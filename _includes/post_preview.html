@@ -1,40 +1,39 @@
 
-
-<div class="row well well-small">
-
-  <div class="col-md-2">
-    <div class="article-date">
-      <a href="{{ post.url }}"><span class="radius secondary label label-default">{{ post.date | date_to_string }}</span></a>
-    </div>
-  </div>
-
-  <div class="col-md-10">
-    <header>
-      <div class="article-title">
-          <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+<div class="well well-lg">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="article-date">
+        <a href="{{ post.url }}"><span class="radius secondary label label-default">{{ post.date | date_to_string }}</span></a>
       </div>
-      <div class="article-info">
-    	    <div class="timestamp in"><span class="in">{% include post_info_bar %}</span></div>
-      </div>
-    </header>
-
-    <hr>
-
-    <div class="article-summary">
-      <p>
-          {% if post.content contains "<!-- more -->" %}
-              {{ post.content | split:'<!-- more -->' |first }}
-          {% else if post.summary %}
-              {{post.summary}}
-          {% else %}
-              {{ post.content | markdownify  | truncatewords:50 }}
-          {% endif %}
-
-          <a class="btn btn-default btn-sm pull-right" href="{{ post.url }}"><span class="readmore">Read More &raquo; </span></a>
-
-      </p>
     </div>
 
-  </div>
+    <div class="col-md-10">
+      <header>
+        <div class="article-title">
+            <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+        </div>
+        <div class="article-info">
+      	    <div class="timestamp in"><span class="in">{% include post_info_bar %}</span></div>
+        </div>
+      </header>
 
+      <hr>
+
+      <div class="article-summary">
+        <p>
+            {% if post.content contains "<!-- more -->" %}
+                {{ post.content | split:'<!-- more -->' |first }}
+            {% else if post.summary %}
+                {{post.summary}}
+            {% else %}
+                {{ post.content | markdownify  | truncatewords:50 }}
+            {% endif %}
+
+            <a class="btn btn-default btn-sm pull-right" href="{{ post.url }}"><span class="readmore">Read More &raquo; </span></a>
+
+        </p>
+      </div>
+
+    </div>
+  </div>
 </div>
