@@ -40,6 +40,8 @@ sidebar_posts: related
                 <li class="previous disabled"><a href="#">&larr; Newer</a></li>
             {% endif %}
 
+            <li><a href="{{ site.archive_path }}">Archive</a></li>
+
             {% if page.previous %}
                 <li class="next"><a href="{{ page.previous.url }}">{{ page.previous.title | truncatewords:5 }} &rarr;</a></li>
             {% else %}
@@ -47,6 +49,7 @@ sidebar_posts: related
             {% endif %}
 
         </ul>
+        <hr>
 
         <!-- JiaThis Button BEGIN -->
         <section id="social">
@@ -55,7 +58,7 @@ sidebar_posts: related
             </p>
         </section>
         <!-- JiaThis Button END -->
-        <br>
+
         <!-- Comments -->
         {% if page.comments %}
         <section id="comment">

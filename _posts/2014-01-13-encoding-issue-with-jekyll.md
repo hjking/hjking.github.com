@@ -17,3 +17,5 @@ tags: [git, github]
 
 然后问题就迎刃而解了。
 
+<!-- more -->
+

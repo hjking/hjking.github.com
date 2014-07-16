@@ -3,32 +3,26 @@ layout: default
 ---
 
 <div class="row">
-    <!-- <div class="col-md-9 columns"> -->
-        <ul class="nav nav-pills nav-justified arch-nav">
-            <li {% if page.nav-arc %}class="active"{% endif %}>
-            <a href="/pages/all_archives.html">All Archives</a></li>
 
-            <li {% if page.nav-cat %}class="active"{% endif %}>
-            <a href="/pages/categories.html">Categories</a></li>
+    <ul class="nav nav-pills nav-justified arch-nav">
+        <li {% if page.nav-arc %}class="active"{% endif %}>
+        <a href="{{ site.archive_path }}">All Archives</a></li>
 
-            <li {% if page.nav-tag %}class="active"{% endif %}>
-            <a href="/pages/tags.html">Tags</a></li>
+        <li {% if page.nav-cat %}class="active"{% endif %}>
+        <a href="{{ site.categories_path }}">Categories</a></li>
 
-            <li {% if page.nav-mon %}class="active"{% endif %}>
-            <a href="/pages/archive_by_month.html">Archive by Month</a> </li>
+        <li {% if page.nav-tag %}class="active"{% endif %}>
+        <a href="{{ site.tags_path }}">Tags</a></li>
 
-            <li {% if page.nav-year %}class="active"{% endif %}>
-            <a href="/pages/archive_by_year.html">Archive by Year</a></li>
+        <li {% if page.nav-mon %}class="active"{% endif %}>
+        <a href="/pages/archive_by_month.html">Archive by Month</a> </li>
 
-        </ul>
-        <hr />
-        <ol class="item-list list-unstyled">
-            {{ content }}
-        </ol>
-    <!-- </div>
-    <div class="col-md-3 columns visible-lg visible-md">
+        <li {% if page.nav-year %}class="active"{% endif %}>
+        <a href="/pages/archive_by_year.html">Archive by Year</a></li>
+    </ul>
+    <hr />
+    <ol class="item-list list-unstyled">
+        {{ content }}
+    </ol>
 
-        {% include sidebar_recent-posts.html %}
-
-    </div> -->
 </div>

@@ -40,6 +40,8 @@ tags: [gmail, mutt, msmtp, centos, mail]
 　　make install
 	{% endhighlight %}
 
+<!-- more -->
+
 ## Setting
 ### Mutt Setting
 

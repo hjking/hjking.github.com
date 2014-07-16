@@ -64,7 +64,7 @@ h6 {
 }
 
 h2 a {
-    color: #333 !important;
+    color: #428bca; !important;
 }
 
 h2 a:hover {
@@ -418,6 +418,7 @@ img.img-rounded {
 .blog-cover {
   height: 150px;
   background-position: center center;
+  margin-bottom: 20px;
 }
 
 .blog-cover section{
@@ -942,10 +943,6 @@ footer {
 
 .footer a:hover{
   color: #02cf6c;
-}
-
-.pagination {
-  display: block;
 }
 
 #post-content p {
