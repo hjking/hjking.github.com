@@ -1,6 +1,7 @@
 
 <footer class="footer">
-
+    <div class="wrap container">
+    <div class="row">
         <small>
         {% assign first_post = site.posts | last %}
         Copyright &copy; {{ first_post.date | date: "%Y" }} ~ {{ site.time | date: "%Y" }} <a href="{{ site.about_path }}">{{ site.author.name }}</a>.
@@ -15,5 +16,6 @@
 
         </small>
         <br>
-
+        </div>
+    </div>
 </footer>

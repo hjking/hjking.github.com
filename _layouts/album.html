@@ -8,26 +8,22 @@ layout: default
         <h1 class="page-title">{{ page.title }}</h1>
         {% endif %}
         <section class="page-content">
-        <!-- {{ content }} -->
-<div id="links"  class="row">
-  {% for img in page.imgs %}
-  <div class="col-xs-6 col-md-3">
-    <a href="/assets/img/{{ img }}" class="thumbnail">
-      <img src="/assets/img/{{ img }}">
-    </a>
-  </div>
-  {% assign i4 = forloop.index | modulo: 4 %}
-  {% if i4 == 0 %}
-  <div class="clearfix visible-lg"></div>
-  <div class="clearfix visible-md"></div>
-  {% endif %}
+          <div id="links"  class="row">
+            {% for img in page.imgs %}
+            <div class="col-xs-6 col-md-3">
+              <a href="/assets/img/{{ img }}" class="thumbnail">
+                <img src="/assets/img/{{ img }}">
+              </a>
+            </div>
+            {% assign i4 = forloop.index | modulo: 4 %}
+            {% if i4 == 0 %}
+            <div class="clearfix visible-lg"></div>
+            <div class="clearfix visible-md"></div>
+            {% endif %}
 
-  <div class="clearfix visible-xs"></div>
-  {% endfor %}
-</div>
-
-
-
+            <div class="clearfix visible-xs"></div>
+            {% endfor %}
+          </div>
         </section>
     </div>
 </div>

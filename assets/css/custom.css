@@ -133,14 +133,10 @@ hr {
 }
 
 blockquote {
-    border-left: 4px solid #e5e5e5;
-    margin: 14px 0;
-    padding: 0 0 0 20px;
-    font-style: italic;
-    color: #555;
+    border-left: 4px solid #95e5e5;
+    color: #890;
 }
 
-p,
 table,
 pre,
 dl {
@@ -148,10 +144,9 @@ dl {
 }
 
 p {
-    margin-bottom: 24px;
     font-family: "Droid Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 18px;
 }
 
 input,
@@ -930,7 +925,6 @@ section #social{
     border-left: 5px solid #8e44ad;
 }
 
-
 footer {
   background: #ccc;
   text-align: center;
@@ -946,8 +940,6 @@ footer {
 }
 
 #post-content p {
-  margin: 0 0 2em 0;
-  line-height: 2em;
   text-transform: none;
   text-decoration: none;
   letter-spacing: 0px;
