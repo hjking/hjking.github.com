@@ -83,6 +83,8 @@ glog默认对log分为4级：INFO，WARNING，ERROR，FATAL。打印log语句类
 
 - 每个级别的日志会输出到不同的文件中。并且高级别日志文件会同样输入到低级别的日志文件中。 即：FATAL的信息会同时记录在INFO，WARNING，ERROR，FATAL日志文件中。默认情况下，glog还会将会将FATAL的日志发送到stderr中。
 
+<!-- more -->
+
 ## 参数设置
 
 ### 设置方法
