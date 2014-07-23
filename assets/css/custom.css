@@ -102,10 +102,18 @@ a {
     transition: color 0.25s ease-in-out;
 }
 
-a:hover,
-a:active {
-    color:#4f738d;
+a:hover {
+    color: #ff9900;
     text-decoration: underline;
+}
+
+a:active {
+    color: #4f738d;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #ff6699;
 }
 
 a small {
@@ -952,4 +960,10 @@ footer {
 
 #stalker ul {
   margin-top: 15px;
+}
+
+.glyphicon-calendar,
+.glyphicon-folder-open,
+.glyphicon-tags {
+  color: #A84365;
 }
