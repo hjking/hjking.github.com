@@ -10,7 +10,7 @@ sidebar_posts: related
 
             <p>
             <i class="glyphicon glyphicon-calendar"></i> {{ page.date | date: "%A, %B %e, %Y" }}
-            | <i class="fa fa-comments"></i> <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}">View Comments</a>
+            | <i class="fa fa-comments"></i> <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}">Comments</a>
             <br>
             <i class="glyphicon glyphicon-folder-open"></i> Category :
             <a href="{{ site.categories_path }}#{{ page.categories }}" title="View posts in     category &quot;{{ page.categories }}&quot;"><span class="label label-primary">{{ page.categories }}</span></a>
@@ -40,7 +40,7 @@ sidebar_posts: related
                 <li class="previous disabled"><a href="#">&larr; Newer</a></li>
             {% endif %}
 
-            <li><a href="{{ site.archive_path }}">Archive</a></li>
+            <li><a href="{{ site.archive_path }}">Archives</a></li>
 
             {% if page.previous %}
                 <li class="next"><a href="{{ page.previous.url }}">{{ page.previous.title | truncatewords:5 }} &rarr;</a></li>

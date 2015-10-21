@@ -137,3 +137,11 @@ sociallink:
 
 # Custom vars
 cover:      /assets/img/cover.jpg
+
+libs:
+    bootstrap:
+        version: 3.3.1
+        path: /assets/bootstrap
+    font-awesome:
+        version: 4.2.0
+        path: /assets/font-awesome

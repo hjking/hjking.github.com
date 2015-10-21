@@ -103,7 +103,7 @@ a {
 }
 
 a:hover {
-    color: #ff9900;
+    color: #009bcd;  /* #ff9900; */
     text-decoration: underline;
 }
 
@@ -193,6 +193,10 @@ ol#search-results li {
     padding-right: 10px;
 }
 
+#navbar {
+  margin-top: 10px;
+}
+
 .navbar .nav > #search-results::before {
     position: absolute;
     top: -7px;
@@ -233,6 +237,7 @@ ol#search-results li {
 .global-nav {
     margin-bottom: 0;
     border-radius: 0;
+    height: 80px;
 }
 
 .headerButton {
@@ -569,7 +574,7 @@ div.post_older {
     width: 100%;
     color: rgb(255, 255, 255);
     background: rgba(0, 0, 0, 0);
-    font-size: 60px;
+    font-size: 35px;
     font-weight: 300;
     text-align: center;
     border: 0px;
@@ -937,10 +942,12 @@ footer {
   background: #ccc;
   text-align: center;
   line-height: 20px;
+  background: #333;
+  color: white;
 }
 
 .footer a{
-  border-bottom: 1px #555 dotted;
+  border-bottom: 1px #555555 dotted;
 }
 
 .footer a:hover{
@@ -956,6 +963,10 @@ footer {
 
 #stalker a {
   color: #428bca;
+}
+
+#stalker a:hover {
+  color: #b94a48;
 }
 
 #stalker ul {

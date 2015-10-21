@@ -11,9 +11,11 @@ layout: default
           <div id="links"  class="row">
             {% for img in page.imgs %}
             <div class="col-xs-6 col-md-3">
-              <a href="/assets/img/{{ img }}" class="thumbnail">
-                <img src="/assets/img/{{ img }}">
-              </a>
+                <div class="well">
+                    <a href="/assets/img/{{ img }}" class="thumbnail">
+                      <img src="/assets/img/{{ img }}">
+                    </a>
+                </div>
             </div>
             {% assign i4 = forloop.index | modulo: 4 %}
             {% if i4 == 0 %}
