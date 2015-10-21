@@ -143,5 +143,5 @@ libs:
         version: 3.3.5
         path: /assets/bootstrap
     font-awesome:
-        version: 4.2.0
+        version: 4.4.0
         path: /assets/font-awesome
