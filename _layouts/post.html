@@ -5,6 +5,7 @@ sidebar_posts: related
 
 <div class="row entry">
     <!-- <div class="col-md-9 columns"> -->
+    <div class="col-md-10 col-md-offset-1">
         <div class="page-header">
             <h2>{{ page.title }}</h2>
 
@@ -28,12 +29,12 @@ sidebar_posts: related
         </div>
 
         <section id="post-content">
-        {{ content }}
+            {{ content }}
         </section>
+
         <hr>
 
         <ul class="pager">
-
             {% if page.next %}
                 <li class="previous"><a href="{{ page.next.url }}">&larr; {{ page.next.title | truncatewords:5 }}</a></li>
             {% else %}
@@ -47,8 +48,8 @@ sidebar_posts: related
             {% else %}
                 <li class="next disabled"><a href="#">&larr; Older</a></li>
             {% endif %}
-
         </ul>
+
         <hr>
 
         <!-- JiaThis Button BEGIN -->
@@ -62,16 +63,17 @@ sidebar_posts: related
         <!-- Comments -->
         {% if page.comments %}
         <section id="comment">
-            <h3>Comments</h3>
+            <!-- <h3>Comments</h3> -->
             {% include comments %}
         </section>
         {% endif %}
         <!-- Comments -->
-    <!-- </div> -->
+    </div>
 
     <!-- <div class="col-md-3 columns"> -->
         <!-- {% include sidebar_related-posts.html %}
         {% include sidebar_tags.html %} -->
         <!-- <div class="toc" id="toc"></div> -->
     <!-- </div> -->
+
 </div>
