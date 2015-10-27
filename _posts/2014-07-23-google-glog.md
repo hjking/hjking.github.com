@@ -88,7 +88,7 @@ glog默认对log分为4级：INFO，WARNING，ERROR，FATAL。打印log语句类
 ## 参数设置
 
 ### 设置方法
-- 如果安装了 [Google gflags](https://code.google.com/p/gflags/)，则可以采用命令的方式来来配置参数。
+- 如果安装了 [Google gflags](https://github.com/google/glog) (https://code.google.com/p/gflags/)，则可以采用命令的方式来来配置参数。
     ./your_application --log_dir=.
 
 - 修改环境变量：`export GLOG_log_dir=.`。log文件将生成到当前目录下。或者，运行前设置：GLOG_logtostderr=1 ./your_application。 通过环境变量设置时，在参数前加上 `GLOG_` 。
