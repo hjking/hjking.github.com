@@ -57,5 +57,5 @@ push 博客内容到 github 时，也把它 push 到 gitcafe 上。进入本地�
 
 ## 参考
 1. [博客迁移回国内的Gitcafe Page](http://www.besteric.com/2014/11/16/build-blog-mirror-site-on-gitcafe/)
-2. [同步github上的项目到gitcafe](cxh.me/2014/06/28/gitsync-github-gitcafe/)
+2. [同步github上的项目到gitcafe](http://cxh.me/2014/06/28/gitsync-github-gitcafe/)
 3. [将博客从GitHub迁移到GitCafe](http://blog.devtang.com/blog/2014/06/02/use-gitcafe-to-host-blog/)
