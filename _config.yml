@@ -1,5 +1,5 @@
 markdown: rdiscount
-pygments: true
+highlighter: pygments
 encoding: utf-8
 
 title: HJKing
@@ -133,7 +133,7 @@ sociallink:
     class: fa fa-tumblr-square
   - title: 500px
     href: http://500px.com/hjking
-    class: fa fa-picture-o
+    class: fa fa-500px
 
 # Custom vars
 cover:      /assets/img/cover.jpg
