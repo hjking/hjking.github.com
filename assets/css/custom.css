@@ -528,10 +528,10 @@ div.post_older {
     box-shadow: inset -5px 0px 10px -5px #000;
 }
 
-.page-header {
+/*.page-header p {
     margin-top: 0px;
     margin-bottom: 0px;
-}
+}*/
 
 /* Full Screen Search*/
 #search {
@@ -991,4 +991,9 @@ section #social{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#post-info {
+  margin-top: 30px;
+  margin-bottom:10px;
 }
