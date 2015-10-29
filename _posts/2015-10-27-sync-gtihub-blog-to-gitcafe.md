@@ -29,30 +29,30 @@ layout: post
 
 push 博客内容到 github 时，也把它 push 到 gitcafe 上。进入本地博客项目目录，执行以下代码：
 
-    {% highlight bash linenos %}
-    git remote add gitcafe git@gitcafe.com:username/username.git
-    {% endhighlight %}
+{% highlight bash %}
+git remote add gitcafe git@gitcafe.com:username/username.git
+{% endhighlight %}
 
 上面代码添加了一个名为 `gitcafe` 的远程仓库，执行一次就可以。此时如果打开目录下的 `.git/config` ，会发现增加了一下内容：
 
-```
-[remote "gitcafe"]
+~~~
+  [remote "gitcafe"]
     url = git@gitcafe.com:username/username.git
     fetch = +refs/heads/*:refs/remotes/gitcafe/*
-```
+~~~
 
 ### push 到 gitcafe
 
 当博客有更新时，先提交，然后依次 push 到 github 和 gitcafe 上。
 
-    {% highlight bash linenos %}
-        git push origin master
-        git push -u gitcafe master:gitcafe-pages
-    {% endhighlight %}
+{% highlight bash %}
+git push origin master
+git push gitcafe master:gitcafe-pages
+{% endhighlight %}
 
-第一行： push 到 github 的 master 分支。
+第一行： push 当前 master 分支到 github 的 master 分支。
 
-第二行： push 到 gitcafe 的 gitcafe-pages 分支。
+第二行： push 当前 master 分支到 gitcafe 的 gitcafe-pages 分支。
 
 
 ## 参考

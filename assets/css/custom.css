@@ -2,9 +2,9 @@
 body {
 /*    padding-top: 40px;*/
     margin: 0;
-    font-family: "Droid Sans", "Inconsolata", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: Consolas, monaco, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", 微软雅黑, STHeiti, "WenQuanYi Micro Hei", sans-serif;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.8;
     color: #001d33;
     background-color: #F5F5F5;
 }
@@ -15,52 +15,45 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Yanone Kaffeesatz", "Droid Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
+    /*font-family: "Yanone Kaffeesatz", "Droid Sans", Helvetica, Arial, "Lucida Grande", sans-serif;*/
     color: #333;
     font-weight: bold;
 }
 
-h1,
+/* underline */
+/*h1,
 h2,
 h3,
 h4 {
     border-bottom: 1px solid #ccc;
-}
+}*/
 
 h1 {
-    line-height: 36px;
     font-size: 32px;
     margin-top: 18px;
-    margin-bottom: .15em;
 }
 
 h2 {
     font-size: 28px;
     line-height: 30px;
-    margin-bottom: 15px;
 }
 
 h3 {
-    line-height: 26px;
     font-size: 24px;
     padding-bottom: 5px;
-    margin-bottom: 10px;
 }
 
 h4 {
-    line-height: 22px;
     font-size: 20px;
     padding-bottom: 5px;
 }
 
 h5 {
     font-size: 18px;
-    line-height: 22px;
 }
 
 h6 {
     font-size: 16px;
-    line-height: 22px;
 }
 
 h2 a {
@@ -91,10 +84,16 @@ h6 a:hover {
     text-decoration: underline;
 }
 
+.navbar-brand {
+    float: left;
+    padding: 20px 15px;
+    font-size: 24px;
+}
+
 a {
     display: inline-block;
     line-height: 1.1;
-    color: #de7568; /* #268bd2; #02cf6c; */
+    color: #02cf6c; /* #de7568;  #268bd2; #02cf6c d05b1c; */
     text-decoration: none;
     -webkit-transition: color 0.25s ease-in-out;
     -moz-transition: color 0.25s ease-in-out;
@@ -103,17 +102,17 @@ a {
 }
 
 a:hover {
-    color: #009bcd;   /*#ff9900;*/
+    color: #de7568; /*#009bcd;   #ff9900;*/
     text-decoration: underline;
 }
 
-a:active {
-    color: #4f738d;
+/*a:active {
+    color: #7cbbbb;
     text-decoration: underline;
 }
-
+*/
 a:visited {
-    color: #ff6699;
+    color: #4f738d;
 }
 
 a small {
@@ -127,7 +126,6 @@ strong {
     color:#222;
     font-weight:700;
 }
-
 
 small {
     font-size:11px;
@@ -152,9 +150,9 @@ dl {
 }
 
 p {
-    font-family: "Droid Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
+    /*font-family: "Droid Sans", Helvetica, Arial, "Lucida Grande", sans-serif;*/
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.8;
 }
 
 input,
@@ -533,7 +531,6 @@ div.post_older {
 .page-header {
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-bottom: 15px;
 }
 
 /* Full Screen Search*/
@@ -966,6 +963,9 @@ section #social{
 
 #stalker a {
   color: #428bca;
+  padding: 5px 2px;
+  position: relative;
+  display: block;
 }
 
 #stalker a:hover {
