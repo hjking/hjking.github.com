@@ -101,3 +101,103 @@ end
     set background=dark
 
 {% endhighlight %}
+
+
+```c++
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Hello world!" << endl;
+    return 0;
+}
+```
+
+```c
+#include<stdio.h>
+main() {
+  float numero1, numero2, ressum, resres, resmul, resdiv;
+  int operacion;
+  //clrscr();
+
+  printf("Ingresa el primer numero\n");
+  scanf("%f", numero1);
+  printf("Ingresa otro numero\n");
+  scanf("%f", numero2);
+  getch();
+
+
+
+  printf("Que desea hacer\n\n");
+  printf("1. Sumar\n");
+  printf("2. Restar\n");
+  printf("3. Multiplicar\n");
+  printf("4. Dividir\n");
+
+  scanf("%i", &operacion);
+
+  switch(operacion) {
+
+  case 1:
+    ressum=numero1+numero2;
+    printf("%.2f", ressum);
+    break;
+
+  case 2:
+    resres=numero1-numero2;
+    printf("%.2f", resres);
+    break;
+
+  case 3:
+    resmul=numero1*numero2;
+    printf("%.2f", resmul);
+    break;
+
+  case 4:
+    resdiv=numero1/numero2;
+    printf("%.2f", resdiv);
+    break;
+
+    default:
+    printf("Opcion incorrecta\n");
+    break;
+    }
+
+  
+  getch();
+  return 0;
+}
+```
+
+```java
+public interface Car {
+  void drive();
+}
+
+public class VWGolf implements Car {
+
+  public void drive() {
+    System.out.println("Brum brum... (without muffler)");
+  }
+}
+
+public class AutoProxy implements Car {
+  private Car car;
+  private int driversAge;
+
+  public AutoProxy(Car car, int driversAge) {
+    this.car = car;
+    this.driversAge = driversAge;
+  }
+
+  public void drive() {
+    if(driversAge < 18)
+      System.out.println("Too young to drive.");
+    else
+      car.drive();
+  }
+}
+```
+

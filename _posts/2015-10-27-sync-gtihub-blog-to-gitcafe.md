@@ -45,10 +45,10 @@ git remote add gitcafe git@gitcafe.com:username/username.git
 
 当博客有更新时，先提交，然后依次 push 到 github 和 gitcafe 上。
 
-{% highlight bash %}
+```bash
 git push origin master
 git push gitcafe master:gitcafe-pages
-{% endhighlight %}
+```
 
 第一行： push 当前 master 分支到 github 的 master 分支。
 

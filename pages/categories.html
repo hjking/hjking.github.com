@@ -29,7 +29,7 @@ title: "Categories"
 {% for category in site.categories %}
     <a name="{{ category | first }}"></a>
     <h4 id="{{ category | first }}">
-        <i class="glyphicon glyphicon-folder-open"></i><a href="/category/{{category | first}}/index.html" title="View all posts under {{category | first}}"> <strong>{{category | first}} ({{category | last | size }})</strong></a></h4>
+        <i class="fa fa-folder-open-o"></i>   <strong>    {{category | first}} ({{category | last | size }})  </strong></h4>
     <ul id="{{ category[0] }}">
         {% for post in category[1] %}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>

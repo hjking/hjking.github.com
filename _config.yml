@@ -1,6 +1,13 @@
-markdown: rdiscount
+markdown: redcarpet
 highlighter: pygments
 encoding: utf-8
+redcarpet:
+  extensions:
+    - fenced_code_blocks
+    - no_intra_emphasis
+    - strikethrough
+    - autolink
+    - tables
 
 title: HJKing
 description: "Personal website for HJKing, an ASIC engineer in Wuhan, China."

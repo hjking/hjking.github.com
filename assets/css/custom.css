@@ -93,7 +93,7 @@ h6 a:hover {
 a {
     display: inline-block;
     line-height: 1.1;
-    color: #02cf6c; /* #de7568;  #268bd2; #02cf6c d05b1c; */
+    color: #de7568; /* #de7568;  #268bd2; #02cf6c #d05b1c; */
     text-decoration: none;
     -webkit-transition: color 0.25s ease-in-out;
     -moz-transition: color 0.25s ease-in-out;
@@ -102,7 +102,7 @@ a {
 }
 
 a:hover {
-    color: #de7568; /*#009bcd;   #ff9900;*/
+    color: #02cf6c; /*#009bcd;   #ff9900;*/
     text-decoration: underline;
 }
 
@@ -112,7 +112,7 @@ a:hover {
 }
 */
 a:visited {
-    color: #4f738d;
+    color: #666;
 }
 
 a small {
