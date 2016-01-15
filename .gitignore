@@ -1,6 +1,10 @@
-drafts
+_drafts
 _site
 
 Thumbs.db
 
 _site/*
+/assets/fancybox
+/assets/impress
+/assets/reveal
+/assets/timeliner
