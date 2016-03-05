@@ -17,9 +17,19 @@ Prelude is an Emacs distribution that aims to enhance the default Emacs experien
 
 
 ## Packages
+### 插件管理
+
 - use-package
 - Helm
 - projectile
+
+### 快捷键显示
+- [which-key](https://github.com/justbur/emacs-which-key)
+- [guide-key](https://github.com/kai2nenobu/guide-key)
+
+基于[popwin.el](https://github.com/m2ym/popwin-el)。配合[guide-key-tip](https://github.com/aki2o/guide-key-tip)，可以在弹出悬浮窗口中显示。
+
+- [OneKey](http://www.emacswiki.org/emacs/OneKey)
 
 ## Tips
 ### Tip 1
