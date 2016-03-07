@@ -1,13 +1,6 @@
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
+highlighter: rouge
 encoding: utf-8
-redcarpet:
-  extensions:
-    - fenced_code_blocks
-    - no_intra_emphasis
-    - strikethrough
-    - autolink
-    - tables
 
 title: HJKing
 description: "Personal website for HJKing, an ASIC engineer in Wuhan, China."
@@ -20,8 +13,8 @@ author:
     name: HJKing
     username: hjking
     email: hon9jin@gmail.com
-    github: hjking
-    twitter: hon9jin
+    github: kinghom
+    twitter: HJKIN9
     facebook: kin9hom
     linkedin: kinghom
     gravatar: http://www.gravatar.com/avatar/f5f95a698d284cdb1acece79504077db.png
@@ -50,6 +43,7 @@ about_path: /pages/about.html
 tags_path: /pages/tags.html
 categories_path: /pages/categories.html
 archive_path: /pages/all_archives.html
+wiki_path: /pages/wiki.html
 category: category
 
 links:

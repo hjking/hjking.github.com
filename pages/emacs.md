@@ -3,6 +3,7 @@ layout: page
 title: Emacs
 ---
 
+# Emacs
 
 ## Starter Kit
 - [Spacemacs](http://spacemacs.org)

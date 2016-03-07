@@ -20,26 +20,26 @@ glog 是 google 的开源 C++ 日志系统。
 
 安装到系统，需要root权限
 
-{% highlight bash linenos %}
-    tar zxvf glog-0.3.3.tar.gz
-    ./configure
-    make
-    make install
+{% highlight bash %}
+tar zxvf glog-0.3.3.tar.gz
+./configure
+make
+make install
 {% endhighlight %}
 
 安装到用户主目录
 
-{% highlight bash linenos %}
-    tar zxvf glog-0.3.3.tar.gz
-    ./configure --prefix=/home/username/app/glog
-    make
-    make install
+{% highlight shell %}
+tar zxvf glog-0.3.3.tar.gz
+./configure --prefix=/home/username/app/glog
+make
+make install
 {% endhighlight %}
 
 安装完成后，设置LB_LIBRARY_PATH环境变量，添加glog的lib目录。
 
-{% highlight bash linenos %}
-    export LD_LIBRARY_PATH=/home/username/app/glog/lib:${LD_LIBRARY_PATH}
+{% highlight shell %}
+export LD_LIBRARY_PATH=/home/username/app/glog/lib:${LD_LIBRARY_PATH}
 {% endhighlight %}
 
 ## 说明
@@ -50,27 +50,27 @@ glog默认对log分为4级：INFO，WARNING，ERROR，FATAL。打印log语句类
 
 `main.cc`
 
-{% highlight c linenos %}
-    #include <iostream>
-    #include "glog/logging.h"
-    using namespace std;
-    int main(int argc, char** argv) {
-      // Initialize Google's logging library.
-      google::InitGoogleLogging(argv[0]);
+{% highlight c %}
+#include <iostream>
+#include "glog/logging.h"
+using namespace std;
+int main(int argc, char** argv) {
+  // Initialize Google's logging library.
+  google::InitGoogleLogging(argv[0]);
 
-      LOG(INFO) << "hello glog";
-    }
+  LOG(INFO) << "hello glog";
+}
 {% endhighlight %}
 
 `Makefile`
 
-{% highlight bash linenos %}
-    LIB=/home/username/app/glog/lib
-    INCLUDE=/home/username/app/glog/include
-    glog.x : main.o
-        g++ -o $@ $^ -L$(LIB) -lglog –lpthread
-    main.o: main.cc
-        g++ -c -o $@ $^ -I$(INCLUDE)
+{% highlight shell %}
+LIB=/home/username/app/glog/lib
+INCLUDE=/home/username/app/glog/include
+glog.x : main.o
+    g++ -o $@ $^ -L$(LIB) -lglog –lpthread
+main.o: main.cc
+    g++ -c -o $@ $^ -I$(INCLUDE)
 {% endhighlight %}
 
 编译运行上述demo， glog默认会在/tmp/目录下生成log日志文件：glog.x.dell14.username.log.INFO.20140723-101911.2533
@@ -98,5 +98,5 @@ glog默认对log分为4级：INFO，WARNING，ERROR，FATAL。打印log语句类
 ### 常用参数
 - logtostderr：log输出到stderr，而不是文件中。
 - stderrthreshold：处于或超过此设置的级别的log将输出到stderr。log级别分为INFO, WARNING, ERROR, 和 FATAL，对应值为 0, 1, 2, and 3。
-- minloglevel：记录处于或高于此级别的log。 
+- minloglevel：记录处于或高于此级别的log。
 - log_dir：设置log保存目录。
