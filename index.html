@@ -6,9 +6,9 @@ image:
 ---
 
 <!-- This loops through the paginated posts -->
-<section id="index">
+<section id="posts-list">
 {% for post in paginator.posts %}
-  <section class="index">
+  <section id="post">
     {% include post_preview.html %}
   </section>
 {% endfor %}
