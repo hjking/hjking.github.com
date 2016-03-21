@@ -20,7 +20,7 @@ glog 是 google 的开源 C++ 日志系统。
 
 安装到系统，需要root权限
 
-{% highlight bash %}
+{% highlight shell %}
 tar zxvf glog-0.3.3.tar.gz
 ./configure
 make
@@ -64,7 +64,7 @@ int main(int argc, char** argv) {
 
 `Makefile`
 
-{% highlight shell %}
+{% highlight make %}
 LIB=/home/username/app/glog/lib
 INCLUDE=/home/username/app/glog/include
 glog.x : main.o
