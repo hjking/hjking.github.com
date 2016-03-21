@@ -33,6 +33,18 @@ push 博客内容到 github 时，也把它 push 到 gitcafe 上。进入本地�
 git remote add gitcafe git@gitcafe.com:username/username.git
 {% endhighlight %}
 
+
+{% highlight ruby %}
+    def show
+    @widget = Widget(params[:id])
+    respond_to do |format|
+        format.html # show.html.erb
+        format.json { render json: @widget }
+    end
+    end
+{% endhighlight %}
+
+
 上面代码添加了一个名为 `gitcafe` 的远程仓库，执行一次就可以。此时如果打开目录下的 `.git/config` ，会发现增加了一下内容：
 
 ~~~

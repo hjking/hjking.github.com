@@ -996,3 +996,5 @@ section #social{
   margin-top: 30px;
   margin-bottom:10px;
 }
+
+.thumbnail:hover { transform: scale(1.025); border-color: #e0e0e0; transition: all 0.2s ease; }
