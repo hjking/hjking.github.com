@@ -1,5 +1,7 @@
 
-<div class="well well-lg">
+<section id="post" class="article">
+
+<!-- <div class="well well-lg">
   <div class="row">
     <div class="col-md-2">
       <div id="post-info">
@@ -18,10 +20,12 @@
           {% endfor %}
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="col-md-10">
+    <!-- <div class="col-md-10 article-inner"> -->
+    <div class="article-inner">
       <!-- <div class="article-heading"> -->
+
       <div class="article-title">
           <!-- <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a> -->
           <h1>
@@ -30,24 +34,41 @@
             </a>
           </h1>
       </div>
-      <!-- </div> -->
+
+      <div class="article-date">
+          <i class="fa fa-calendar"></i>
+          <a href="{{ post.url }}"><span>{{ post.date | date_to_string }}</span></a>
+
+          <i class="fa fa-folder-o"></i>
+          <a href="{{ site.categories_path }}#{{ post.categories }}" title="View posts in category &quot;{{ post.categories }}&quot;"><span>{{ post.categories }}</span></a>
+
+      </div>
 
       <!-- <hr> -->
 
       <div class="article-summary">
-        <p>
-            {% if post.content contains "<!-- more -->" %}
-                {{ post.content | split:'<!-- more -->' | first }}
-            {% else if post.summary %}
-                {{post.summary}}
-            {% else %}
-                {{ post.content | markdownify  | truncatewords:50 }}
-            {% endif %}
+          {% if post.content contains "<!-- more -->" %}
+              {{ post.content | split:'<!-- more -->' | first }}
+          {% else if post.summary %}
+              {{post.summary}}
+          {% else %}
+              {{ post.content | markdownify  | truncatewords:50 }}
+          {% endif %}
 
-            <a class="btn btn-default btn-sm pull-right" href="{{ post.url }}"><span class="readmore">Read More &raquo; </span></a>
-
-        </p>
+          <a class="btn btn-default btn-sm pull-right" href="{{ post.url }}"><span class="readmore">Read More &raquo; </span></a>
       </div>
+
+      <br>
+
+      <footer class="article-footer">
+          <i class="fa fa-tags"></i>
+          {% for tag in post.tags %}
+            <a href="{{ site.tags_path }}#{{tag}}" title="View posts tagged with &quot;{{ tag }}&quot;"><span>#{{tag}}</span></a>&nbsp;
+          {% endfor %}
+      </footer>
     </div>
-  </div>
-</div>
+<!--   </div>
+</div> -->
+
+
+</section>
