@@ -1005,6 +1005,7 @@ section #social{
 
 .article-inner {
   box-shadow: 1px 2px 3px #eee;
+  /*box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);*/
   border: 1px solid #eee;
   padding: 12px 12px 0;
 }
@@ -1015,11 +1016,26 @@ section #social{
   color: #999;
 }
 
+.article-footer {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding: 0.6rem;
+}
+
 .article-footer a {
   color: #999;
   text-decoration: none;
 }
 
+.article-footer .read-more-btn {
+  color: #3f51b5;
+  text-decoration: none;
+}
+
 section #post{
   display: block;
+}
+
+.nav-link:hover {
+  color: #fff;
+  transform: scale(1.2);
 }
