@@ -16,6 +16,7 @@ Spacemacs is designed to be approachable for users coming from Vim–you do not 
 
 Prelude is an Emacs distribution that aims to enhance the default Emacs experience. Prelude alters a lot of the default settings, bundles a plethora of additional packages and adds its own core library to the mix. The final product offers an easy to use Emacs configuration for Emacs newcomers and lots of additional power for Emacs power users.
 
+- [Steve Purcell](https://github.com/purcell/emacs.d)
 
 ## Packages
 ### 插件管理
@@ -32,6 +33,14 @@ Prelude is an Emacs distribution that aims to enhance the default Emacs experien
 
 - [OneKey](http://www.emacswiki.org/emacs/OneKey)
 
-## Tips
-### Tip 1
+## 参考
+### 入门教程
+- [Absolute Beginner's Guide to Emacs](http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs/)
+- [How To Use the Emacs Editor in Linux](https://www.digitalocean.com/community/tutorials/how-to-use-the-emacs-editor-in-linux)
+- [Master Emacs in 21 Days](http://book.emacs-china.org/)
+- [一年成为Emacs高手](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org)
+- [Strip Emacs](http://emacs-doctor.com/emacs-strip-tease.html)
+- [Emacs is Sexy](http://emacs.sexy/)
+- [A Visual Guide to Emacs](http://sachachua.com/blog/series/a-visual-guide-to-emacs/)
+
 ### Tip 2

@@ -9,17 +9,6 @@ body {
     background-color: #F5F5F5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    /*font-family: "Yanone Kaffeesatz", "Droid Sans", Helvetica, Arial, "Lucida Grande", sans-serif;*/
-    /*color: #333;*/
-    font-weight: bold;
-}
-
 /* underline */
 /*h1,
 h2,
@@ -34,12 +23,10 @@ h1 {
 }
 
 h2 {
-    font-size: 28px;
     line-height: 30px;
 }
 
 h3 {
-    /*font-size: 24px;*/
     padding-bottom: 5px;
 }
 
@@ -56,19 +43,34 @@ h6 {
     font-size: 16px;
 }
 
-h2 a {
-    color: #de7568; !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /*margin-top: 1em;*/
+  margin-bottom: 12px;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
-h2 a:hover {
-    color: #02cf6c !important;
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover {
     text-decoration: underline;
+    visibility: visible;
 }
 
+h2
 h3,
 h4,
 h5,
 h6,
+h2 a,
 h3 a,
 h4 a,
 h5 a,
@@ -76,6 +78,7 @@ h6 a {
     color: #de7568 !important;
 }
 
+h2 a:hover,
 h3 a:hover,
 h4 a:hover,
 h5 a:hover,
@@ -110,9 +113,9 @@ a:hover {
     text-decoration: underline;
 }
 */
-a:visited {
+/*a:visited {
     color: #666;
-}
+}*/
 
 a small {
     font-size:11px;
@@ -124,10 +127,6 @@ a small {
 strong {
     color:#222;
     font-weight:700;
-}
-
-small {
-    font-size:11px;
 }
 
 hr {

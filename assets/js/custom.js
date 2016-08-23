@@ -58,7 +58,7 @@ jQuery(document).ready(function() {
             $('#search-results', search).show();
             $('#close', search).show();
         };
-        $('input', search).bind("focus",_(function() {
+        $('input', search).bind("focus",(function() {
             $('#search-results', search).empty();
             $('#search-results', search).hide();
             $('#close', search).hide();
