@@ -13,7 +13,7 @@ author:
     name: HJKing
     username: hjking
     email: hon9jin@gmail.com
-    github: kinghom
+    github: hjking
     twitter: HJKIN9
     facebook: kin9hom
     linkedin: kinghom
@@ -144,5 +144,5 @@ libs:
         version: 3.3.5
         path: /assets/bootstrap
     font-awesome:
-        version: 4.4.0
+        version: 4.6.3
         path: /assets/font-awesome
