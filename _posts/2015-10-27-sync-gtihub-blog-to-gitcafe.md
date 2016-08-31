@@ -35,7 +35,7 @@ git remote add gitcafe git@gitcafe.com:username/username.git
 
 上面代码添加了一个名为 `gitcafe` 的远程仓库，执行一次就可以。此时如果打开目录下的 `.git/config` ，会发现增加了一下内容：
 
-~~~
+~~~conf
   [remote "gitcafe"]
     url = git@gitcafe.com:username/username.git
     fetch = +refs/heads/*:refs/remotes/gitcafe/*
@@ -45,7 +45,7 @@ git remote add gitcafe git@gitcafe.com:username/username.git
 
 当博客有更新时，先提交，然后依次 push 到 github 和 gitcafe 上。
 
-```shell
+``` shell
 git push origin master
 git push gitcafe master:gitcafe-pages
 ```

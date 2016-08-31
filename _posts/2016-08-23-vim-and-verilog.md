@@ -31,7 +31,7 @@ layout: post
 
 编辑 `~/.ctags`， 添加以下代码：
 
-~~~shell
+``` shell
 --exclude=.SOS
 --exclude=.git
 --exclude=nobackup
@@ -62,15 +62,15 @@ layout: post
 --SystemVerilog-kinds=+ctfmpied
 
 --languages=SystemVerilog,C,C++,HTML,Lisp,Make,Perl,Python,Sh
-~~~
+```
 
 然后就可以运行 ctags 产生 TAGS 文件： `ctags -Re --languages=SystemVerilog -f my.tags /path/to/your/source/code`
 
 之后配置 VIM， 使 VIM 能读到已经产生的 TAGS 文件:
 
-~~~vim
+``` viml
 set tags+=./my.tags
-~~~
+```
 
 以后在 VIM 中打开代码时，就可以通过 `CTRL-]` 跳转到当前光标处的变量/函数等的定义位置。
 
@@ -78,7 +78,7 @@ set tags+=./my.tags
 
 在 VIM 中，可以通过 `%` 在匹配的 `( 与 ) ，{ 与 } ， [ 与 ]` 间跳转。增加以下配置后，可以实现在 module 与 endmodule，task 与 endtask等之间跳转。
 
-~~~
+~~~viml
 runtime! macros/matchit.vim
 if exists('loaded_matchit')
   let b:match_ignorecase=0
