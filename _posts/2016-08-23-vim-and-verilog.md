@@ -23,6 +23,8 @@ layout: post
 
 安装插件[nerdtree](https://github.com/scrooloose/nerdtree)，通过运行命令 `NERDTree` 可以在VIM中打开文件浏览，方便在文件间切换。
 
+<!-- more -->
+
 ### tag 跳转
 
 首先得利用 `ctags` 到生成 TAGS 文件。
