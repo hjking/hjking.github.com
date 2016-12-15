@@ -3,15 +3,6 @@ layout: page
 title: About
 ---
 
-<div data-spy="affix" id="dot-nav">
-    <ul>
-      <li class="awesome-tooltip active" title="Me"><a href="#me"></a></li>
-      <li class="awesome-tooltip" title="Blog"><a href="#blog"></a></li>
-      <li class="awesome-tooltip" title="Projects"><a href="#projects"></a></li>
-      <li class="awesome-tooltip" title="Contact"><a href="#social"></a></li>
-    </ul>
-</div>
-
 <div id="about" class="row">
   <div class="col-md-10">
     <section id="me">
@@ -115,29 +106,27 @@ title: About
     <section id="social">
        <article>
            <div class="row">
-               <div class="col-md-12">
+              <div class="col-md-12">
                 <h1>Contact <small>Social Link</small></h1>
-                   <!-- <p> -->
-                    <div id="stalker">
-                      <ul class="list-inline">
-                      <li><a title="Email Me" href="mailto:{{ site.author.email }}" target="_blank">
-                        <i class="fa fa-envelope fa-2x"></i>
-                      </a>
-                      {% for nav in site.sociallink %}
-                          <li><a title="{{ nav.title }}" href="{{ nav.href }}" target="_blank">
-                            <i class="{{ nav.class }} fa-2x"></i>
-                          </a>
-                      {% endfor %}
-                      <li><a title="Wechat" href="/pages/wechat.html">
-                        <i class="fa fa-wechat fa-2x"></i>
-                      </a>
-                      <li><a title="RSS Feed" href="/rss.xml">
-                        <i class="fa fa-rss-square fa-2x"></i>
-                      </a>
-                      </ul>
-                    </div>
-                   <!-- </p> -->
-               </div>
+                <div id="stalker">
+                  <ul class="list-inline">
+                    <li><a title="Email Me" href="mailto:{{ site.author.email }}" target="_blank">
+                      <i class="fa fa-envelope fa-2x"></i>
+                    </a>
+                    {% for nav in site.sociallink %}
+                        <li><a title="{{ nav.title }}" href="{{ nav.href }}" target="_blank">
+                          <i class="{{ nav.class }} fa-2x"></i>
+                        </a>
+                    {% endfor %}
+                    <li><a title="Wechat" href="/pages/wechat.html">
+                      <i class="fa fa-wechat fa-2x"></i>
+                    </a>
+                    <li><a title="RSS Feed" href="/rss.xml">
+                      <i class="fa fa-rss-square fa-2x"></i>
+                    </a>
+                  </ul>
+                </div>
+              </div>
            </div>
        </article>
     </section>

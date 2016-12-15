@@ -1,14 +1,41 @@
 
 <footer id="footer" class="footer hidden-print">
     <div class="wrap container">
-    <div class="row">
-        <small>
-        {% assign first_post = site.posts | last %}
-        Copyright &copy; {{ first_post.date | date: "%Y" }} ~ {{ site.time | date: "%Y" }} <a href="{{ site.about_path }}">{{ site.author.name }}</a>.
-        <br>
-        Powered by <a href="{{ site.links.jekyll }}" target="_blank">Jekyll</a>, <a href="{{ site.links.bootstrap }}" target="_blank">Twitter Bootstrap</a>, <a href="http://jekyllbootstrap.com" target="_blank">Jekyll Bootstrap</a> and <a href="http://fontawesome.io/" target="_blank">Font Awesome</a>.
-        </small>
-        <br>
+        <div class="row">
+            <small>
+            {% assign first_post = site.posts | last %}
+            Copyright &copy; {{ first_post.date | date: "%Y" }} ~ {{ site.time | date: "%Y" }} <a href="{{ site.about_path }}">{{ site.author.name }}</a>.
+            <br>
+            Powered by <a href="{{ site.links.jekyll }}" target="_blank">Jekyll</a>, <a href="{{ site.links.bootstrap }}" target="_blank">Twitter Bootstrap</a>, <a href="http://jekyllbootstrap.com" target="_blank">Jekyll Bootstrap</a> and <a href="http://fontawesome.io/" target="_blank">Font Awesome</a>.
+            </small>
+            <br>
+        </div>
+    </div>
+
+    <div class="footer_info_block container">
+        <div class="footer_info wrap">
+            <div class="footer_socialIcons">
+                <ul class="list-inline">
+                    <li class="socialIcons_link">
+                    <a class="fa fa-twitter" href="https://twitter.com/hon9jin"></a>
+                    </li>
+                    <li class="socialIcons_link">
+                    <a class="fa fa-facebook" href="https://www.facebook.com/kin9hom"></a>
+                    </li>
+                    <li class="socialIcons_link">
+                    <a class="fa fa-google-plus" href="https://plus.google.com/103205960311343871154"></a>
+                    </li>
+                    <li class="socialIcons_link">
+                    <a class="fa fa-linkedin" href="https://www.linkedin.com/in/hjking"></a>
+                    </li>
+                    <li class="socialIcons_link">
+                    <a class="fa fa-github" href="https://github.com/hjking"></a>
+                    </li>
+                    <li class="socialIcons_link">
+                    <a class="fa fa-rss" href="/rss.xml"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </footer>

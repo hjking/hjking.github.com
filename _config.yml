@@ -20,7 +20,7 @@ author:
     github: hjking
     twitter: HJKIN9
     facebook: kin9hom
-    linkedin: kinghom
+    linkedin: hjking
     gravatar: http://www.gravatar.com/avatar/f5f95a698d284cdb1acece79504077db.png
 
 paginate: 7
@@ -95,7 +95,7 @@ sharing :
 
 sociallink:
   - title: LinkedIn
-    href: http://www.linkedin.com/in/kinghom
+    href: http://www.linkedin.com/in/hjking
     class: fa fa-linkedin-square
   - title: GitHub
     href: https://github.com/hjking
@@ -145,7 +145,7 @@ cover:      /assets/img/cover.jpg
 
 libs:
     bootstrap:
-        version: 3.3.5
+        version: 3.3.7
         path: /assets/bootstrap
     font-awesome:
         version: 4.6.3

@@ -53,9 +53,10 @@ h6 {
   margin-bottom: 12px;
   font-weight: bold;
   line-height: 1.2;
+  /*border-bottom: 2px solid #27d7e7;*/
 }
 
-h1:hover,
+/*h1:hover,
 h2:hover,
 h3:hover,
 h4:hover,
@@ -63,9 +64,9 @@ h5:hover,
 h6:hover {
     text-decoration: underline;
     visibility: visible;
-}
+}*/
 
-h2
+h2,
 h3,
 h4,
 h5,
@@ -935,11 +936,10 @@ section #social{
 }
 
 #footer {
-  background: #ccc;
   padding: 15px 0;
   text-align: center;
   line-height: 20px;
-  background: #333;
+  background: #585f69;
   color: white;
 }
 
@@ -972,6 +972,7 @@ section #social{
 
 #stalker ul {
   margin-top: 15px;
+  margin-left: 5px;
 }
 
 .glyphicon-calendar,
@@ -1038,3 +1039,28 @@ section #post{
   color: #fff;
   transform: scale(1.2);
 }
+
+.footer_info_block {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.footer_socialIcons {
+    top: 27%;
+    opacity: .6;
+    text-align: center;
+}
+
+.headline {
+    display: block;
+    margin: 10px 0 25px 0;
+    border-bottom: 1px dotted #e4e9f0;
+}
+
+.headline h2, .headline h3, .headline h4 {
+    border-bottom: 2px solid #27d7e7;
+}
+
+/*.footer a, .copyright a, .footer a:hover, .copyright a:hover {
+    color: #27d7e7;
+}*/
