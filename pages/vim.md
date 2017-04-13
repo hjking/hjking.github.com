@@ -117,15 +117,20 @@ Vim distributions are Vim + custom settings + custom plugins from certain author
 
   让cpp文件在.h和.cpp文件中切换。
 
-- expand region
-- gundo
+- [gundo](https://github.com/sjl/gundo.vim)
+
+  显示撤销树浏览器。
+
 - multiple-cursors
 
 - [neocomplcache](https://github.com/Shougo/neocomplcache)
 
   关键字补全、文件路径补全、tag补全等等，各种，非常好用，速度超快。[neocomplete](https://github.com/Shougo/neocomplete.vim) 也不错，但是它是基于lua的。
 
+- [neocomplete](https://github.com/Shougo/neocomplete.vim)
+
 - unite
+
 - [fugitive](https://github.com/tpope/vim-fugitive.git)
 
   方便在Vim里面使用Git的插件。
@@ -133,6 +138,19 @@ Vim distributions are Vim + custom settings + custom plugins from certain author
 - [delimitMate](https://github.com/Raimondi/delimitMate.git)
 
   成对生成(),{},[]
+
+- [wildfire](https://github.com/Shougo/wildfire.vim)
+
+  快速的就近选择一个候选文本对象，并能通过快捷键继续简单的扩大文本对象范围。
+
+- [vim-expand-region](https://github.com/terryma/vim-expand-region)
+
+  同上。
+
+- [multiple-cursors]()
+
+  多重选取
+
 
 ## Customize
 

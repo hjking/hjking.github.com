@@ -11,7 +11,8 @@ description: "Personal website for HJKing, an ASIC engineer in Wuhan, China."
 
 url: http://hjking.github.io
 
-permalink: /blog/:year/:month/:day/:title
+# permalink: /blog/:year/:month/:day/:title
+permalink: /blog/:year/:month/:day/:title.html
 
 author:
     name: HJKing
@@ -29,7 +30,7 @@ blog:
     cover: true
 
 comments:
-    provider: duoshuo
+    provider: livere
     disqus:
         short_name: hjking
     uyan:

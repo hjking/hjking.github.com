@@ -13,6 +13,8 @@
       {% include comments-providers/uyan %}
     {% when "duoshuo" %}
       {% include comments-providers/duoshuo %}
+    {% when "livere" %}
+      {% include comments-providers/livere %}
     {% when "custom" %}
       {% include custom/comments %}
   {% endcase %}
