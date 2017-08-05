@@ -35,6 +35,14 @@ title: Tools
 - [Chocolatey](https://chocolatey.org/)
   软件包管理系统，完全用命令行来安装应用程序。
 
+- [Bandizip](https://www.bandisoft.com/bandizip/)
+  压缩软件
+
+- [Recuva](https://www.piriform.com/recuva/download)
+  数据恢复软件
+
+
+
 ### IC 相关
 - [WaveDromEditor](http://wavedrom.com/)
   功能强大的画时序图的工具。
