@@ -22,7 +22,7 @@ layout: post
 
 通过重载 `uvm_report_server` 类的 `compose_message` 函数可以达到目的。 首先创建一个继承自 `uvm_report_server` 的 `my_report_server` 类，在类中实现 `compose_message` 函数。 需要注意的是对 `uvm_severity` 类型的 severity 做了强制转换为 `uvm_severity_type`，为的是显示打印类型。
 
-~~~ verilog
+{% highlight verilog %}
 class my_report_server extends uvm_report_server;
    virtual function string compose_message( uvm_severity severity,
                                             string name,
@@ -35,7 +35,7 @@ class my_report_server extends uvm_report_server;
              severity_type.name(), filename, line, $time, name, id, message );
    endfunction: compose_message
 endclass: my_report_server
-~~~
+{% endhighlight %}
 
 ## 如何使用自定义格式
 
@@ -43,7 +43,7 @@ endclass: my_report_server
 
 首先, 实例化 `my_report_server`。 然后，通过 `uvm_report_server` 的静态函数 `set_server()` 设置 `my_server` 为全局。这里，我们在 testcase 的 `start_of_simulation()` 函数中做以上处理。
 
-~~~ verilog
+{% highlight verilog %}
 class my_test extends uvm_test;
    // ...
    function void start_of_simulation();
@@ -51,7 +51,7 @@ class my_test extends uvm_test;
       uvm_report_server::set_server( my_server );
    endfunction: start_of_simulation
 endclass: my_test
-~~~
+{% endhighlight %}
 
 现在的打印信息格式如下:
 
