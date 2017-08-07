@@ -3,8 +3,6 @@ layout: index
 title: "Home Page"
 image:
   feature: abstract-1.jpg
-pagination:
-  enabled: true
 ---
 
 <!-- This loops through the paginated posts -->
@@ -23,7 +21,7 @@ pagination:
         <li><a href="/">&lsaquo;</a></li>
       {% else %}
         <li><a href="/">&laquo;</a></li>
-        <li><a href="/page/{{paginator.previous_page}}/">&lsaquo;</a></li>
+        <li><a href="/page{{paginator.previous_page}}/">&lsaquo;</a></li>
       {% endif %}
     {% else %}
       <li class="disabled"><a href="/">&laquo;</a></li>
@@ -40,14 +38,13 @@ pagination:
       {% if count == paginator.page %}
         <li class="active"><a href="#">{{ count }}</a></li>
       {% else %}
-        <!-- <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}">{{ count }}</a></li> -->
-        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', '/' | append: count }}">{{ count }}</a></li>
+        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}">{{ count }}</a></li>
       {% endif %}
     {% endfor %}
 
     {% if paginator.next_page %}
-      <li><a href="/page/{{paginator.next_page}}/">&rsaquo;</a></li>
-      <li><a href="/page/{{paginator.total_pages}}/">&raquo;</a></li>
+      <li><a href="/page{{paginator.next_page}}/">&rsaquo;</a></li>
+      <li><a href="/page{{paginator.total_pages}}/">&raquo;</a></li>
     {% else if paginator.page == paginator.total_pages %}
       <li class="disabled"><a href="#">&rsaquo;</a></li>
       <li class="disabled"><a href="#">&raquo;</a></li>
