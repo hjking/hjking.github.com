@@ -5,8 +5,6 @@ title: Vim
 
 # Vim
 
-some description
-
 
 ## Distributions
 
@@ -28,7 +26,7 @@ Vim distributions are Vim + custom settings + custom plugins from certain author
 
   spf13-vim is a distribution of vim plugins and resources for Vim, Gvim and MacVim.
 
-  It is a good starting point for anyone intending to use VIM for development running equally well on Windows, Linux, *nix and Mac.
+  It is a good starting point for anyone intending to use VIM for development running equally well on Windows, Linux, \*nix and Mac.
 
   The distribution is completely customisable using a ~/.vimrc.local, ~/.vimrc.bundles.local, and ~/.vimrc.before.local Vim RC files.
 
@@ -55,7 +53,7 @@ Vim distributions are Vim + custom settings + custom plugins from certain author
 - [neocomplete](https://github.com/Shougo/neocomplete.vim)
   需要Vim支持Lua
 
--[YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
+- [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 
   前Google的C++工程师Valloric (Val Markovic) 开发的一款，专门用于C系（C,C++,C#) 的自动补全工具, 优点是速度非常快，而且支持变量跳转，函数关联跳转，检测代码报错, 可以说是最牛逼的补全工具，缺点是太难配置，对于除了C系语言的其他语言补全支持并不好. 对于刚接触Vim的同学来说相当不友好, 不过文档比较齐全.
 
@@ -226,8 +224,6 @@ Vim distributions are Vim + custom settings + custom plugins from certain author
 ### Colors
 
 ### Additional Syntaxes
-
-## Tips
 
 ### 调试
 

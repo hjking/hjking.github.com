@@ -41,11 +41,30 @@ title: Tools
 - [Recuva](https://www.piriform.com/recuva/download)
   数据恢复软件
 
+- [Dism++](https://www.chuyu.me/en/index.html)
+  Windows实用系统优化工具
+
+- [Ditto](http://ditto-cp.sourceforge.net/)
+  剪切板记录
+
+- [FastStone Capture](http://faststone.org/FSCaptureDetail.htm)
+  截图工具
+
+- [Snipaste](http://www.snapfiles.com/get/snipaste.html)
+  截图工具
+
+- [Sublime Text 3](https://www.sublimetext.com/3)
+  Text editor
 
 
 ### IC 相关
-- [WaveDromEditor](http://wavedrom.com/)
+- [WaveDromEditor](http://wavedrom.com/editor.html)
+
   功能强大的画时序图的工具。
+
+- [KWSequence](http://kellen.wang/zh/kwsequence-javascript-project/)
+
+  提供在线生成数字电路仿真波形图的工具，通过输入ASCII字符即可得到对应的波形图。
 
 ## 团队协作平台
 
@@ -54,8 +73,10 @@ title: Tools
 - [worktile](https://worktile.com)
 - [trello](https://trello.com/)
 - [Asana](https://asana.com/)
+- [Slack](https://slack.com)
 
 ## 在线文档写作平台
 
 - [Quip](https://quip.com/)
 - [石墨](https://shimo.im/)
+- [workflowy](https://workflowy.com/)
