@@ -56,6 +56,26 @@ title: Tools
 - [Sublime Text 3](https://www.sublimetext.com/3)
   Text editor
 
+- [etcher](https://etcher.io/)
+  Burn images to SD cards & USB drives, safely and easily.
+
+#### Markdown
+
+- [typora](https://typora.io/)
+
+  Typora 将「编辑写字」、「预览呈现」两个过程合并了，所有行内元素（比如粗体、斜体）会根据是否在编辑状态而自动在编辑和预览状态之间切换，区块元素（比如标题、列表）会在按下 Enter 后及时渲染。
+
+- [Boostnote](https://boostnote.io/)
+
+  一个专门为程序员设计的笔记应用：支持上百种程序语言的高亮显示、项目 Dev Track 进度追踪、独立的 Finder Popup显示窗口，用户在新建环节甚至可以创建多个 Tab，用来组成独立的代码项目。目前，Boostnote 支持 Windows、macOS、Linux 三大桌面端和 Android、iOS 两大移动端平台。
+
+- [Laverna](https://laverna.cc/)
+
+  Dropbox 同步; Remote Storage 存储协议; 加密功能。
+
+- [Simplenote](https://simplenote.com/)
+
+  支持平台最全面的写作工具，支持包括 Windows、macOS、Linux、Android、iOS 和 Web 共六大平台，覆盖桌面端和移动端，并且所有文档都可以实现跨平台同步编辑。
 
 ### IC 相关
 - [WaveDromEditor](http://wavedrom.com/editor.html)
@@ -66,7 +86,9 @@ title: Tools
 
   提供在线生成数字电路仿真波形图的工具，通过输入ASCII字符即可得到对应的波形图。
 
-## 团队协作平台
+## 在线应用
+
+### 团队协作平台
 
 - [teambition](https://www.teambition.com)
 - [Tower](https://tower.im)
@@ -75,7 +97,7 @@ title: Tools
 - [Asana](https://asana.com/)
 - [Slack](https://slack.com)
 
-## 在线文档写作平台
+### 在线文档写作平台
 
 - [Quip](https://quip.com/)
 - [石墨](https://shimo.im/)

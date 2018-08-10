@@ -30,6 +30,10 @@ Vim distributions are Vim + custom settings + custom plugins from certain author
 
   The distribution is completely customisable using a ~/.vimrc.local, ~/.vimrc.bundles.local, and ~/.vimrc.before.local Vim RC files.
 
+## 教程
+
+- [Vim 从入门到精通](https://github.com/wsdjeg/vim-galore-zh_cn)
+
 ## Featured Plugins
 
 ### 插件管理器
@@ -37,6 +41,8 @@ Vim distributions are Vim + custom settings + custom plugins from certain author
 - [pathogen](https://github.com/tpope/vim-pathogen)
 
   该插件用来管理Vim的插件，可以让插件的安装与卸载更加方便。配合Github和Submodule效果更佳。
+
+- vim-plug
 
 ### 文件，代码搜索工具
 
@@ -51,11 +57,12 @@ Vim distributions are Vim + custom settings + custom plugins from certain author
   关键字补全、文件路径补全、tag补全等等，各种，非常好用，速度超快。[neocomplete](https://github.com/Shougo/neocomplete.vim) 也不错，但是它是基于lua的。
 
 - [neocomplete](https://github.com/Shougo/neocomplete.vim)
+  
   需要Vim支持Lua
 
 - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 
-  前Google的C++工程师Valloric (Val Markovic) 开发的一款，专门用于C系（C,C++,C#) 的自动补全工具, 优点是速度非常快，而且支持变量跳转，函数关联跳转，检测代码报错, 可以说是最牛逼的补全工具，缺点是太难配置，对于除了C系语言的其他语言补全支持并不好. 对于刚接触Vim的同学来说相当不友好, 不过文档比较齐全.
+  前Google的C++工程师Valloric (Val Markovic) 开发的一款，专门用于C系（C,C++,C\#) 的自动补全工具, 优点是速度非常快，而且支持变量跳转，函数关联跳转，检测代码报错, 可以说是最牛逼的补全工具，缺点是太难配置，对于除了C系语言的其他语言补全支持并不好. 对于刚接触Vim的同学来说相当不友好, 不过文档比较齐全.
 
 ### 代码检测
 
@@ -119,7 +126,7 @@ Vim distributions are Vim + custom settings + custom plugins from certain author
 
 - [multiple-cursors]()
 
-  多重选取,多光标输入。在 Normal模式下按 Ctrl-n 高亮选中当前光标下的单词，并且将光标放在单词尾部；继续按，会选中下一个重复的单词。如果在Visual模式下选中一行, 按 Ctrl-n 选中每一相同行，并将光标放在末尾，并回到 Normal 模式。
+  多光标操作，多重选取，多光标输入。在 Normal 模式下按 Ctrl-n 高亮选中当前光标下的单词，并且将光标放在单词尾部；继续按，会选中下一个重复的单词。 如果在Visual模式下选中一行, 按 Ctrl-n 选中每一相同行，并将光标放在末尾，并回到 Normal 模式。
 
 - [gundo](https://github.com/sjl/gundo.vim)
 
@@ -202,6 +209,7 @@ Vim distributions are Vim + custom settings + custom plugins from certain author
 - unite
 
 - [vim-airline](https://github.com/vim-airline/vim-airline)
+
   各种line已经成为过去，基本 airline 已经实现了统一 ，同时支持各种插件，当然带来的负担就是会导致vim启动慢了一点. 当然如果要用vim装逼的话，这个是必不可少的.
 
 - [vim-repeat]
@@ -210,7 +218,20 @@ Vim distributions are Vim + custom settings + custom plugins from certain author
 
 - [delimitMate](https://github.com/Raimondi/delimitMate.git)
 
-  成对生成(),{},[]
+  符号自动补全, 成对生成(),{},[]
+
+- quickrun: 快速执行
+
+- trailing-whitespace: 行尾空格处理
+
+- rainbow_parentheses: 括号高亮
+
+- syntastic: 语法检查
+
+- matchit: 成对标签跳转
+
+- vim-signature: 快速标记跳转
+
 
 
 ## Customize
@@ -235,4 +256,22 @@ Vim distributions are Vim + custom settings + custom plugins from certain author
 
   在vim中运行 _scriptnames_ 。
 
-- Tip 2
+
+## Tips
+
+- Remove all trailing spaces
+
+    Try :%s/\s\+$//e.
+
+- Use [{ to jump back to the "{" at the start of the current code block.
+
+- Use gd to jump from the use of a variable to its local declaration.
+
+
+## Cheatsheet
+
+- http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
+- https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
+- http://www.nathael.org/Data/vi-vim-cheat-sheet.svg
+- http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
+- http://www.rosipov.com/images/posts/vim-movement-commands-cheatsheet.png

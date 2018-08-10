@@ -63,7 +63,7 @@ Each `awk` procedure can be divided into three sections:
 >  continue
 >  exit [ expression ]
 
-- Built-in variables
+- 内置变量
 
 Variable  | Meaning
 --------- | -------
@@ -76,7 +76,7 @@ FNR    | The number of records relative to the current input file
 OFS    | The output field separator, default value is “ “
 ORS    | The output record separator, default value is “\n”
 
-- Typical use
+- 典型用法
 
 ~~~ shell
 # print 1st and 4th column
@@ -119,81 +119,3 @@ awk '! /test/ { print $2 }' file.txt
 
 ### sed
 
-`sed` refers to Stream Editor. It can perform text transformations on a given file or an input stream.
-
-
-- Print a line: p
-
-~~~ shell
-# treat this as using 'grep'
-# same with 'cat file.txt'
-sed '' file.txt
-
-# print every line that matches the regex pattern
-sed -n '/test/p' file.txt
-
-# match different patterns
-sed -n '/test1/, /test2/p' file.txt
-~~~
-
-- Remove a line: d
-
-~~~ shell
-# remove every line that matches the regex pattern
-sed '/test/d' file.txt
-
-# remove 2nd line
-sed '2d' file.txt
-
-# remove from 2nd line to the end of the file
-sed '2,$d' file.txt
-~~~
-
-- Substitution: s
-
-~~~ shell
-# replace the 1st 'test' with 'text' in each line
-sed 's/test/text/' file.txt
-
-# replace all 'test' with 'text' in each line
-sed 's/test/text/g' file.txt
-
-# replace the 2nd 'test' with 'text' in each line
-sed 's/test/text/2' file.txt
-
-# replace all 'test' from the 2nd to the end of each line with 'text'
-sed 's/test/text/2g' file.txt
-
-# replace the 'test' in the 2nd line with 'text'
-sed '2s/test/text/g' file.txt
-~~~
-
-- Insert & Append a whole line: i & a
-
-~~~ shell
-# insert a new line before the 2nd line
-sed '2 i test' file.txt
-
-# append a new line after the 2nd line
-sed '2 a test' file.txt
-
-# append a new line after each line that matches the regex pattern
-sed '/test/a test' file.txt
-~~~
-
-- Replace a whole line: c
-
-~~~ shell
-# replace the 2nd line with 'test'
-sed '2 c test' file.txt
-
-# replace each line that matches the regex pattern with 'text'
-sed '/test/c text' file.txt
-~~~
-
-- In-place editing: \-i
-
-~~~ shell
-# make immediate change!
-sed -i 's/test/text/g' file.txt
-~~~
