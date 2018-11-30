@@ -59,6 +59,9 @@ title: Tools
 - [etcher](https://etcher.io/)
   Burn images to SD cards & USB drives, safely and easily.
 
+- [百度云满速下载](https://github.com/proxyee-down-org/proxyee-down)
+  使用本地http代理服务器方式嗅探下载请求，支持所有操作系统和大部分主流浏览器,支持分段下载和断点下载。
+
 #### Markdown
 
 - [typora](https://typora.io/)
