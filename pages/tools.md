@@ -105,3 +105,16 @@ title: Tools
 - [Quip](https://quip.com/)
 - [石墨](https://shimo.im/)
 - [workflowy](https://workflowy.com/)
+
+### GTD
+
+- [todo](https://todo.microsoft.com)
+- [todoist](https://todoist.com)
+- [Google Keep](https://keep.google.com/)
+
+### 笔记
+
+- [OneNote]()
+- [Evernote]()
+- [有道笔记]()
+- [为知笔记]()
